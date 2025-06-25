@@ -79,22 +79,22 @@
 >
 > ### 3. Componentes Impactados
 >
-> |    Componente    | Descripción                                                                                                                                                      | Impacto | Estado |
-> | :--------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----: | :----: |
-> | **SIU01** | Servidor de Interfaces de Usuario                                                                                                                                 |  ✅ SI  |   🟢   |
-> | **API01** | API para personal del colegio (Directivos, Auxiliares, Profesores, etc)                                                                                           |  ✅ SI  |   🟢   |
-> | **API02** | API para padres de Familia                                                                                                                                        |  ❌ NO  |   ⚪   |
-> | **API03** | API para obtención de hora real UTC                                                                                                                              |  ✅ SI  |   🟡   |
-> | **TPS01** | Tareas programadas con Scripts                                                                                                                                    |  ❌ NO  |   ⚪   |
-> | **EMCS01** | Ejecutor múltiple de consultas SQL de Escritura de API01 hacia RDP02 y RDP03                                                                                     |  ✅ SI  |   🟢   |
-> | **EMCS02** | Ejecutor múltiple de consultas SQL de escritura para API02 hacia RDP03                                                                                           |  ❌ NO  |   ⚪   |
-> | **RDP01** | Repositorio de Datos Persistentes solo para Archivos del Sistema en General (Fotos de Perfil, Excels de Asistencia, Backups, etc) ➡️**Google Drive**      |  ✅ SI  |   🟢   |
-> | **RDP02** | Repositorio de Datos Persistentes para Datos Relacionados a Personal del Colegio (Directivos, Auxiliares, Profesores, etc) ➡️ PostgreSQL                        |  ✅ SI  |   🟢   |
-> | **RDP03** | Repositorio de Datos Persistentes para Datos Relacionados a Responsables (Padres de Familia/Apoderados) ➡️ MongoDB                                              |  ❌ NO  |   ⚪   |
-> | **RDP04** | Repositorio de Datos Persistentes para JSONs con Información de Datos de Asistencia del Día Actual (Se actualiza todos los días por TPS01) ➡️ Blob de Vercel |  ✅ SI  |   🟡   |
-> | **RDP05** | Repositorio de Datos Persistentes para Asistencias Tomadas a lo largo del día actual exclusivamente ➡️ Redis                                                   |  ✅ SI  |   🟡   |
-> |  **SS01**  | Servidor de Sockets para operaciones en tiempo real                                                                                                               |  ✅ SI  |   🟢   |
-> |  **SE01**  | Servicio Externo de Correo Electrónico por GMAIL de Google                                                                                                       |  ❌ NO  |   ⚪   |
+> |    Componente    | Descripción                                                                                                                                                      | Si | No |
+> | :--------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -- | -- |
+> | **SIU01** | Servidor de Interfaces de Usuario                                                                                                                                 | ✅ |    |
+> | **API01** | API para personal del colegio (Directivos, Auxiliares, Profesores, etc)                                                                                           | ✅ |    |
+> | **API02** | API para padres de Familia                                                                                                                                        |    | ❌ |
+> | **API03** | API para obtención de hora real UTC                                                                                                                              | ✅ |    |
+> | **TPS01** | Tareas programadas con Scripts                                                                                                                                    |    | ❌ |
+> | **EMCS01** | Ejecutor múltiple de consultas SQL de Escritura de API01 hacia RDP02 y RDP03                                                                                     | ✅ |    |
+> | **EMCS02** | Ejecutor múltiple de consultas SQL de escritura para API02 hacia RDP03                                                                                           |    | ❌ |
+> | **RDP01** | Repositorio de Datos Persistentes solo para Archivos del Sistema en General (Fotos de Perfil, Excels de Asistencia, Backups, etc) ➡️**Google Drive**      |    | ❌ |
+> | **RDP02** | Repositorio de Datos Persistentes para Datos Relacionados a Personal del Colegio (Directivos, Auxiliares, Profesores, etc) ➡️ PostgreSQL                        |    | ❌ |
+> | **RDP03** | Repositorio de Datos Persistentes para Datos Relacionados a Responsables (Padres de Familia/Apoderados) ➡️ MongoDB                                              | ✅ |    |
+> | **RDP04** | Repositorio de Datos Persistentes para JSONs con Información de Datos de Asistencia del Día Actual (Se actualiza todos los días por TPS01) ➡️ Blob de Vercel | ✅ |    |
+> | **RDP05** | Repositorio de Datos Persistentes para Asistencias Tomadas a lo largo del día actual exclusivamente ➡️ Redis                                                   |    | ❌ |
+> |  **SS01**  | Servidor de Sockets para operaciones en tiempo real                                                                                                               |    | ❌ |
+> |  **SE01**  | Servicio Externo de Correo Electrónico por GMAIL de Google                                                                                                       | ✅ |    |
 
 ---
 
@@ -212,7 +212,7 @@
 >
 > |                 Flujo                 | Tipo de Prueba             | Fecha de Inicio |  Fecha Fin  |     Ambiente     | Test Execution |
 > | :------------------------------------: | -------------------------- | :-------------: | :----------: | :---------------: | :------------: |
-> |            Inicio de Sesion            | 🔧 Pruebas Unitarias       |  [DD/MM/YYYY]  | [DD/MM/YYYY] |   🔧 Desarrollo   |  `TE-001T`  |
+> |            Inicio de Sesion            | 🔧 Pruebas Funcionales     |  [DD/MM/YYYY]  | [DD/MM/YYYY] |   🔧 Desarrollo   |  `TE-001T`  |
 > |     Toma de Asistencia de Personal     | 🔗 Pruebas de Integración |  [DD/MM/YYYY]  | [DD/MM/YYYY] | 🧪 Certificación |   `TE-002`   |
 > | **Edicion de Datos de Personal** | 🌐 Pruebas E2E             |  [DD/MM/YYYY]  | [DD/MM/YYYY] | 🧪 Certificación |   `TE-003`   |
 > |                  etc                  | ⚡ Pruebas de Performance  |  [DD/MM/YYYY]  | [DD/MM/YYYY] |  🚀 Producción  |   `TE-004`   |
