@@ -87,7 +87,7 @@
 > | **API03** | API para obtención de hora real UTC                                                                                                                              |  ✅ SI  |   🟡   |
 > | **TPS01** | Tareas programadas con Scripts                                                                                                                                    |  ❌ NO  |   ⚪   |
 > | **EMCS01** | Ejecutor múltiple de consultas SQL de Escritura de API01 hacia RDP02 y RDP03                                                                                     |  ✅ SI  |   🟢   |
-> | **EMCS02** | Ejecutor múltiple de consultas SQL de escritura para API02 hacia RDP03                                                                                           |  ❌ NO  |   ⚪   |
+> | **EMCN01** | Ejecutor múltiple de consultas NoSQL de escritura para API02 hacia RDP03                                                                                         |  ❌ NO  |   ⚪   |
 > | **RDP01** | Repositorio de Datos Persistentes solo para Archivos del Sistema en General (Fotos de Perfil, Excels de Asistencia, Backups, etc) ➡️**Google Drive**      |  ✅ SI  |   🟢   |
 > | **RDP02** | Repositorio de Datos Persistentes para Datos Relacionados a Personal del Colegio (Directivos, Auxiliares, Profesores, etc) ➡️ PostgreSQL                        |  ✅ SI  |   🟢   |
 > | **RDP03** | Repositorio de Datos Persistentes para Datos Relacionados a Responsables (Padres de Familia/Apoderados) ➡️ MongoDB                                              |  ❌ NO  |   ⚪   |

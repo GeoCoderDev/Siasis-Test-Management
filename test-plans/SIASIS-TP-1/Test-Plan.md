@@ -1,10 +1,9 @@
-# 📋 Test Plan: SIASIS-TP-1 - [Nombre del Plan]
+# 📋 Test Plan: SIASIS-TP-1 - Login para Personal del Colegio IE20935
 
 > [!IMPORTANT]
 >
-> **Fecha de Creación:** [Fecha]
-> **Responsable:** [Nombre]
-> **Sprint/Release:** [Número]
+> **Fecha de Creación:** 28/06/2025
+> **Responsable: Juan Chavez** > **Sprint/Release:** 5
 > **Estado:** 🟡 En Progreso
 
 ---
@@ -15,11 +14,11 @@
 >
 > ### 🎯 Historia de Usuario Principal
 >
-> **COMO** [Tipo de usuario - Directivo/Profesor/Auxiliar/Responsable]
+> **COMO** Personal del Colegio IE20935 _(Directivos, Profesores, Auxiliares, Personales administrativos, etc)_
 >
-> **QUIERO** [Funcionalidad específica que se va a probar]
+> **QUIERO** poder iniciar sesión en el sistema de asistencia SIASIS mediante un nombre de usuario y una contraseña
 >
-> **PARA** [Beneficio o razón del negocio]
+> **PARA** poder hacer uso del sistema segun mi rol
 
 ### ✅ Criterios de Aceptación
 
@@ -27,21 +26,33 @@
 >
 > #### 📝 Criterio de Aceptación 1:
 >
-> **Dado** [Condición inicial o contexto]
+> **Dado** que soy un usuario del sistema SIASIS
 >
-> **Cuando** [Acción que se realiza]
+> **Cuando** ingreso mis credenciales en la interfaz del login del sistema
 >
-> **Entonces** [Resultado esperado]
+> **Entonces** logro iniciar sesión y visualizar la interfaz de bienvenida al sistema
 
 > [!TIP]
 >
 > #### 📝 Criterio de Aceptación 2:
 >
-> **Dado** [Condición inicial o contexto]
+> **Dado** que no soy un usuario del sistema SIASIS
 >
-> **Cuando** [Acción que se realiza]
+> **Cuando** intento ingresar al sistema con credenciales invalidas
 >
-> **Entonces** [Resultado esperado]
+> **Entonces** no puedo acceder al sistema
+>
+> **Y** la interfaz muestra un error de credenciales invalidas
+
+> [!TIP]
+>
+> #### 📝 Criterio de Aceptación 3:
+>
+> **Dado** que las interfaces de Login estan desarrolladas
+>
+> **Cuando** accedo al sistema desde dispositivos con diferentes tamaños
+>
+> **Entonces** las interfaces no se deben deformar y deben permanecer presentables para el usuario.
 
 ---
 
@@ -51,7 +62,7 @@
 >
 > ### 1. Objetivo
 >
-> [Describir claramente el objetivo principal de este plan de pruebas]
+> Validar el correcto funcionamiento de la interfaz del Login para los 6 roles de personal del Colegio(Directivos, Profesores de Primaria, Profesores de Secundaria, Tutores de Secundaria, Auxiliares, Personales Administrativos)
 
 > [!NOTE]
 >
@@ -59,19 +70,20 @@
 >
 > #### 2.1. Lo que se va a probar (Funcionalidades)
 >
-> | Funcionalidad     | Responsable | Prioridad |
-> | :---------------- | ----------- | :-------: |
-> | [Funcionalidad 1] | [Nombre]    |  🔴 Alta  |
-> | [Funcionalidad 2] | [Nombre]    | 🟡 Media |
-> | [Funcionalidad 3] | [Nombre]    |  🟢 Baja  |
-> | [Funcionalidad 4] | [Nombre]    |  🔴 Alta  |
-> | [Funcionalidad 5] | [Nombre]    | 🟡 Media |
+> | Funcionalidad                                  | Responsable | Prioridad |
+> | :--------------------------------------------- | ----------- | :-------: |
+> | Inicio de Sesión para Directivos               | Juan Chavez |  🔴 Alta  |
+> | Inicio de Sesión para Profesores de Primaria   | Juan Chavez |  🔴 Alta  |
+> | Inicio de Sesión para Auxiliares               | Juan Chavez |  🔴 Alta  |
+> | Inicio de Sesión para Profesores de Secundaria | Juan Chavez |  🔴 Alta  |
+> | Inicio de Sesión para Tutores de Secundaria    | Juan Chavez |  🔴 Alta  |
+> | Inicio de Sesión de Personal Administrativo    | Juan Chavez |  🔴 Alta  |
 >
 > #### 2.2. Lo que NO se va a probar
 >
-> - ❌ [Funcionalidad excluida 1]
-> - ❌ [Funcionalidad excluida 2]
-> - ❌ [Funcionalidad excluida 3]
+> - ❌ Pruebas de Performance
+> - ❌ Pruebas de Escalabilidad
+> - ❌ Pruebas de Volumen
 
 ---
 
@@ -79,22 +91,22 @@
 >
 > ### 3. Componentes Impactados
 >
-> |    Componente    | Descripción                                                                                                                                                      | Si | No |
-> | :--------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -- | -- |
-> | **SIU01** | Servidor de Interfaces de Usuario                                                                                                                                 | ✅ |    |
-> | **API01** | API para personal del colegio (Directivos, Auxiliares, Profesores, etc)                                                                                           | ✅ |    |
-> | **API02** | API para padres de Familia                                                                                                                                        |    | ❌ |
-> | **API03** | API para obtención de hora real UTC                                                                                                                              | ✅ |    |
-> | **TPS01** | Tareas programadas con Scripts                                                                                                                                    |    | ❌ |
-> | **EMCS01** | Ejecutor múltiple de consultas SQL de Escritura de API01 hacia RDP02 y RDP03                                                                                     | ✅ |    |
-> | **EMCS02** | Ejecutor múltiple de consultas SQL de escritura para API02 hacia RDP03                                                                                           |    | ❌ |
-> | **RDP01** | Repositorio de Datos Persistentes solo para Archivos del Sistema en General (Fotos de Perfil, Excels de Asistencia, Backups, etc) ➡️**Google Drive**      |    | ❌ |
-> | **RDP02** | Repositorio de Datos Persistentes para Datos Relacionados a Personal del Colegio (Directivos, Auxiliares, Profesores, etc) ➡️ PostgreSQL                        |    | ❌ |
-> | **RDP03** | Repositorio de Datos Persistentes para Datos Relacionados a Responsables (Padres de Familia/Apoderados) ➡️ MongoDB                                              | ✅ |    |
-> | **RDP04** | Repositorio de Datos Persistentes para JSONs con Información de Datos de Asistencia del Día Actual (Se actualiza todos los días por TPS01) ➡️ Blob de Vercel | ✅ |    |
-> | **RDP05** | Repositorio de Datos Persistentes para Asistencias Tomadas a lo largo del día actual exclusivamente ➡️ Redis                                                   |    | ❌ |
-> |  **SS01**  | Servidor de Sockets para operaciones en tiempo real                                                                                                               |    | ❌ |
-> |  **SE01**  | Servicio Externo de Correo Electrónico por GMAIL de Google                                                                                                       | ✅ |    |
+> | Componente | Descripción                                                                                                                                                  | Si  | No  |
+> | :--------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | --- |
+> | **SIU01**  | Servidor de Interfaces de Usuario                                                                                                                            | ✅  |     |
+> | **API01**  | API para personal del colegio (Directivos, Auxiliares, Profesores, etc)                                                                                      | ✅  |     |
+> | **API02**  | API para padres de Familia                                                                                                                                   |     | ❌  |
+> | **API03**  | API para obtención de hora real UTC                                                                                                                          |     | ❌  |
+> | **TPS01**  | Tareas programadas con Scripts                                                                                                                               |     | ❌  |
+> | **EMCS01** | Ejecutor múltiple de consultas SQL de Escritura de API01 hacia RDP02 y RDP03                                                                                 |     | ❌  |
+> | **EMCN01** | Ejecutor múltiple de consultas SQL de escritura para API02 hacia RDP03                                                                                       |     | ❌  |
+> | **RDP01**  | Repositorio de Datos Persistentes solo para Archivos del Sistema en General (Fotos de Perfil, Excels de Asistencia, Backups, etc) ➡️**Google Drive**         |     | ❌  |
+> | **RDP02**  | Repositorio de Datos Persistentes para Datos Relacionados a Personal del Colegio (Directivos, Auxiliares, Profesores, etc) ➡️ PostgreSQL                     |     | ❌  |
+> | **RDP03**  | Repositorio de Datos Persistentes para Datos Relacionados a Responsables (Padres de Familia/Apoderados) ➡️ MongoDB                                           | ✅  |     |
+> | **RDP04**  | Repositorio de Datos Persistentes para JSONs con Información de Datos de Asistencia del Día Actual (Se actualiza todos los días por TPS01) ➡️ Blob de Vercel |     | ❌  |
+> | **RDP05**  | Repositorio de Datos Persistentes para Asistencias Tomadas a lo largo del día actual exclusivamente ➡️ Redis                                                 |     | ❌  |
+> |  **SS01**  | Servidor de Sockets para operaciones en tiempo real                                                                                                          |     | ❌  |
+> |  **SE01**  | Servicio Externo de Correo Electrónico por GMAIL de Google                                                                                                   |     | ❌  |
 
 ---
 
@@ -102,16 +114,16 @@
 >
 > ### 4. Tipos de Pruebas
 >
-> | Tipos de Prueba          | Si | No |
-> | ------------------------ | :- | :- |
-> | Pruebas Funcionales      | ✅ | ❌ |
-> | Pruebas de Diseño (GUI) | ✅ | ❌ |
-> | Pruebas de Usabilidad    | ✅ | ❌ |
-> | Pruebas de Migración    | ❌ | ✅ |
-> | Pruebas de Performance   | ✅ | ❌ |
-> | Pruebas de Seguridad     | ✅ | ❌ |
-> | Pruebas de Portabilidad  | ❌ | ✅ |
-> | Otros Tipos de Pruebas   | ❌ | ✅ |
+> | Tipos de Prueba         | Si  | No  |
+> | ----------------------- | :-- | :-- |
+> | Pruebas Funcionales     | ✅  |     |
+> | Pruebas de Diseño (GUI) |     | ✅  |
+> | Pruebas de Usabilidad   |     | ❌  |
+> | Pruebas de Migración    |     | ❌  |
+> | Pruebas de Performance  |     | ❌  |
+> | Pruebas de Seguridad    |     | ❌  |
+> | Pruebas de Portabilidad |     | ❌  |
+> | Otros Tipos de Pruebas  |     | ❌  |
 
 ---
 
@@ -119,12 +131,12 @@
 >
 > ### 5. Niveles de Pruebas
 >
-> | Niveles                | Si | No |
-> | ---------------------- | :- | :- |
-> | Nivel de Componente    | ✅ | ❌ |
-> | Nivel de Integración  | ✅ | ❌ |
-> | Nivel de Sistema (e2e) | ✅ | ❌ |
-> | Nivel de Aceptación   | ✅ | ❌ |
+> | Niveles                | Si  | No  |
+> | ---------------------- | :-- | :-- |
+> | Nivel de Componente    | ✅  |     |
+> | Nivel de Integración   |     | ❌  |
+> | Nivel de Sistema (e2e) | ✅  |     |
+> | Nivel de Aceptación    |     | ❌  |
 
 ---
 
@@ -134,23 +146,23 @@
 >
 > #### 6.1. Ambientes
 >
-> | Ambiente       | Marcar(X) |
-> | -------------- | :-------: |
-> | Desarrollo     |    ✅    |
-> | Certificación |    ✅    |
-> | Producción    |    ✅    |
+> | Ambiente      | Marcar(X) |
+> | ------------- | :-------: |
+> | Desarrollo    |    ✅     |
+> | Certificación |    ✅     |
+> | Producción    |    ✅     |
 
 > [!TIP]
 >
 > #### 6.2. Tecnología
 >
-> | Tecnología    | Marcar(X) |
+> | Tecnología     | Marcar(X) |
 > | -------------- | :-------: |
-> | Web            |    ✅    |
-> | API            |    ✅    |
-> | Base de Datos  |    ✅    |
-> | GitHub Actions |    ✅    |
-> | Otros          |    ❌    |
+> | Web            |    ✅     |
+> | API            |    ✅     |
+> | Base de Datos  |    ❌     |
+> | GitHub Actions |    ❌     |
+> | Otros          |    ❌     |
 
 > [!NOTE]
 >
@@ -158,35 +170,35 @@
 >
 > | Dispositivos | Marcar(X) |
 > | ------------ | :-------: |
-> | Desktop      |    ✅    |
-> | Móviles     |    ✅    |
-> | Tablets      |    ✅    |
-> | Laptops      |    ✅    |
-> | Otros        |    ❌    |
+> | Desktop      |    ✅     |
+> | Móviles      |    ✅     |
+> | Tablets      |    ❌     |
+> | Laptops      |    ✅     |
+> | Otros        |    ❌     |
 
 > [!WARNING]
 >
-> #### 6.4. Navegadores (En caso aplique pruebas WEB)
+> #### 6.4. Navegadores (En caso aplique pruebas en la WEB)
 >
 > | Navegador | Versión | Marcar(X) |
-> | --------- | -------- | :-------: |
-> | Chrome    | Última  |    ✅    |
-> | Firefox   | Última  |    ✅    |
-> | Safari    | Última  |    ✅    |
-> | Edge      | Última  |    ✅    |
-> | Opera     | Última  |    ❌    |
+> | --------- | ------- | :-------: |
+> | Chrome    | Última  |    ✅     |
+> | Firefox   | Última  |    ❌     |
+> | Safari    | Última  |    ❌     |
+> | Edge      | Última  |    ✅     |
+> | Opera     | Última  |    ❌     |
 
 > [!CAUTION]
 >
 > #### 6.5. Sistemas Operativos
 >
-> | Sistema Operativo | Versión   | Marcar(X) |
+> | Sistema Operativo | Versión    | Marcar(X) |
 > | ----------------- | ---------- | :-------: |
-> | Windows           | 10/11      |    ✅    |
-> | macOS             | Monterey+  |    ✅    |
-> | Linux             | Ubuntu 20+ |    ✅    |
-> | iOS               | 15+        |    ✅    |
-> | Android           | 10+        |    ✅    |
+> | Windows           | 10/11      |    ✅     |
+> | macOS             | Monterey+  |    ❌     |
+> | Linux             | Ubuntu 20+ |    ✅     |
+> | iOS               | 15+        |    ❌     |
+> | Android           | 10+        |    ✅     |
 
 ---
 
@@ -194,15 +206,15 @@
 >
 > ### 7. Lista de Tests a Usar
 >
-> | Tag Identificador        | Descripción                          |  | Desarrollo | Certificación | Producción |
-> | ------------------------ | ------------------------------------- | - | :--------: | :------------: | :---------: |
-> | `@auth-login`          | Pruebas de autenticación de usuarios |  |     ✅     |       ✅       |     ✅     |
-> | `@crud-estudiantes`    | Operaciones CRUD de estudiantes       |  |     ✅     |       ✅       |     ❌     |
-> | `@asistencia-registro` | Registro de asistencias diarias       |  |     ✅     |       ✅       |     ✅     |
-> | `@reportes-generacion` | Generación de reportes               |  |     ✅     |       ✅       |     ⏳     |
-> | `@performance-load`    | Pruebas de carga y rendimiento        |  |     ❌     |       ✅       |     ✅     |
-> | `@security-tests`      | Pruebas de seguridad                  |  |     ✅     |       ✅       |     ✅     |
-> | `@ui-responsiveness`   | Pruebas de diseño responsivo         |  |     ✅     |       ✅       |     ❌     |
+> | Tag Identificador      | Descripción                          |     | Desarrollo | Certificación | Producción |
+> | ---------------------- | ------------------------------------ | --- | :--------: | :-----------: | :--------: |
+> | `@auth-login`          | Pruebas de autenticación de usuarios |     |     ✅     |      ✅       |     ✅     |
+> | `@crud-estudiantes`    | Operaciones CRUD de estudiantes      |     |     ✅     |      ✅       |     ❌     |
+> | `@asistencia-registro` | Registro de asistencias diarias      |     |     ✅     |      ✅       |     ✅     |
+> | `@reportes-generacion` | Generación de reportes               |     |     ✅     |      ✅       |     ⏳     |
+> | `@performance-load`    | Pruebas de carga y rendimiento       |     |     ❌     |      ✅       |     ✅     |
+> | `@security-tests`      | Pruebas de seguridad                 |     |     ✅     |      ✅       |     ✅     |
+> | `@ui-responsiveness`   | Pruebas de diseño responsivo         |     |     ✅     |      ✅       |     ❌     |
 
 ---
 
@@ -210,15 +222,15 @@
 >
 > ### 8. Estrategia de Pruebas
 >
-> |                 Flujo                 | Tipo de Prueba             | Fecha de Inicio |  Fecha Fin  |     Ambiente     | Test Execution |
-> | :------------------------------------: | -------------------------- | :-------------: | :----------: | :---------------: | :------------: |
-> |            Inicio de Sesion            | 🔧 Pruebas Funcionales     |  [DD/MM/YYYY]  | [DD/MM/YYYY] |   🔧 Desarrollo   |  `TE-001T`  |
-> |     Toma de Asistencia de Personal     | 🔗 Pruebas de Integración |  [DD/MM/YYYY]  | [DD/MM/YYYY] | 🧪 Certificación |   `TE-002`   |
-> | **Edicion de Datos de Personal** | 🌐 Pruebas E2E             |  [DD/MM/YYYY]  | [DD/MM/YYYY] | 🧪 Certificación |   `TE-003`   |
-> |                  etc                  | ⚡ Pruebas de Performance  |  [DD/MM/YYYY]  | [DD/MM/YYYY] |  🚀 Producción  |   `TE-004`   |
-> |                  etc                  | ✅ Pruebas de Aceptación  |  [DD/MM/YYYY]  | [DD/MM/YYYY] |  🚀 Producción  |   `TE-005`   |
-> |                  etc                  | 🔒 Pruebas de Seguridad    |  [DD/MM/YYYY]  | [DD/MM/YYYY] | 🧪 Certificación |   `TE-006`   |
-> |                  etc                  | 📱 Pruebas de Usabilidad   |  [DD/MM/YYYY]  | [DD/MM/YYYY] | 🧪 Certificación |   `TE-007`   |
+> |              Flujo               | Tipo de Prueba            | Fecha de Inicio |  Fecha Fin   |     Ambiente     | Test Execution |
+> | :------------------------------: | ------------------------- | :-------------: | :----------: | :--------------: | :------------: |
+> |         Inicio de Sesion         | 🔧 Pruebas Funcionales    |  [DD/MM/YYYY]   | [DD/MM/YYYY] |  🔧 Desarrollo   |   `TE-001T`    |
+> |  Toma de Asistencia de Personal  | 🔗 Pruebas de Integración |  [DD/MM/YYYY]   | [DD/MM/YYYY] | 🧪 Certificación |    `TE-002`    |
+> | **Edicion de Datos de Personal** | 🌐 Pruebas E2E            |  [DD/MM/YYYY]   | [DD/MM/YYYY] | 🧪 Certificación |    `TE-003`    |
+> |               etc                | ⚡ Pruebas de Performance |  [DD/MM/YYYY]   | [DD/MM/YYYY] |  🚀 Producción   |    `TE-004`    |
+> |               etc                | ✅ Pruebas de Aceptación  |  [DD/MM/YYYY]   | [DD/MM/YYYY] |  🚀 Producción   |    `TE-005`    |
+> |               etc                | 🔒 Pruebas de Seguridad   |  [DD/MM/YYYY]   | [DD/MM/YYYY] | 🧪 Certificación |    `TE-006`    |
+> |               etc                | 📱 Pruebas de Usabilidad  |  [DD/MM/YYYY]   | [DD/MM/YYYY] | 🧪 Certificación |    `TE-007`    |
 
 ---
 
@@ -245,6 +257,6 @@
 
 ---
 
-**📅 Última Actualización:** [Fecha]
-**✅ Estado de Aprobación:** [Pendiente/Aprobado/Rechazado]
+**📅 Última Actualización:** 28/06/2025
+**✅ Estado de Aprobación:** Aprobado
 **👤 Aprobado por:** Juan Chavez - Lider Técnico
