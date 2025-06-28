@@ -1,7 +1,10 @@
 # 🧪 Test Case: SIASIS-TC-1 - Validar Inicio de Sesión de Sesión Exitoso por Roles en el Sistema
 
-> [!IMPORTANT] > **ID del Test Case:** TC-XXX-001
-> **Fecha de Creación:** [DD/MM/YYYY] > **Autor:** [Nombre del QA] > **Última Actualización:** [DD/MM/YYYY] > **Estado:** 🟡 Draft | 🟢 Ready | 🔵 In Review | ⚪ Approved
+> [!IMPORTANT] 
+> **ID del Test Case:** SIASIS-TC-1
+> **Fecha de Creación:** 28/06/2025 **Autor:** Juan Chavez
+> **Última Actualización:** 28/06/2025
+> **Estado:** 🟡 Draft | 🟢 Ready | 🔵 In Review | ⚪ Approved
 
 ---
 
