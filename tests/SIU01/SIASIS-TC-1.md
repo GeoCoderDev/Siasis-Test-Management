@@ -1,7 +1,6 @@
 # 🧪 Test Case: SIASIS-TC-1 - Validar Inicio de Sesión de Sesión Exitoso por Roles en el Sistema
 
-> [!IMPORTANT] 
-> **ID del Test Case:** SIASIS-TC-1
+> [!IMPORTANT] > **ID del Test Case:** SIASIS-TC-1
 > **Fecha de Creación:** 28/06/2025 **Autor:** Juan Chavez
 > **Última Actualización:** 28/06/2025
 > **Estado:** 🟡 Draft | 🟢 Ready | 🔵 In Review | ⚪ Approved
@@ -89,12 +88,22 @@
 >
 > ### 🏗️ Componentes Involucrados
 >
-> | Componente      | Descripción                      | Estado Requerido |
-> | --------------- | --------------------------------- | ---------------- |
-> | **SIU01** | Servidor de Interfaces de Usuario | 🟢 Activo        |
-> | **API01** | API para personal del colegio     | 🟢 Activo        |
-> | **RDP02** | Base de datos PostgreSQL          | 🟢 Activo        |
-> | **SS01**  | Servidor de Sockets               | 🟢 Activo        |
+> |    Componente    | Descripción                                                                                                                                                      | Si | No |
+> | :--------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -- | -- |
+> | **SIU01** | Servidor de Interfaces de Usuario                                                                                                                                 | ✅ |    |
+> | **API01** | API para personal del colegio (Directivos, Auxiliares, Profesores, etc)                                                                                           | ✅ |    |
+> | **API02** | API para padres de Familia                                                                                                                                        |    | ❌ |
+> | **API03** | API para obtención de hora real UTC                                                                                                                              |    | ❌ |
+> | **TPS01** | Tareas programadas con Scripts                                                                                                                                    |    | ❌ |
+> | **EMCS01** | Ejecutor múltiple de consultas SQL de Escritura de API01 hacia RDP02 y RDP03                                                                                     |    | ❌ |
+> | **EMCN01** | Ejecutor múltiple de consultas SQL de escritura para API02 hacia RDP03                                                                                           |    | ❌ |
+> | **RDP01** | Repositorio de Datos Persistentes solo para Archivos del Sistema en General (Fotos de Perfil, Excels de Asistencia, Backups, etc) ➡️**Google Drive**      |    | ❌ |
+> | **RDP02** | Repositorio de Datos Persistentes para Datos Relacionados a Personal del Colegio (Directivos, Auxiliares, Profesores, etc) ➡️ PostgreSQL                        |    | ❌ |
+> | **RDP03** | Repositorio de Datos Persistentes para Datos Relacionados a Responsables (Padres de Familia/Apoderados) ➡️ MongoDB                                              | ✅ |    |
+> | **RDP04** | Repositorio de Datos Persistentes para JSONs con Información de Datos de Asistencia del Día Actual (Se actualiza todos los días por TPS01) ➡️ Blob de Vercel |    | ❌ |
+> | **RDP05** | Repositorio de Datos Persistentes para Asistencias Tomadas a lo largo del día actual exclusivamente ➡️ Redis                                                   |    | ❌ |
+> |  **SS01**  | Servidor de Sockets para operaciones en tiempo real                                                                                                               |    | ❌ |
+> |  **SE01**  | Servicio Externo de Correo Electrónico por GMAIL de Google                                                                                                       |    | ❌ |
 
 ---
 
@@ -113,7 +122,7 @@
 >   Background:
 >     Given Estoy en la página de login
 >
->   @SIASIS-TC-1 @Login @SmokeTest @API01 @API02
+>   @SIASIS-TC-1 @happy @login @auth @regresion @smoke @SIU01 @API02 @RDP03 @todos-los-roles
 >   Scenario Outline: Ingreso de login a SIASIS con el rol <rol>
 >     Given Selecciono el rol <rol>
 >     And Ingreso mi nombre de usuario y contraseña
@@ -216,12 +225,15 @@
 >
 > ### 👥 Roles Involucrados
 >
-> | Rol                   | Permisos Necesarios                  | Acciones Permitidas            |
-> | --------------------- | ------------------------------------ | ------------------------------ |
-> | **Directivo**   | Admin completo                       | Todas las operaciones          |
-> | **Profesor**    | Lectura/Escritura módulos asignados | CRUD estudiantes de sus clases |
-> | **Auxiliar**    | Lectura general                      | Consultas y reportes           |
-> | **Responsable** | Lectura limitada                     | Ver info de sus hijos          |
+> | Rol                         | SI | NO |
+> | --------------------------- | -- | -- |
+> | **Directivo**         | ✅ |    |
+> | **Profesor Primaria** | ✅ |    |
+> | **Auxiliar**          | ✅ |    |
+> | Profesor Secundaria         | ✅ |    |
+> | Tutor                       | ✅ |    |
+> | Personal Administrativo     | ✅ |    |
+> | **Responsable**       | ✅ |    |
 
 ---
 
