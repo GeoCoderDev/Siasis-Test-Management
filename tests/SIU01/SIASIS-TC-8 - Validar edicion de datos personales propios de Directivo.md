@@ -1,7 +1,8 @@
 # 🧪 Test Case: SIASIS-TC-8 - Validar edicion de datos personales propios de Directivo
 
 > [!IMPORTANT] > **ID del Test Case:** SIASIS-TC-8
-> **Fecha de Creación:** 28/06/2025 **Autor:** Gil Pardo
+> **Fecha de Creación:** 28/06/2025 
+> **Autor:** Gil Pardo
 > **Última Actualización:** 28/06/2025
 > **Estado:** 🟡 Draft | 🟢 Ready | 🔵 In Review | ⚪ Approved
 

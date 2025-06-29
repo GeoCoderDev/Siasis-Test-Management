@@ -1,7 +1,8 @@
 # 🧪 Test Case: SIASIS-TC-4 - Validar Inicio de Sesión de Sesión Exitoso para Auxiliares
 
 > [!IMPORTANT] > **ID del Test Case:** SIASIS-TC-4
-> **Fecha de Creación:** 28/06/2025 **Autor:** Gil Pardo
+> **Fecha de Creación:** 28/06/2025 
+> **Autor:** Gil Pardo
 > **Última Actualización:** 28/06/2025
 > **Estado:** 🟢 Ready
 

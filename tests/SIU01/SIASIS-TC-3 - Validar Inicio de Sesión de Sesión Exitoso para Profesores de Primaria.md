@@ -1,7 +1,9 @@
 # 🧪 Test Case: SIASIS-TC-3 - Validar Inicio de Sesión de Sesión Exitoso para Profesores de Primaria
 
-> [!IMPORTANT] > **ID del Test Case:** SIASIS-TC-3
-> **Fecha de Creación:** 28/06/2025 **Autor:** Gil Pardo
+> [!IMPORTANT] 
+> **ID del Test Case:** SIASIS-TC-3  
+> **Fecha de Creación:** 28/06/2025 
+> **Autor:** Gil Pardo
 > **Última Actualización:** 28/06/2025
 > **Estado:** 🟢 Ready
 

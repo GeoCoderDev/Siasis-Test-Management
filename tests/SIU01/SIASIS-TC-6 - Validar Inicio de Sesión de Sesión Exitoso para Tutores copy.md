@@ -1,7 +1,8 @@
 # 🧪 Test Case: SIASIS-TC-6 - Validar Inicio de Sesión de Sesión Exitoso para Tutores
 
 > [!IMPORTANT] > **ID del Test Case:** SIASIS-TC-6
-> **Fecha de Creación:** 28/06/2025 **Autor:** Gil Pardo
+> **Fecha de Creación:** 28/06/2025 
+> **Autor:** Gil Pardo
 > **Última Actualización:** 28/06/2025
 > **Estado:** 🟢 Ready
 
