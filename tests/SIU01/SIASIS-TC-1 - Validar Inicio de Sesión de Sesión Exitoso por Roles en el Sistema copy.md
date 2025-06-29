@@ -1,9 +1,9 @@
 # 🧪 Test Case: SIASIS-TC-1 - Validar Inicio de Sesión de Sesión Exitoso por Roles en el Sistema
 
 > [!IMPORTANT] > **ID del Test Case:** SIASIS-TC-1
-> **Fecha de Creación:** 28/06/2025 **Autor:** Juan Chavez
+> **Fecha de Creación:** 28/06/2025 **Autor:** Gil Pardo
 > **Última Actualización:** 28/06/2025
-> **Estado:** 🟡 Draft | 🟢 Ready | 🔵 In Review | ⚪ Approved
+> **Estado:** 🟢 Ready
 
 ---
 
@@ -13,18 +13,18 @@
 >
 > ### 🔖 Metadatos del Test
 >
-> | Campo                     |                                Valor                                |
-> | ------------------------- | :------------------------------------------------------------------: |
-> | **ID Test Case**    |                             SIASIS-TC-1                             |
-> | **Nombre**          | Validar Inicio de Sesión de Sesión Exitoso por Roles en el Sistema |
-> | **Módulo/Feature** |                         [Nombre del módulo]                         |
-> | **Epic/User Story** |                             No se tiene                             |
-> | **Tipo de Prueba**  |                         🔧 Funcional\|🌐 E2E                         |
-> | **Nivel de Prueba** |                              🌐 System                              |
-> | **Prioridad**       |                             🔴 Critical                             |
-> | **Severidad**       |                              🔴 Blocker                              |
-> | **Automatizable**   |                                ✅ Sí                                |
-> | Automatizada              |                                ✅ Sí                                |
+> | Campo                     |                                                                                  Valor                                                                                  |
+> | ------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+> | **ID Test Case**    |                                                                               SIASIS-TC-1                                                                               |
+> | **Nombre**          |                                                        Validar Inicio de Sesión Exitoso por Roles en el Sistema                                                        |
+> | **Módulo/Feature** |                                                                            Inicio de Sesión                                                                            |
+> | **Epic/User Story** |                                                                               No se tiene                                                                               |
+> | **Tipo de Prueba**  |                                                                           🔧 Funcional\|🌐 E2E                                                                           |
+> | **Nivel de Prueba** |                                                                                🌐 System                                                                                |
+> | **Prioridad**       |                                                                               🔴 Critical                                                                               |
+> | **Severidad**       |                                                                                🔴 Blocker                                                                                |
+> | **Automatizable**   |                                                                                  ✅ Sí                                                                                  |
+> | Automatizada              | ✅ Sí ([Test Automatizado](https://github.com/GeoCoderDev/continuous-testing-selenium-SIASIS-SIU01-WEB/blob/master/src/test/resources/features/Login.feature "👁️Ver Test")) |
 
 ---
 
@@ -35,19 +35,19 @@
 > **Tags principales:**
 >
 > ```gherkin
-> @SIASIS-TC-1 @web @login @auth @regresion @smoke
+> @SIASIS-TC-1 @happy @login @auth @regresion @smoke
 > ```
 >
 > **Tags por componente:**
 >
 > ```gherkin
-> @SIU01 @API01 @API02 @RDP02 @RDP03
+> @SIU01
 > ```
 >
 > **Tags por rol:**
 >
 > ```gherkin
-> @directivo @profesor-primaria @auxiliar @profesor-secundaria @tutor @personal-administrativo @responsable
+> @todos-los-roles
 > ```
 
 ---
@@ -58,15 +58,15 @@
 >
 > ### 📖 Descripción del Test Case
 >
-> [Descripción clara y concisa de qué se va a probar y por qué es importante]
+> Este es un **test de autenticación básico** que verifica el flujo de login exitoso para todos los roles del sistema SIASIS (Sistema de Control de Asistencia).
 
 > [!NOTE]
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** [Describir qué funcionalidad o comportamiento específico se va a verificar]
+> **Objetivo:** Validar que cada tipo de usuario puede iniciar sesión correctamente con sus credenciales y acceder a su interfaz de bienvenida correspondiente.
 >
-> **Criterio de Éxito:** [Definir claramente cuándo el test se considera exitoso]
+> **Criterio de Éxito:** Se puede visualizar las interfaces de bienvenida con los nombres y roles espectivos de cada usuario.
 
 ---
 
@@ -76,13 +76,13 @@
 >
 > ### 💻 Tecnología y Componentes
 >
-> | Aspecto                         | Detalle                                                     |
-> | ------------------------------- | ----------------------------------------------------------- |
-> | **Tecnología Principal** | 🌐 Web\| 📱 Mobile \| 🔌 API \| 💾 Database \| 🖥️ Desktop |
-> | **Navegadores**           | Chrome, Firefox, Safari, Edge                               |
-> | **Dispositivos**          | Desktop, Mobile, Tablet                                     |
-> | **Sistemas Operativos**   | Windows, macOS, Linux, iOS, Android                         |
-> | **Resoluciones**          | 1920x1080, 1366x768, 375x667 (mobile)                       |
+> | Aspecto                         | Detalle                               |
+> | ------------------------------- | ------------------------------------- |
+> | **Tecnología Principal** | 🌐 Web\| 🖥️ Desktop                 |
+> | **Navegadores**           | Chrome, Edge                          |
+> | **Dispositivos**          | Desktop, Mobile, Tablet               |
+> | **Sistemas Operativos**   | Windows, macOS, Linux, iOS, Android   |
+> | **Resoluciones**          | 1920x1080, 1366x768, 375x667 (mobile) |
 
 > [!CAUTION]
 >
@@ -165,13 +165,7 @@
 >
 > ### 🚶‍♂️ Pasos Detallados
 >
-> | # | Acción                      | Datos de Entrada   | Resultado Esperado            |
-> | - | ---------------------------- | ------------------ | ----------------------------- |
-> | 1 | [Acción específica paso 1] | [Datos necesarios] | [Resultado esperado del paso] |
-> | 2 | [Acción específica paso 2] | [Datos necesarios] | [Resultado esperado del paso] |
-> | 3 | [Acción específica paso 3] | [Datos necesarios] | [Resultado esperado del paso] |
-> | 4 | [Acción específica paso 4] | [Datos necesarios] | [Resultado esperado del paso] |
-> | 5 | [Acción específica paso 5] | [Datos necesarios] | [Resultado esperado del paso] |
+> No necesarios, el test esta automatizado
 
 ---
 
@@ -213,9 +207,14 @@
 >
 > #### Test Cases Relacionados:
 >
-> - 📋 **Pre-requisito:** TC-XXX-000 (Setup inicial)
-> - 🔄 **Dependiente:** TC-XXX-002 (Test que depende de este)
-> - 🔗 **Relacionado:** TC-XXX-003 (Funcionalidad similar)
+> - 📋 **Pre-requisito:** No hay Pre-requitsitos
+> - 🔄 **Dependiente:** No hay dependencias
+> - 🔗 **Relacionado:** SIASIS-TC-2 (Login solo para Directivos)
+> - 🔗 **Relacionado:** SIASIS-TC-3 (Login solo para Profesores de Primaria)
+> - 🔗 **Relacionado:** SIASIS-TC-4 (Login solo para Auxiliar)
+> - 🔗 **Relacionado:** SIASIS-TC-5 (Login solo para Profesores de Secundaria)
+> - 🔗 **Relacionado:** SIASIS-TC-6 (Login solo para Tutores)
+> - 🔗 **Relacionado:** SIASIS-TC-7 (Login solo para Personales Administrativos)
 
 ---
 
@@ -265,12 +264,12 @@
 >
 > ### 👥 Responsables
 >
-> |           Rol           | Nombre      | Email / Celular |      Responsabilidad      |
-> | :----------------------: | ----------- | :-------------: | :-----------------------: |
-> | **Autor del Test** | Juan Chavez |    961863783    | Creación y mantenimiento |
-> | **Product Owner** | Juan Chavez |    961863783    | Validación de criterios |
-> |   **Tech Lead**   | Juan Chavez |    961863783    |    Revisión técnica    |
-> |  **Dev Asignado**  | Juan Chavez |    961863783    |    Corrección de bugs    |
+> |           Rol           |   Nombre   | Email / Celular |      Responsabilidad      |
+> | :----------------------: | :---------: | :-------------: | :-----------------------: |
+> | **Autor del Test** |  Gil Pardo  |        -        | Creación y mantenimiento |
+> | **Product Owner** | Juan Chavez |        -        | Validación de criterios |
+> |   **Tech Lead**   | Juan Chavez |        -        |    Revisión técnica    |
+> |  **Dev Asignado**  | Juan Chavez |        -        |    Corrección de bugs    |
 
 ---
 
