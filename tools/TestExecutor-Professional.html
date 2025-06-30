@@ -13,58 +13,159 @@
 
       body {
         font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-        background-color: #f8fafc;
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
         color: #2d3748;
-        line-height: 1.4;
+        line-height: 1.2;
         min-height: 100vh;
-        padding: 12px;
+        padding: 6px;
       }
 
       .container {
-        max-width: 900px;
+        max-width: 1500px;
         margin: 0 auto;
         background: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
         border: 1px solid #e2e8f0;
+        overflow: hidden;
       }
 
       .header {
-        background: linear-gradient(135deg, #2563eb, #1e40af);
+        background: linear-gradient(
+          135deg,
+          #2563eb 0%,
+          #1d4ed8 50%,
+          #3b82f6 100%
+        );
+        background-size: 300% 300%;
+        animation: gradientShift 8s ease-in-out infinite;
         color: white;
-        padding: 20px 24px;
-        border-radius: 8px 8px 0 0;
+        padding: 8px 16px;
         text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.1),
+          transparent
+        );
+        animation: shimmer 3s ease-in-out infinite;
+      }
+
+      @keyframes gradientShift {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 100%;
+        }
       }
 
       .header h1 {
-        font-size: 1.75rem;
+        font-size: 1.3rem;
         font-weight: 600;
-        margin-bottom: 4px;
+        margin-bottom: 1px;
+        position: relative;
+        z-index: 1;
       }
 
       .header p {
         opacity: 0.9;
-        font-size: 0.95rem;
+        font-size: 0.7rem;
+        position: relative;
+        z-index: 1;
       }
 
       .form-container {
-        padding: 24px;
+        padding: 10px 14px;
+      }
+
+      .info-box {
+        background: linear-gradient(145deg, #f0f9ff, #e0f2fe);
+        border: 1px solid #bae6fd;
+        border-radius: 4px;
+        padding: 6px 8px;
+        margin-bottom: 8px;
+        color: #0c4a6e;
+        font-size: 0.7rem;
+        text-align: center;
+      }
+
+      .main-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 12px;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .main-grid {
+          grid-template-columns: 1fr;
+          gap: 8px;
+        }
+      }
+
+      .form-section {
+        background: #fafbfc;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        padding: 8px;
+      }
+
+      .section-title {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #1f2937;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 2px 0;
+        border-left: 2px solid #2563eb;
+        padding-left: 6px;
       }
 
       .form-group {
-        margin-bottom: 16px;
+        margin-bottom: 8px;
       }
 
       .form-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 16px;
+        gap: 8px;
+      }
+
+      .form-row-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 6px;
       }
 
       @media (max-width: 768px) {
-        .form-row {
+        .form-row,
+        .form-row-3 {
           grid-template-columns: 1fr;
+          gap: 6px;
         }
       }
 
@@ -72,8 +173,8 @@
         display: block;
         color: #374151;
         font-weight: 500;
-        margin-bottom: 4px;
-        font-size: 0.9rem;
+        margin-bottom: 2px;
+        font-size: 0.7rem;
       }
 
       .required {
@@ -84,11 +185,11 @@
       select,
       textarea {
         width: 100%;
-        padding: 10px 12px;
+        padding: 6px 8px;
         border: 1px solid #d1d5db;
-        border-radius: 6px;
-        font-size: 0.95rem;
-        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        transition: all 0.2s ease;
         background: white;
       }
 
@@ -97,165 +198,255 @@
       textarea:focus {
         outline: none;
         border-color: #2563eb;
-        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+        transform: translateY(-1px);
       }
 
       input::placeholder,
       textarea::placeholder {
         color: #9ca3af;
+        font-size: 0.7rem;
       }
 
-      select option {
-        padding: 6px;
+      .tags-section {
+        grid-column: 1 / -1;
+        background: #fafbfc;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        padding: 8px;
+        margin-bottom: 8px;
       }
 
       .tags-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 6px;
-        margin-bottom: 10px;
-        padding: 10px;
-        background: #f9fafb;
+        gap: 3px;
+        margin-bottom: 6px;
+        padding: 6px;
+        background: linear-gradient(145deg, #f9fafb, #f3f4f6);
         border: 1px solid #e5e7eb;
-        border-radius: 6px;
-        min-height: 50px;
+        border-radius: 4px;
+        min-height: 32px;
+        max-height: 80px;
+        overflow-y: auto;
       }
 
       .tag {
-        padding: 4px 8px;
+        padding: 2px 4px;
         background: white;
         border: 1px solid #d1d5db;
-        border-radius: 4px;
+        border-radius: 2px;
         color: #374151;
-        font-size: 0.8rem;
+        font-size: 0.65rem;
         cursor: pointer;
         transition: all 0.2s ease;
         user-select: none;
+        white-space: nowrap;
       }
 
       .tag:hover {
         border-color: #2563eb;
-        background: #eff6ff;
+        background: linear-gradient(145deg, #eff6ff, #dbeafe);
+        transform: translateY(-1px);
       }
 
       .tag.selected {
-        background: #2563eb;
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
         color: white;
         border-color: #2563eb;
+        box-shadow: 0 1px 3px rgba(37, 99, 235, 0.3);
+      }
+
+      .advanced-options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-bottom: 8px;
+      }
+
+      @media (max-width: 768px) {
+        .advanced-options {
+          grid-template-columns: 1fr;
+        }
       }
 
       .parallel-container {
         display: flex;
         align-items: center;
-        gap: 10px;
-        padding: 12px;
-        background: #f9fafb;
+        gap: 6px;
+        padding: 6px;
+        background: linear-gradient(145deg, #f9fafb, #f3f4f6);
         border: 1px solid #e5e7eb;
-        border-radius: 6px;
+        border-radius: 4px;
       }
 
       .toggle {
         position: relative;
-        width: 40px;
-        height: 22px;
-        background: #d1d5db;
-        border-radius: 22px;
+        width: 32px;
+        height: 18px;
+        background: linear-gradient(145deg, #d1d5db, #9ca3af);
+        border-radius: 18px;
         cursor: pointer;
-        transition: background-color 0.2s ease;
+        transition: all 0.3s ease;
+        flex-shrink: 0;
       }
 
       .toggle::before {
         content: "";
         position: absolute;
-        width: 16px;
-        height: 16px;
+        width: 12px;
+        height: 12px;
         background: white;
         border-radius: 50%;
         top: 3px;
         left: 3px;
-        transition: transform 0.2s ease;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
       }
 
       .toggle.active {
-        background: #2563eb;
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
       }
 
       .toggle.active::before {
-        transform: translateX(18px);
+        transform: translateX(14px);
       }
 
       .action-buttons {
         display: flex;
-        gap: 10px;
-        margin-top: 20px;
-        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 8px;
       }
 
       .btn {
-        flex: 1;
-        min-width: 160px;
-        padding: 10px 20px;
+        padding: 8px 20px;
         border: none;
-        border-radius: 6px;
-        font-size: 0.95rem;
+        border-radius: 5px;
+        font-size: 0.75rem;
         font-weight: 500;
         cursor: pointer;
-        transition: all 0.2s ease;
+        transition: all 0.3s ease;
+        min-width: 120px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.5s ease;
+      }
+
+      .btn:hover::before {
+        left: 100%;
       }
 
       .btn-primary {
-        background: #2563eb;
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
         color: white;
+        box-shadow: 0 3px 10px rgba(37, 99, 235, 0.3);
       }
 
       .btn-primary:hover:not(:disabled) {
-        background: #1d4ed8;
+        background: linear-gradient(135deg, #1d4ed8, #1e40af);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
       }
 
       .btn-primary:disabled {
-        background: #9ca3af;
+        background: linear-gradient(135deg, #9ca3af, #6b7280);
         cursor: not-allowed;
+        transform: none;
       }
 
       .btn-secondary {
-        background: white;
+        background: linear-gradient(145deg, white, #f9fafb);
         color: #374151;
         border: 1px solid #d1d5db;
       }
 
       .btn-secondary:hover {
-        background: #f9fafb;
+        background: linear-gradient(145deg, #f9fafb, #f3f4f6);
+        transform: translateY(-1px);
       }
 
       .status-panel {
-        margin-top: 16px;
-        padding: 16px;
-        background: #f0f9ff;
+        margin-top: 8px;
+        padding: 8px;
+        background: linear-gradient(145deg, #f0f9ff, #e0f2fe);
         border: 1px solid #bae6fd;
-        border-radius: 6px;
+        border-radius: 4px;
         display: none;
       }
 
       .status-panel.show {
         display: block;
+        animation: slideInUp 0.3s ease;
+      }
+
+      @keyframes slideInUp {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       .status-panel h3 {
         color: #0c4a6e;
-        margin-bottom: 10px;
-        font-size: 1rem;
+        margin-bottom: 6px;
+        font-size: 0.8rem;
+      }
+
+      .status-content {
+        background: white;
+        padding: 6px;
+        border-radius: 3px;
+        border: 1px solid #bae6fd;
+      }
+
+      .config-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 6px;
+        margin-top: 6px;
+      }
+
+      .config-item {
+        font-size: 0.65rem;
+        color: #4b5563;
+        padding: 3px;
+        background: #f9fafb;
+        border-radius: 2px;
+      }
+
+      .config-item strong {
+        color: #1f2937;
       }
 
       .spinner {
         display: inline-block;
-        width: 14px;
-        height: 14px;
+        width: 10px;
+        height: 10px;
         border: 2px solid #f3f4f6;
         border-radius: 50%;
         border-top-color: #2563eb;
         animation: spin 1s linear infinite;
-        margin-left: 6px;
+        margin-left: 4px;
       }
 
       @keyframes spin {
@@ -266,18 +457,18 @@
 
       .notification {
         position: fixed;
-        top: 16px;
-        right: 16px;
-        padding: 12px 16px;
-        border-radius: 6px;
+        top: 8px;
+        right: 8px;
+        padding: 8px 12px;
+        border-radius: 4px;
         color: white;
         font-weight: 500;
         z-index: 1000;
-        max-width: 350px;
+        max-width: 280px;
         transform: translateX(100%);
         transition: transform 0.3s ease;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        font-size: 0.9rem;
+        font-size: 0.75rem;
       }
 
       .notification.show {
@@ -285,101 +476,80 @@
       }
 
       .notification.success {
-        background: #059669;
+        background: linear-gradient(135deg, #059669, #047857);
       }
 
       .notification.error {
-        background: #dc2626;
-      }
-
-      .info-box {
-        background: #f0f9ff;
-        border: 1px solid #bae6fd;
-        border-radius: 6px;
-        padding: 12px;
-        margin-bottom: 16px;
-        color: #0c4a6e;
-        font-size: 0.9rem;
+        background: linear-gradient(135deg, #dc2626, #b91c1c);
       }
 
       .help-text {
         color: #6b7280;
-        font-size: 0.8rem;
-        margin-top: 3px;
-      }
-
-      .form-section {
-        margin-bottom: 20px;
-        padding-bottom: 16px;
-        border-bottom: 1px solid #e5e7eb;
-      }
-
-      .form-section:last-child {
-        border-bottom: none;
-        margin-bottom: 0;
-      }
-
-      .section-title {
-        font-size: 1rem;
-        font-weight: 600;
-        color: #1f2937;
-        margin-bottom: 12px;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-      }
-
-      .status-content {
-        background: white;
-        padding: 12px;
-        border-radius: 4px;
-        border: 1px solid #bae6fd;
-      }
-
-      .config-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 10px;
-        margin-top: 10px;
-      }
-
-      .config-item {
-        font-size: 0.8rem;
-        color: #4b5563;
-      }
-
-      .config-item strong {
-        color: #1f2937;
+        font-size: 0.65rem;
+        margin-top: 1px;
+        line-height: 1.1;
       }
 
       .empty-tags {
         color: #6b7280;
         font-style: italic;
-        padding: 16px;
+        padding: 8px;
         text-align: center;
-        font-size: 0.85rem;
+        font-size: 0.65rem;
       }
 
       @media (max-width: 768px) {
         body {
-          padding: 8px;
+          padding: 3px;
         }
 
         .form-container {
-          padding: 16px;
+          padding: 8px 10px;
         }
 
         .header {
-          padding: 16px 20px;
+          padding: 6px 12px;
         }
 
         .header h1 {
-          font-size: 1.5rem;
+          font-size: 1.1rem;
+        }
+
+        .header p {
+          font-size: 0.65rem;
         }
 
         .btn {
-          min-width: 140px;
-          padding: 8px 16px;
+          min-width: 100px;
+          padding: 6px 14px;
+          font-size: 0.7rem;
+        }
+
+        .action-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .container {
+          border-radius: 6px;
+        }
+      }
+
+      /* Animación sutil de respiración para elementos interactivos */
+      .tag:not(.selected),
+      .toggle:not(.active),
+      input:not(:focus),
+      select:not(:focus) {
+        animation: breathe 4s ease-in-out infinite;
+      }
+
+      @keyframes breathe {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.95;
         }
       }
     </style>
@@ -399,92 +569,137 @@
         </div>
 
         <form id="testForm">
-          <!-- GitHub Configuration Section -->
-          <div class="form-section">
-            <div class="section-title">🔧 Configuración de GitHub</div>
-            <div class="form-group">
-              <label for="githubToken"
-                >Personal Access Token <span class="required">*</span></label
-              >
-              <input
-                type="password"
-                id="githubToken"
-                placeholder="ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-                required
-              />
-              <div class="help-text">
-                Token requerido para ejecutar GitHub Actions. Debe tener
-                permisos de 'repo' y 'actions'.
+          <div class="main-grid">
+            <!-- GitHub Configuration Section -->
+            <div class="form-section">
+              <div class="section-title">🔧 Configuración de GitHub</div>
+              <div class="form-group">
+                <label for="githubToken"
+                  >Personal Access Token <span class="required">*</span></label
+                >
+                <input
+                  type="password"
+                  id="githubToken"
+                  placeholder="ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+                  required
+                />
+                <div class="help-text">
+                  Token requerido para ejecutar GitHub Actions. Debe tener
+                  permisos de 'repo' y 'actions'.
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Test Configuration Section -->
-          <div class="form-section">
-            <div class="section-title">⚙️ Configuración de Ejecución</div>
-
-            <div class="form-group">
-              <label for="component"
-                >Componente a Testear <span class="required">*</span></label
-              >
-              <select id="component" required>
-                <option value="">Selecciona un componente...</option>
-                <option value="SIU01-WEB">SIU01 - Web Application</option>
-                <option value="SIU01-API">
-                  SIU01 - API Services (Próximamente)
-                </option>
-                <option value="API02">
-                  API02 - Secondary API (Próximamente)
-                </option>
-                <option value="API03">API03 - Third API (Próximamente)</option>
-              </select>
-            </div>
-
-            <div class="form-row">
+            <!-- Test Configuration Section -->
+            <div class="form-section">
+              <div class="section-title">⚙️ Configuración de Ejecución</div>
               <div class="form-group">
-                <label for="environment"
-                  >Entorno de Ejecución <span class="required">*</span></label
+                <label for="component"
+                  >Componente a Testear <span class="required">*</span></label
                 >
-                <select id="environment" required>
-                  <option value="">Selecciona entorno...</option>
-                  <option value="D">🛠️ Desarrollo</option>
-                  <option value="C">🎯 Certificación</option>
-                  <option value="P" disabled>
-                    🚀 Producción (Próximamente)
+                <select id="component" required>
+                  <option value="">Selecciona un componente...</option>
+                  <option value="SIU01-WEB">SIU01 - Web Application</option>
+                  <option value="SIU01-API">
+                    SIU01 - API Services (Próximamente)
+                  </option>
+                  <option value="API02">
+                    API02 - Secondary API (Próximamente)
+                  </option>
+                  <option value="API03">
+                    API03 - Third API (Próximamente)
                   </option>
                 </select>
               </div>
-
+              <div class="form-row-3">
+                <div class="form-group">
+                  <label for="environment"
+                    >Entorno <span class="required">*</span></label
+                  >
+                  <select id="environment" required>
+                    <option value="">Selecciona entorno...</option>
+                    <option value="D">🛠️ Desarrollo</option>
+                    <option value="C">🎯 Certificación</option>
+                    <option value="P" disabled>
+                      🚀 Producción (Próximamente)
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="browser">Navegador</label>
+                  <select id="browser">
+                    <option value="chrome">Chrome (Recomendado)</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="edge">Microsoft Edge</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="notificationEmail">Email Notificación</label>
+                  <input
+                    type="email"
+                    id="notificationEmail"
+                    placeholder="tu-email@ejemplo.com"
+                  />
+                </div>
+              </div>
               <div class="form-group">
-                <label for="browser">Navegador</label>
-                <select id="browser">
-                  <option value="chrome">Chrome (Recomendado)</option>
-                  <option value="firefox">Firefox</option>
-                  <option value="edge">Microsoft Edge</option>
-                </select>
+                <label for="reportName">Nombre del Reporte</label>
+                <input
+                  type="text"
+                  id="reportName"
+                  placeholder="Se generará automáticamente..."
+                />
+                <div class="help-text">
+                  Formato: {componente}_{entorno}_{fecha}_{hora}. Deja vacío
+                  para generar automáticamente.
+                </div>
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="reportName">Nombre del Reporte</label>
-              <input
-                type="text"
-                id="reportName"
-                placeholder="Se generará automáticamente..."
-              />
-              <div class="help-text">
-                Formato: {componente}_{entorno}_{fecha}_{hora}. Deja vacío para
-                generar automáticamente.
+            <!-- Advanced Options Section -->
+            <div class="form-section">
+              <div class="section-title">🚀 Opciones Avanzadas</div>
+              <div class="form-group">
+                <label>Ejecución en Paralelo</label>
+                <div class="parallel-container">
+                  <div class="toggle" id="parallelToggle"></div>
+                  <span style="font-size: 0.7rem">Ejecutar en paralelo</span>
+                  <span
+                    style="
+                      color: #6b7280;
+                      font-size: 0.65rem;
+                      margin-left: auto;
+                    "
+                    id="parallelStatus"
+                    >(No)</span
+                  >
+                </div>
+                <div class="help-text">
+                  La ejecución en paralelo puede reducir el tiempo total, pero
+                  puede usar más recursos.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="customTags">Tags Personalizados</label>
+                <textarea
+                  id="customTags"
+                  rows="2"
+                  placeholder="@tag1 and @tag2, @tag3 or @tag4"
+                ></textarea>
+                <div class="help-text">
+                  Expresiones complejas usando 'and', 'or', 'not'. Los tags
+                  seleccionados se agregarán automáticamente.
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Tags Section -->
-          <div class="form-section">
+          <div class="tags-section">
             <div class="section-title">🏷️ Selección de Tests</div>
             <div class="form-group">
               <label>Tags Predefinidos</label>
-              <div class="help-text" style="margin-bottom: 6px">
+              <div class="help-text" style="margin-bottom: 4px">
                 Haz clic en los tags que deseas ejecutar. Si no seleccionas
                 ninguno, se ejecutarán todos los tests disponibles.
               </div>
@@ -492,56 +707,6 @@
                 <div class="empty-tags">
                   Selecciona un componente para ver los tags disponibles
                 </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="customTags">Tags Personalizados</label>
-              <textarea
-                id="customTags"
-                rows="2"
-                placeholder="Ejemplo: @tag1 and @tag2, @tag3 or @tag4"
-              ></textarea>
-              <div class="help-text">
-                Puedes escribir expresiones complejas usando 'and', 'or', 'not'.
-                Los tags seleccionados arriba se agregarán automáticamente aquí.
-              </div>
-            </div>
-          </div>
-
-          <!-- Advanced Options Section -->
-          <div class="form-section">
-            <div class="section-title">🚀 Opciones Avanzadas</div>
-
-            <div class="form-group">
-              <label>Ejecución en Paralelo</label>
-              <div class="parallel-container">
-                <div class="toggle" id="parallelToggle"></div>
-                <span style="font-size: 0.9rem"
-                  >Ejecutar tests en paralelo para mayor velocidad</span
-                >
-                <span
-                  style="color: #6b7280; font-size: 0.8rem; margin-left: auto"
-                  id="parallelStatus"
-                  >(Desactivado)</span
-                >
-              </div>
-              <div class="help-text">
-                La ejecución en paralelo puede reducir el tiempo total, pero
-                puede usar más recursos.
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="notificationEmail">Email de Notificación</label>
-              <input
-                type="email"
-                id="notificationEmail"
-                placeholder="tu-email@ejemplo.com"
-              />
-              <div class="help-text">
-                Opcional. Recibirás notificaciones del inicio y resultado de la
-                ejecución por correo electrónico.
               </div>
             </div>
           </div>
@@ -564,13 +729,13 @@
               Limpiar Formulario
             </button>
           </div>
-        </form>
 
-        <!-- Status Panel -->
-        <div class="status-panel" id="statusPanel">
-          <h3>📊 Estado de la Ejecución</h3>
-          <div class="status-content" id="statusContent"></div>
-        </div>
+          <!-- Status Panel -->
+          <div class="status-panel" id="statusPanel">
+            <h3>📊 Estado de la Ejecución</h3>
+            <div class="status-content" id="statusContent"></div>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -578,7 +743,7 @@
     <div class="notification" id="notification"></div>
 
     <script>
-      // Component configurations - Same as modern version
+      // Component configurations
       const COMPONENTS_CONFIG = {
         "SIU01-WEB": {
           owner: "GeoCoderDev",
@@ -595,7 +760,6 @@
             "@unhappy",
             "@todos-los-roles",
             "@profesor-primaria",
-            "@auxiliar",
             "@profesor-secundaria",
             "@tutor",
             "@personal-administrativo",
@@ -616,7 +780,6 @@
             "@unhappy",
           ],
         },
-        // Future components will be added here
       };
 
       // Initialize predefined tags
@@ -653,7 +816,6 @@
         const selectedTags = Array.from(
           document.querySelectorAll(".tag.selected")
         ).map((tag) => tag.textContent);
-
         if (selectedTags.length > 0) {
           document.getElementById("customTags").value =
             selectedTags.join(" and ");
@@ -685,8 +847,8 @@
 
         toggle.classList.toggle("active");
         status.textContent = toggle.classList.contains("active")
-          ? "(Activado)"
-          : "(Desactivado)";
+          ? "(Sí)"
+          : "(No)";
       }
 
       // Show notification
@@ -708,7 +870,7 @@
           tag.classList.remove("selected");
         });
         document.getElementById("parallelToggle").classList.remove("active");
-        document.getElementById("parallelStatus").textContent = "(Desactivado)";
+        document.getElementById("parallelStatus").textContent = "(No)";
         document.getElementById("statusPanel").classList.remove("show");
         document.getElementById("reportName").value = "";
         initializeTags();
@@ -792,36 +954,36 @@
               ].text;
 
             statusContent.innerHTML = `
-                        <div style="margin-bottom: 12px;">
-                            <strong>✅ Ejecución iniciada exitosamente</strong><br>
-                            <span style="color: #6b7280; font-size: 0.85rem;">Reporte: ${
-                              payload.client_payload.report_name
-                            }</span>
-                        </div>
-                        
-                        <div style="margin-bottom: 12px;">
-                            <a href="https://github.com/${config.owner}/${
+              <div style="margin-bottom: 6px;">
+                <strong>✅ Ejecución iniciada exitosamente</strong><br>
+                <span style="color: #6b7280; font-size: 0.7rem;">Reporte: ${
+                  payload.client_payload.report_name
+                }</span>
+              </div>
+              
+              <div style="margin-bottom: 6px;">
+                <a href="https://github.com/${config.owner}/${
               config.repo
             }/actions" 
-                               target="_blank" 
-                               style="color: #2563eb; text-decoration: none; font-weight: 500; font-size: 0.9rem;">
-                               🔗 Ver progreso en GitHub Actions →
-                            </a>
-                        </div>
-                        
-                        <div class="config-grid">
-                            <div class="config-item"><strong>Componente:</strong> ${component}</div>
-                            <div class="config-item"><strong>Entorno:</strong> ${envText}</div>
-                            <div class="config-item"><strong>Navegador:</strong> ${browserText}</div>
-                            <div class="config-item"><strong>Paralelo:</strong> ${
-                              document
-                                .getElementById("parallelToggle")
-                                .classList.contains("active")
-                                ? "Sí"
-                                : "No"
-                            }</div>
-                        </div>
-                    `;
+                   target="_blank" 
+                   style="color: #2563eb; text-decoration: none; font-weight: 500; font-size: 0.75rem;">
+                   🔗 Ver progreso en GitHub Actions →
+                </a>
+              </div>
+              
+              <div class="config-grid">
+                <div class="config-item"><strong>Componente:</strong> ${component}</div>
+                <div class="config-item"><strong>Entorno:</strong> ${envText}</div>
+                <div class="config-item"><strong>Navegador:</strong> ${browserText}</div>
+                <div class="config-item"><strong>Paralelo:</strong> ${
+                  document
+                    .getElementById("parallelToggle")
+                    .classList.contains("active")
+                    ? "Sí"
+                    : "No"
+                }</div>
+              </div>
+            `;
             statusPanel.classList.add("show");
           } else {
             const errorData = await response.text();
