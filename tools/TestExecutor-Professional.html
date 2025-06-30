@@ -15,9 +15,9 @@
         font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
         background-color: #f8fafc;
         color: #2d3748;
-        line-height: 1.6;
+        line-height: 1.4;
         min-height: 100vh;
-        padding: 20px;
+        padding: 12px;
       }
 
       .container {
@@ -32,34 +32,34 @@
       .header {
         background: linear-gradient(135deg, #2563eb, #1e40af);
         color: white;
-        padding: 30px;
+        padding: 20px 24px;
         border-radius: 8px 8px 0 0;
         text-align: center;
       }
 
       .header h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
         font-weight: 600;
-        margin-bottom: 8px;
+        margin-bottom: 4px;
       }
 
       .header p {
         opacity: 0.9;
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
 
       .form-container {
-        padding: 40px;
+        padding: 24px;
       }
 
       .form-group {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
       }
 
       .form-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        gap: 16px;
       }
 
       @media (max-width: 768px) {
@@ -72,8 +72,8 @@
         display: block;
         color: #374151;
         font-weight: 500;
-        margin-bottom: 6px;
-        font-size: 0.95rem;
+        margin-bottom: 4px;
+        font-size: 0.9rem;
       }
 
       .required {
@@ -84,10 +84,10 @@
       select,
       textarea {
         width: 100%;
-        padding: 12px 16px;
+        padding: 10px 12px;
         border: 1px solid #d1d5db;
         border-radius: 6px;
-        font-size: 1rem;
+        font-size: 0.95rem;
         transition: border-color 0.2s ease, box-shadow 0.2s ease;
         background: white;
       }
@@ -106,28 +106,28 @@
       }
 
       select option {
-        padding: 8px;
+        padding: 6px;
       }
 
       .tags-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 12px;
-        padding: 12px;
+        gap: 6px;
+        margin-bottom: 10px;
+        padding: 10px;
         background: #f9fafb;
         border: 1px solid #e5e7eb;
         border-radius: 6px;
-        min-height: 60px;
+        min-height: 50px;
       }
 
       .tag {
-        padding: 6px 12px;
+        padding: 4px 8px;
         background: white;
         border: 1px solid #d1d5db;
         border-radius: 4px;
         color: #374151;
-        font-size: 0.875rem;
+        font-size: 0.8rem;
         cursor: pointer;
         transition: all 0.2s ease;
         user-select: none;
@@ -147,8 +147,8 @@
       .parallel-container {
         display: flex;
         align-items: center;
-        gap: 12px;
-        padding: 16px;
+        gap: 10px;
+        padding: 12px;
         background: #f9fafb;
         border: 1px solid #e5e7eb;
         border-radius: 6px;
@@ -156,10 +156,10 @@
 
       .toggle {
         position: relative;
-        width: 44px;
-        height: 24px;
+        width: 40px;
+        height: 22px;
         background: #d1d5db;
-        border-radius: 24px;
+        border-radius: 22px;
         cursor: pointer;
         transition: background-color 0.2s ease;
       }
@@ -167,8 +167,8 @@
       .toggle::before {
         content: "";
         position: absolute;
-        width: 18px;
-        height: 18px;
+        width: 16px;
+        height: 16px;
         background: white;
         border-radius: 50%;
         top: 3px;
@@ -182,23 +182,23 @@
       }
 
       .toggle.active::before {
-        transform: translateX(20px);
+        transform: translateX(18px);
       }
 
       .action-buttons {
         display: flex;
-        gap: 12px;
-        margin-top: 32px;
+        gap: 10px;
+        margin-top: 20px;
         flex-wrap: wrap;
       }
 
       .btn {
         flex: 1;
-        min-width: 180px;
-        padding: 12px 24px;
+        min-width: 160px;
+        padding: 10px 20px;
         border: none;
         border-radius: 6px;
-        font-size: 1rem;
+        font-size: 0.95rem;
         font-weight: 500;
         cursor: pointer;
         transition: all 0.2s ease;
@@ -229,8 +229,8 @@
       }
 
       .status-panel {
-        margin-top: 24px;
-        padding: 20px;
+        margin-top: 16px;
+        padding: 16px;
         background: #f0f9ff;
         border: 1px solid #bae6fd;
         border-radius: 6px;
@@ -243,19 +243,19 @@
 
       .status-panel h3 {
         color: #0c4a6e;
-        margin-bottom: 12px;
-        font-size: 1.1rem;
+        margin-bottom: 10px;
+        font-size: 1rem;
       }
 
       .spinner {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
         border: 2px solid #f3f4f6;
         border-radius: 50%;
         border-top-color: #2563eb;
         animation: spin 1s linear infinite;
-        margin-left: 8px;
+        margin-left: 6px;
       }
 
       @keyframes spin {
@@ -266,17 +266,18 @@
 
       .notification {
         position: fixed;
-        top: 20px;
-        right: 20px;
-        padding: 16px 20px;
+        top: 16px;
+        right: 16px;
+        padding: 12px 16px;
         border-radius: 6px;
         color: white;
         font-weight: 500;
         z-index: 1000;
-        max-width: 400px;
+        max-width: 350px;
         transform: translateX(100%);
         transition: transform 0.3s ease;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        font-size: 0.9rem;
       }
 
       .notification.show {
@@ -295,20 +296,21 @@
         background: #f0f9ff;
         border: 1px solid #bae6fd;
         border-radius: 6px;
-        padding: 16px;
-        margin-bottom: 24px;
+        padding: 12px;
+        margin-bottom: 16px;
         color: #0c4a6e;
+        font-size: 0.9rem;
       }
 
       .help-text {
         color: #6b7280;
-        font-size: 0.875rem;
-        margin-top: 4px;
+        font-size: 0.8rem;
+        margin-top: 3px;
       }
 
       .form-section {
-        margin-bottom: 32px;
-        padding-bottom: 24px;
+        margin-bottom: 20px;
+        padding-bottom: 16px;
         border-bottom: 1px solid #e5e7eb;
       }
 
@@ -318,31 +320,31 @@
       }
 
       .section-title {
-        font-size: 1.125rem;
+        font-size: 1rem;
         font-weight: 600;
         color: #1f2937;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 6px;
       }
 
       .status-content {
         background: white;
-        padding: 16px;
+        padding: 12px;
         border-radius: 4px;
         border: 1px solid #bae6fd;
       }
 
       .config-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 12px;
-        margin-top: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+        margin-top: 10px;
       }
 
       .config-item {
-        font-size: 0.875rem;
+        font-size: 0.8rem;
         color: #4b5563;
       }
 
@@ -353,8 +355,32 @@
       .empty-tags {
         color: #6b7280;
         font-style: italic;
-        padding: 20px;
+        padding: 16px;
         text-align: center;
+        font-size: 0.85rem;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 8px;
+        }
+
+        .form-container {
+          padding: 16px;
+        }
+
+        .header {
+          padding: 16px 20px;
+        }
+
+        .header h1 {
+          font-size: 1.5rem;
+        }
+
+        .btn {
+          min-width: 140px;
+          padding: 8px 16px;
+        }
       }
     </style>
   </head>
@@ -458,7 +484,7 @@
             <div class="section-title">🏷️ Selección de Tests</div>
             <div class="form-group">
               <label>Tags Predefinidos</label>
-              <div class="help-text" style="margin-bottom: 8px">
+              <div class="help-text" style="margin-bottom: 6px">
                 Haz clic en los tags que deseas ejecutar. Si no seleccionas
                 ninguno, se ejecutarán todos los tests disponibles.
               </div>
@@ -473,7 +499,7 @@
               <label for="customTags">Tags Personalizados</label>
               <textarea
                 id="customTags"
-                rows="3"
+                rows="2"
                 placeholder="Ejemplo: @tag1 and @tag2, @tag3 or @tag4"
               ></textarea>
               <div class="help-text">
@@ -491,9 +517,11 @@
               <label>Ejecución en Paralelo</label>
               <div class="parallel-container">
                 <div class="toggle" id="parallelToggle"></div>
-                <span>Ejecutar tests en paralelo para mayor velocidad</span>
+                <span style="font-size: 0.9rem"
+                  >Ejecutar tests en paralelo para mayor velocidad</span
+                >
                 <span
-                  style="color: #6b7280; font-size: 0.875rem; margin-left: auto"
+                  style="color: #6b7280; font-size: 0.8rem; margin-left: auto"
                   id="parallelStatus"
                   >(Desactivado)</span
                 >
@@ -764,19 +792,19 @@
               ].text;
 
             statusContent.innerHTML = `
-                        <div style="margin-bottom: 16px;">
+                        <div style="margin-bottom: 12px;">
                             <strong>✅ Ejecución iniciada exitosamente</strong><br>
-                            <span style="color: #6b7280;">Reporte: ${
+                            <span style="color: #6b7280; font-size: 0.85rem;">Reporte: ${
                               payload.client_payload.report_name
                             }</span>
                         </div>
                         
-                        <div style="margin-bottom: 16px;">
+                        <div style="margin-bottom: 12px;">
                             <a href="https://github.com/${config.owner}/${
               config.repo
             }/actions" 
                                target="_blank" 
-                               style="color: #2563eb; text-decoration: none; font-weight: 500;">
+                               style="color: #2563eb; text-decoration: none; font-weight: 500; font-size: 0.9rem;">
                                🔗 Ver progreso en GitHub Actions →
                             </a>
                         </div>
