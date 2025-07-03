@@ -15,16 +15,16 @@
 >
 > ### 🔖 Metadatos de Ejecución
 >
-> | Campo                        | Valor                                                                                                                                                                                            |
-> | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-> | **ID Ejecución**      | SIASIS-TE-1                                                                                                                                                                                      |
-> | **Nombre**             | Ejecución de Tests de Login de Personal del Colegio                                                                                                                                             |
+> | Campo                        |                                                                                              Valor                                                                                              |
+> | ---------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+> | **ID Ejecución**      |                                                                                           SIASIS-TE-1                                                                                           |
+> | **Nombre**             |                                                                       Ejecución de Tests de Login de Personal del Colegio                                                                       |
 > | **Test Plan**          | [SIASIS-TP-1](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/SIASIS-TP-1%20-%20Login%20para%20Personal%20del%20Colegio%20IE20935.md "Test Plan Relacionado") |
-> | **Sprint/Release**     | 4                                                                                                                                                                                                |
-> | **Build/Versión**     | 1.0                                                                                                                                                                                              |
-> | **Tipo de Ejecución** | 🐛 Bug Verification                                                                                                                                                                              |
-> | **Modo de Ejecución** | 🤖 Automated                                                                                                                                                                                     |
-> | **Prioridad**          | 🔴 Critical                                                                                                                                                                                      |
+> | **Sprint/Release**     |                                                                                                4                                                                                                |
+> | **Build/Versión**     |                                                                                               1.0                                                                                               |
+> | **Tipo de Ejecución** |                                                                                       🐛 Bug Verification                                                                                       |
+> | **Modo de Ejecución** |                                                                                           🤖 Automated                                                                                           |
+> | **Prioridad**          |                                                                                           🔴 Critical                                                                                           |
 
 ---
 
@@ -74,12 +74,12 @@
 >
 > | Métrica                      | Cantidad | Porcentaje |
 > | ----------------------------- | -------- | ---------- |
-> | **Total de Tests**      | 5        | 100%       |
-> | **Tests Críticos**     | 5        | 30%        |
-> | **Tests Automatizados** | 5        | 80%        |
+> | **Total de Tests**      | 6        | 100%       |
+> | **Tests Críticos**     | 6        | 100%       |
+> | **Tests Automatizados** | 6        | 100%       |
 > | **Tests Manuales**      | 0        | 0%         |
 > | **Tests Nuevos**        | 0        | 0%         |
-> | **Tests de Regresión** | 5        | 100%       |
+> | **Tests de Regresión** | 6        | 100%       |
 
 ---
 

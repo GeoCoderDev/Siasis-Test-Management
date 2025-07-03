@@ -1,4 +1,4 @@
-# 📋 Test Plan: SIASIS-TP-1 - Login para Personal del Colegio IE20935
+# 📋 Test Plan: SIASIS-TP-2 - Login para Personal del Colegio IE20935
 
 > [!IMPORTANT]
 >
