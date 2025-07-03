@@ -1,4 +1,4 @@
-# 🚀 Test Execution: Ejecución de Tests de Login de Personal del Colegio 
+# 🚀 Test Execution: Ejecución de Tests de Login de Personal del Colegio
 
 > [!IMPORTANT]
 > **ID de Ejecución:** SIASIS-TE-1
@@ -18,7 +18,7 @@
 > | Campo                        | Valor                                                                                                                                                                                            |
 > | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 > | **ID Ejecución**      | SIASIS-TE-1                                                                                                                                                                                      |
-> | **Nombre**             | Ejecución de Tests de Login de Personal del Colegio                                                                                              |
+> | **Nombre**             | Ejecución de Tests de Login de Personal del Colegio                                                                                                                                             |
 > | **Test Plan**          | [SIASIS-TP-1](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/SIASIS-TP-1%20-%20Login%20para%20Personal%20del%20Colegio%20IE20935.md "Test Plan Relacionado") |
 > | **Sprint/Release**     | 4                                                                                                                                                                                                |
 > | **Build/Versión**     | 1.0                                                                                                                                                                                              |
@@ -91,14 +91,14 @@
 >
 > #### 🔐 Módulo de Autenticación
 >
-> | ID Test     | Nombre                                                                       | Tipo      | Prioridad   | Estado    | Tiempo Est. |
-> | ----------- | ---------------------------------------------------------------------------- | --------- | ----------- | --------- | ----------- |
-> | SIASIS-TC-2 | Validar Inicio de Sesión de Sesión Exitoso para Directivos                 | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
-> | SIASIS-TC-3 | Validar Inicio de Sesión de Sesión Exitoso para Profesores de Primaria     | Funcional | 🔴 Critical | ✅ Passed | 15 secs    |
-> | SIASIS-TC-4 | Validar Inicio de Sesión de Sesión Exitoso para Auxiliar                   | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
-> | SIASIS-TC-5 | Validar Inicio de Sesión de Sesión Exitoso para Profesor Secundaria        | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
-> | SIASIS-TC-6 | Validar Inicio de Sesión de Sesión Exitoso para Tutores                    | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
-> | SIASIS-TC-7 | Validar Inicio de Sesión de Sesión Exitoso para Personales Administrativos | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
+> | ID Test                                                                                                                                                                                                                              | Nombre                                                                       | Tipo      | Prioridad   | Estado    | Tiempo Est. |
+> | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- | --------- | ----------- | --------- | ----------- |
+> | [SIASIS-TC-2](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-2%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Directivos.md "Ir al Test Case")                   | Validar Inicio de Sesión de Sesión Exitoso para Directivos                 | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
+> | [SIASIS-TC-3](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-3%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Profesores%20de%20Primaria.md "Ir al Test Case")   | Validar Inicio de Sesión de Sesión Exitoso para Profesores de Primaria     | Funcional | 🔴 Critical | ✅ Passed | 15 secs    |
+> | [SIASIS-TC-4](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-4%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Auxiliar.md "Ir al Test Case")                     | Validar Inicio de Sesión de Sesión Exitoso para Auxiliar                   | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
+> | [SIASIS-TC-5](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-5%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Profesor%20Secundaria.md "Ir al Test Case")        | Validar Inicio de Sesión de Sesión Exitoso para Profesor Secundaria        | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
+> | [SIASIS-TC-6](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-6%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Tutores.md "Ir al Test Case")                      | Validar Inicio de Sesión de Sesión Exitoso para Tutores                    | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
+> | [SIASIS-TC-7](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-7%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Personales%20Administrativos.md "Ir al Test Case") | Validar Inicio de Sesión de Sesión Exitoso para Personales Administrativos | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
 
 ---
 
