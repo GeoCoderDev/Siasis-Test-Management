@@ -121,31 +121,33 @@
 > ### 📸 Evidencias de la ejecución
 >
 > 1. Directivo
+>    
 >    ![1751585502771](image/SIASIS-TE-3/1751585502771.png)
 >
 >    ![1751585580019](image/SIASIS-TE-3/1751585580019.png)
-> 2. Profesor de Primaria
+> 
+> 3. Profesor de Primaria
 >
 >    ![1751585904007](image/SIASIS-TE-3/1751585904007.png)
 >
 >    ![1751585955513](image/SIASIS-TE-3/1751585955513.png)
-> 3. Auxiliar
+> 4. Auxiliar
 >
 >    ![1751586046230](image/SIASIS-TE-3/1751586046230.png)
 >
 >    ![1751586126006](image/SIASIS-TE-3/1751586126006.png)
-> 4. Profesor de Secundaria
+> 5. Profesor de Secundaria
 >
 >    ![1751586211727](image/SIASIS-TE-3/1751586211727.png)
 >
 >     ![1751586258005](image/SIASIS-TE-3/1751586258005.png)
 >
-> 5. Tutor
+> 6. Tutor
 >
 >    ![1751586339248](image/SIASIS-TE-3/1751586339248.png)
 >
 >    ![1751586401511](image/SIASIS-TE-3/1751586401511.png)
-> 6. Personal Administrativo
+> 7. Personal Administrativo
 >
 >    ![1751586452788](image/SIASIS-TE-3/1751586452788.png)
 >
