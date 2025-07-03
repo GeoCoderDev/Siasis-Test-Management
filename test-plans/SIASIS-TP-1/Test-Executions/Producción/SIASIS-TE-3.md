@@ -4,7 +4,7 @@
 > **ID de Ejecución:** SIASIS-TE-3
 > **Fecha de Ejecución:** 03/07/2025
 > **Ejecutor:** Juan Chavez
-> **Duración:** 10 min
+> **Duración:** 20 min
 > **Estado:** ✅ Completed
 
 ---
@@ -118,15 +118,40 @@
 
 > [!TIP]
 >
-> ### 📸 Evidencias Requeridas
+> ### 📸 Evidencias de la ejecución
 >
-> #### Durante la Ejecución:
+> 1. Directivo
+>    ![1751585502771](image/SIASIS-TE-3/1751585502771.png)
 >
-> - 📸 Screenshot del estado inicial
-> - 📸 Screenshot de cada paso crítico
-> - 📸 Screenshot del resultado final
-> - 🎥 Video de la ejecución completa (si es complejo
-> - 
+>    ![1751585580019](image/SIASIS-TE-3/1751585580019.png)
+> 2. Profesor de Primaria
+>
+>    ![1751585904007](image/SIASIS-TE-3/1751585904007.png)
+>
+>    ![1751585955513](image/SIASIS-TE-3/1751585955513.png)
+> 3. Auxiliar
+>
+>    ![1751586046230](image/SIASIS-TE-3/1751586046230.png)
+>
+>    ![1751586126006](image/SIASIS-TE-3/1751586126006.png)
+> 4. Profesor de Secundaria
+>
+>    ![1751586211727](image/SIASIS-TE-3/1751586211727.png)
+>
+>     ![1751586258005](image/SIASIS-TE-3/1751586258005.png)
+>
+> 5. Tutor
+>
+>    ![1751586339248](image/SIASIS-TE-3/1751586339248.png)
+>
+>    ![1751586401511](image/SIASIS-TE-3/1751586401511.png)
+> 6. Personal Administrativo
+>
+>    ![1751586452788](image/SIASIS-TE-3/1751586452788.png)
+>
+>    ![1751586507406](image/SIASIS-TE-3/1751586507406.png)
+
+
 
 ---
 
@@ -239,7 +264,7 @@
 ---
 
 **📅 Fecha de Ejecución:** 03/07/2025
-**⏰ Hora de Inicio:** 04:30 PM
-**⏰ Hora de Finalización:** 4:40PM
+**⏰ Hora de Inicio:** 06:30 PM
+**⏰ Hora de Finalización:** 06:50PM
 **👤 Ejecutado por: Juan Chavez - QA**
 **✅ Estado Final:** Completado
