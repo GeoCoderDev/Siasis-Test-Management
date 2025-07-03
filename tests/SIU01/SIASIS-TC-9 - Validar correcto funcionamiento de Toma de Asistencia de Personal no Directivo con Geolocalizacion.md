@@ -137,7 +137,7 @@
 >   Then me aparece el modal <modal_resultante>
 >
 >   Examples:
->     | situacion                                                                       | resultado                                            |
+>     | situacion                                                                       | modal_resultante                                     |
 >     | Me encuentro dentro del perimetro del Colegio con GPS y permisos habillitados   | Modal de Registro Exitoso                            |
 >     | Estoy usando mi laptop o algun dispositivo que no sea un celular                | Modal de Solo uso de Celulares para Geolocaclizacion |
 >     | Tengo mi celular con GPS Desactivado o Permisos no Condedidos                   | Modal de Solicitud de Permisos o Activación de GPS   |
