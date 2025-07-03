@@ -1,4 +1,4 @@
-# 🚀 Test Execution: [Nombre de la Ejecución]
+# 🚀 Test Execution: Ejecución de Tests de Login de Personal del Colegio 
 
 > [!IMPORTANT]
 > **ID de Ejecución:** SIASIS-TE-1
@@ -18,7 +18,7 @@
 > | Campo                        | Valor                                                                                                                                                                                            |
 > | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 > | **ID Ejecución**      | SIASIS-TE-1                                                                                                                                                                                      |
-> | **Nombre**             | Se ejecutaron los test automatizados de inicio de sesion de todos los roles de personal del Colegio                                                                                              |
+> | **Nombre**             | Ejecución de Tests de Login de Personal del Colegio                                                                                              |
 > | **Test Plan**          | [SIASIS-TP-1](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/SIASIS-TP-1%20-%20Login%20para%20Personal%20del%20Colegio%20IE20935.md "Test Plan Relacionado") |
 > | **Sprint/Release**     | 4                                                                                                                                                                                                |
 > | **Build/Versión**     | 1.0                                                                                                                                                                                              |
