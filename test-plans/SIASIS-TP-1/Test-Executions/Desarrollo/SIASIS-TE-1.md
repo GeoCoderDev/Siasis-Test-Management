@@ -47,12 +47,12 @@
 > ### 💻 Configuración Técnica
 >
 > | Tecnología             | Versión        | Estado |
-> | ----------------------- | --------------- | ------ |
-> | **Frontend**      | React 18.2.0    | 🟢     |
-> | **Backend**       | Node.js 22      | 🟢     |
-> | **Base de Datos** | PostgreSQL 15.3 | 🟢     |
-> | **Cache**         | Redis 7.0       | 🟢     |
-> | **WebSocket**     | Socket.io 4.7.0 | 🟢     |
+> | ----------------------- | --------------- | :----: |
+> | **Frontend**      | React 18.2.0    |   🟢   |
+> | **Backend**       | Node.js 22      |   🟢   |
+> | **Base de Datos** | PostgreSQL 15.3 |   🟢   |
+> | **Cache**         | Redis 7.0       |   🟢   |
+> | **WebSocket**     | Socket.io 4.7.0 |   🟢   |
 
 > [!CAUTION]
 >
@@ -91,29 +91,14 @@
 >
 > #### 🔐 Módulo de Autenticación
 >
-> | ID Test     | Nombre                            | Tipo      | Prioridad   | Estado     | Tiempo Est. |
-> | ----------- | --------------------------------- | --------- | ----------- | ---------- | ----------- |
-> | TC-AUTH-001 | Login con credenciales válidas   | Funcional | 🔴 Critical | ⏳ Pending | 5 min       |
-> | TC-AUTH-002 | Login con credenciales inválidas | Funcional | 🔴 Critical | ⏳ Pending | 3 min       |
-> | TC-AUTH-003 | Logout de usuario                 | Funcional | 🟡 High     | ⏳ Pending | 2 min       |
-> | TC-AUTH-004 | Sesión expira por timeout        | Funcional | 🟡 High     | ⏳ Pending | 10 min      |
-
----
-
-## ⏰ Cronograma de Ejecución
-
-> [!NOTE]
->
-> ### 📅 Plan de Ejecución por Fases
->
-> | Fase        | Tipo de Tests        | Fecha Inicio  | Fecha Fin     | Duración | Responsable |
-> | ----------- | -------------------- | ------------- | ------------- | --------- | ----------- |
-> | **1** | 🔥 Smoke Tests       | [DD/MM HH:MM] | [DD/MM HH:MM] | 2 hrs     | [Nombre QA] |
-> | **2** | 🔐 Security & Auth   | [DD/MM HH:MM] | [DD/MM HH:MM] | 4 hrs     | [Nombre QA] |
-> | **3** | 🧪 Functional Tests  | [DD/MM HH:MM] | [DD/MM HH:MM] | 8 hrs     | [Nombre QA] |
-> | **4** | 🔗 Integration Tests | [DD/MM HH:MM] | [DD/MM HH:MM] | 6 hrs     | [Nombre QA] |
-> | **5** | ⚡ Performance Tests | [DD/MM HH:MM] | [DD/MM HH:MM] | 4 hrs     | [Nombre QA] |
-> | **6** | 🔄 Regression Tests  | [DD/MM HH:MM] | [DD/MM HH:MM] | 10 hrs    | [Nombre QA] |
+> | ID Test     | Nombre                                                                       | Tipo      | Prioridad   | Estado    | Tiempo Est. |
+> | ----------- | ---------------------------------------------------------------------------- | --------- | ----------- | --------- | ----------- |
+> | SIASIS-TC-2 | Validar Inicio de Sesión de Sesión Exitoso para Directivos                 | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
+> | SIASIS-TC-3 | Validar Inicio de Sesión de Sesión Exitoso para Profesores de Primaria     | Funcional | 🔴 Critical | ✅ Passed | 15 secs    |
+> | SIASIS-TC-4 | Validar Inicio de Sesión de Sesión Exitoso para Auxiliar                   | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
+> | SIASIS-TC-5 | Validar Inicio de Sesión de Sesión Exitoso para Profesor Secundaria        | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
+> | SIASIS-TC-6 | Validar Inicio de Sesión de Sesión Exitoso para Tutores                    | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
+> | SIASIS-TC-7 | Validar Inicio de Sesión de Sesión Exitoso para Personales Administrativos | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
 
 ---
 
