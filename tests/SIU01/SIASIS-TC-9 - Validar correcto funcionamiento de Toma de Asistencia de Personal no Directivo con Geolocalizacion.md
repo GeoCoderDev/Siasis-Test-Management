@@ -204,12 +204,12 @@
 >
 > | Rol                         | SI | NO |
 > | --------------------------- | -- | -- |
-> | **Directivo**         | ✅ |    |
-> | **Profesor Primaria** |    | ❌ |
-> | **Auxiliar**          |    | ❌ |
-> | Profesor Secundaria         |    | ❌ |
-> | Tutor                       |    | ❌ |
-> | Personal Administrativo     |    | ❌ |
+> | **Directivo**         |    | ❌ |
+> | **Profesor Primaria** | ✅ |    |
+> | **Auxiliar**          | ✅ |    |
+> | Profesor Secundaria         | ✅ |    |
+> | Tutor                       | ✅ |    |
+> | Personal Administrativo     | ✅ |    |
 > | **Responsable**       |    | ❌ |
 
 ---
