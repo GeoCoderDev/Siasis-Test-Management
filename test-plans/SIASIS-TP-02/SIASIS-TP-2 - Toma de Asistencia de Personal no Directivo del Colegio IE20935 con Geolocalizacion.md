@@ -1,10 +1,10 @@
-# 📋 Test Plan: SIASIS-TP-2 - Login para Personal del Colegio IE20935
+# 📋 Test Plan: SIASIS-TP-2 - Toma de Asistencia de Personal no Directivo del Colegio IE20935 con Geolocalizacion
 
 > [!IMPORTANT]
 >
-> **Fecha de Creación:** 28/06/2025
+> **Fecha de Creación:** 03/07/2025
 > **Responsable: Juan Chavez** > **Sprint/Release:** 5
-> **Estado:** 🟡 En Progreso
+> **Estado:** ✅ Completed
 
 ---
 
