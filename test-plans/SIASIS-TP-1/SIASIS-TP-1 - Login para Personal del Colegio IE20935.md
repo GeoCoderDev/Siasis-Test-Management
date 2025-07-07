@@ -207,11 +207,11 @@
 >
 > ### 7. Estrategia de Pruebas
 >
-> |      Flujo      |     Tipo de Prueba     | Fecha de Inicio | Fecha Fin |     Ambiente     |                                                                              Test Execution                                                                              |
-> | :--------------: | :--------------------: | :-------------: | :--------: | :---------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | Inicio de Sesion | 🔧 Pruebas Funcionales |   03/07/2025   | 03/07/2025 |   🔧 Desarrollo   |     [SIASIS-TE-1](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/Test-Executions/Desarrollo/SIASIS-TE-1.md "Ir al TestExecution")     |
-> | Inicio de Sesion | 🔧 Pruebas Funcionales |   03/07/2025   | 03/07/2025 | 🧪 Certificación | [SIASIS-TE-2](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/Test-Executions/Certificaci%C3%B3n/SIASIS-TE-2.md "Ir al TestExecution") |
-> | Inicio de Sesion | 🔧 Pruebas Funcionales |   03/07/2025   | 03/07/2025 |  🚀 Producción  |  [SIASIS-TE-3](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/Test-Executions/Producci%C3%B3n/SIASIS-TE-3.md "Ir al TestExecution")  |
+> |      Flujo      |     Tipo de Prueba     | Fecha de Inicio | Fecha Fin |     Ambiente     |                                                                      Test Execution                                                                      |
+> | :--------------: | :--------------------: | :-------------: | :--------: | :---------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
+> | Inicio de Sesion | 🔧 Pruebas Funcionales |   03/07/2025   | 03/07/2025 |   🔧 Desarrollo   |     [SIASIS-TE-1](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/Desarrollo/SIASIS-TE-1.md "Ir al TestExecution")     |
+> | Inicio de Sesion | 🔧 Pruebas Funcionales |   03/07/2025   | 03/07/2025 | 🧪 Certificación | [SIASIS-TE-2](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/Certificaci%C3%B3n/SIASIS-TE-2.md "Ir al TestExecution") |
+> | Inicio de Sesion | 🔧 Pruebas Funcionales |   03/07/2025   | 03/07/2025 |  🚀 Producción  |  [SIASIS-TE-3](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/Producci%C3%B3n/SIASIS-TE-3.md "Ir al TestExecution")  |
 
 ---
 
