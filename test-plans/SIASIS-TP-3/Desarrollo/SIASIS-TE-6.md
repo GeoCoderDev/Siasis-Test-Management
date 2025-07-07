@@ -1,4 +1,4 @@
-# 🚀 Test Execution: Ejecución de Tests de Login de Personal del Colegio
+# 🚀 Test Execution: Ejecución de Tests para toma de asistencia de personal por parte de Directivo en varios dispositivos a la vez
 
 > [!IMPORTANT]
 > **ID de Ejecución:** SIASIS-TE-6
@@ -17,8 +17,8 @@
 >
 > | Campo                        |                                                                                                               Valor                                                                                                               |
 > | ---------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | **ID Ejecución**      |                                                                                                            SIASIS-TE-1                                                                                                            |
-> | **Nombre**             |                                                                                        Ejecución de Tests de Login de Personal del Colegio                                                                                        |
+> | **ID Ejecución**      |                                                                                                            SIASIS-TE-6                                                                                                            |
+> | **Nombre**             |                                                        Ejecución de Tests para toma de asistencia de personal<br /> por parte de Directivo en varios dispositivos a la vez                                                        |
 > | **Test Plan**          | [SIASIS-TP-3](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-3/SIASIS-TP-3%20-%20Toma%20de%20Asistencia%20de%20Personal%20en%20varios%20dispositivos%20sincronizados.md "Test Plan Relacionado") |
 > | **Sprint/Release**     |                                                                                                                 6                                                                                                                 |
 > | **Build/Versión**     |                                                                                                                1.0                                                                                                                |
@@ -34,13 +34,13 @@
 >
 > ### 🏗️ Detalles del Ambiente
 >
-> | Aspecto                 | Configuración                |
-> | ----------------------- | ----------------------------- |
-> | **Ambiente**      | 🔧 Desarrollo                 |
+> | Aspecto                 |        Configuración        |
+> | ----------------------- | :---------------------------: |
+> | **Ambiente**      |         🔧 Desarrollo         |
 > | **URL Base**      | https://siasis-dev.vercel.app |
-> | **Base de Datos** | Instancia 1 de RDP05         |
-> | **Servidor**      | No hay detalles               |
-> | **Red/VPN**       | No hay Detalles               |
+> | **Base de Datos** |     Instancia 1 de RDP05     |
+> | **Servidor**      |        No hay detalles        |
+> | **Red/VPN**       |        No hay Detalles        |
 
 > [!TIP]
 >
@@ -91,10 +91,10 @@
 >
 > #### 🔐 Módulo de Autenticación
 >
-> | ID Test                                                                                                                                                                                                                                                                                     | Nombre                                                                   | Tipo      | Prioridad   | Estado    | Tiempo Est. |
-> | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------- | ----------- | --------- | ----------- |
-> | [SIASIS-TC-10](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-10%20-%20Validar%20sincronizaci%C3%B3n%20de%20varios%20dispositivos%20al%20marcar%20una%20asistencia%20de%20personal%20por%20parte%20de%20usuario%20Directivo%20copy.md "Ir al Test Case") | Validar Inicio de Sesión de Sesión Exitoso para Directivos             | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
-> | [SIASIS-TC-11](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-3%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Profesores%20de%20Primaria.md "Ir al Test Case")                                                         | Validar Inicio de Sesión de Sesión Exitoso para Profesores de Primaria | Funcional | 🔴 Critical | ✅ Passed | 15 secs    |
+> | ID Test                                                                                                                                                                                                                                                                                                             | Nombre                                                                   | Tipo      | Prioridad | Estado    | Tiempo Est. |
+> | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------- | :-------: | --------- | ----------- |
+> | [SIASIS-TC-10](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-10%20-%20Validar%20sincronizaci%C3%B3n%20de%20varios%20dispositivos%20al%20marcar%20una%20asistencia%20de%20personal%20por%20parte%20de%20usuario%20Directivo.md "Ir al Test Case")                                | Validar Inicio de Sesión de Sesión Exitoso para Directivos             | Funcional | 🟢 Medium | ✅ Passed | -           |
+> | [SIASIS-TC-11](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-11%20-%20Validar%20la%20no%20sincronizacion%20al%20tomar%20asistencia%20de%20personal%20por%20parte%20de%20directivo%20en%20varios%20dispositivos%20con%20diferente%20seccion%20seleccionada.md "Ir al Test Case") | Validar Inicio de Sesión de Sesión Exitoso para Profesores de Primaria | Funcional |  🟡 High  | ✅ Passed | -           |
 
 ---
 

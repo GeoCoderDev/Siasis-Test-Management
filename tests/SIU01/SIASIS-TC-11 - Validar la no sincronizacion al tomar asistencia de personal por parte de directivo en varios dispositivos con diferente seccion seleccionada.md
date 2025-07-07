@@ -126,7 +126,7 @@
 >     And he iniciado sesion como Directivo en varios dispositivos a la vez
 >
 >   @SIASIS-TC-10 @SIU01 @SS01 @RDP05 @directivo
->   Scenario: Directivo marca la asistencia de un personal en varios dispositivos a la vez
+>   Scenario: Directivo no marca la asistencia de un personal en varios dispositivos a la vez debido a que cada dispositivo tiene seleccionado diferente rol o modo de registro(Entrada o Salida)
 >     Given he seleccionado en todos los dispositivos diferentes tipos de registro(Entrada o Salida) para diferentes Roles
 >     When marco la asistencia de cualquier personal en uno de los dispositivos
 >     Then la asistencia solo se marca en ese dispositvo

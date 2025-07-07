@@ -33,7 +33,7 @@
 >
 > **Y** marco la asistencia de cualquier personal
 >
-> **Entonces** la asistencia es registrada en todos los dispositivos
+> **Entonces** la asistencia es registrada en todos los dispositivos a la vez
 
 > [!TIP]
 >
