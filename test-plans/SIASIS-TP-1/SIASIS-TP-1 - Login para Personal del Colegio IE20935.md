@@ -3,7 +3,8 @@
 > [!IMPORTANT]
 >
 > **Fecha de Creación:** 28/06/2025
-> **Responsable: Juan Chavez** > **Sprint/Release:** 5
+> **Responsable: Juan Chavez**
+> **Sprint/Release:** 5
 > **Estado:** ✅ Completed
 
 ---
@@ -117,7 +118,7 @@
 > | Tipos de Prueba          | Si | No |
 > | ------------------------ | :- | :- |
 > | Pruebas Funcionales      | ✅ |    |
-> | Pruebas de Diseño (GUI) |    | ✅ |
+> | Pruebas de Diseño (GUI) |    | ❌ |
 > | Pruebas de Usabilidad    |    | ❌ |
 > | Pruebas de Migración    |    | ❌ |
 > | Pruebas de Performance   |    | ❌ |
@@ -185,7 +186,7 @@
 > | Chrome    | Última  |    ✅    |
 > | Firefox   | Última  |    ❌    |
 > | Safari    | Última  |    ❌    |
-> | Edge      | Última  |    ✅    |
+> | Edge      | Última  |    ❌    |
 > | Opera     | Última  |    ❌    |
 
 > [!CAUTION]
@@ -198,7 +199,7 @@
 > | macOS             | Monterey+  |    ❌    |
 > | Linux             | Ubuntu 20+ |    ✅    |
 > | iOS               | 15+        |    ❌    |
-> | Android           | 10+        |    ✅    |
+> | Android           | 10+        |    ❌    |
 
 ---
 

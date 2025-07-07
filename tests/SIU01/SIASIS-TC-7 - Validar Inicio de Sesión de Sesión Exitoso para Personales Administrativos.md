@@ -1,7 +1,7 @@
 # 🧪 Test Case: SIASIS-TC-7 - Validar Inicio de Sesión de Sesión Exitoso para Personal Administrativo
 
 > [!IMPORTANT] > **ID del Test Case:** SIASIS-TC-7
-> **Fecha de Creación:** 28/06/2025 
+> **Fecha de Creación:** 28/06/2025
 > **Autor:** Gil Pardo
 > **Última Actualización:** 28/06/2025
 > **Estado:** 🟢 Ready
@@ -20,12 +20,12 @@
 > | **Nombre**          |                                                      Validar Inicio de Sesión Exitoso para Personal Administrativo                                                      |
 > | **Módulo/Feature** |                                                                            Inicio de Sesión                                                                            |
 > | **Epic/User Story** |                                                                               No se tiene                                                                               |
-> | **Tipo de Prueba**  |                                                                          🔧 Funcional \|🌐 E2E                                                                          |
+> | **Tipo de Prueba**  |                                                                           🔧 Funcional\|🌐 E2E                                                                           |
 > | **Nivel de Prueba** |                                                                                🌐 System                                                                                |
 > | **Prioridad**       |                                                                               🔴 Critical                                                                               |
 > | **Severidad**       |                                                                                🔴 Blocker                                                                                |
 > | **Automatizable**   |                                                                                  ✅ Sí                                                                                  |
-> | Automatizada              | ✅ Sí ([Test Automatizado](https://github.com/GeoCoderDev/continuous-testing-selenium-SIASIS-SIU01-WEB/blob/master/src/test/resources/features/Login.feature "👁️Ver Test")) |
+> | Automatizado              | ✅ Sí ([Test Automatizado](https://github.com/GeoCoderDev/continuous-testing-selenium-SIASIS-SIU01-WEB/blob/master/src/test/resources/features/Login.feature "👁️Ver Test")) |
 
 ---
 
@@ -36,19 +36,19 @@
 > **Tags principales:**
 >
 > ```gherkin
-> @SIASIS-TC-7 @happy @login @auth @regresion @smoke
+> @SIASIS-TC-7
 > ```
 >
 > **Tags por componente:**
 >
 > ```gherkin
-> @SIU01 @API01 @RDP02
+> @SIU01 @SS01 @RDP05
 > ```
 >
 > **Tags por rol:**
 >
 > ```gherkin
-> @personal-administrativo @personal-colegio @todos-los-roles
+> @directivo
 > ```
 
 ---
