@@ -60,7 +60,7 @@
 >
 > | Dispositivo       | Sistema Operativo | Navegador   | Resolución |
 > | ----------------- | ----------------- | ----------- | ----------- |
-> | **Desktop** | Linux             | Chrome 115+ | 1920x941    |
+> | **Desktop** | Windows           | Chrome 115+ | 1920x941    |
 > | **Mobile**  | -                 | -           | -           |
 > | **Tablet**  | -                 | -           | -           |
 
@@ -101,7 +101,6 @@
 > | [SIASIS-TC-7](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-7%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Personales%20Administrativos.md "Ir al Test Case") | Validar Inicio de Sesión de Sesión Exitoso para Personales Administrativos | Funcional | 🔴 Critical | ✅ Passed | 40 secs     |
 
 ---
-
 
 ## 📎 Evidencias y Documentación
 
@@ -170,16 +169,6 @@
 > | ------------------ | :------: | ----------- | :----: |
 > | **Selenium** | lastest | E2E Testing |   🟢   |
 > | **Postman**  | lastest | API Testing |   🟢   |
-
-> [!TIP]
->
-> ### 📊 Herramientas de Reporting
->
-> | Herramienta          | Propósito    |                                                                             Link                                                                             |
-> | -------------------- | ------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | **Cucumber**   | Test Reports  | [[Link al reporte]](https://github.com/GeoCoderDev/continuous-testing-selenium-SIASIS-SIU01-WEB/actions/runs/16044468896/artifacts/3455945292 "Descargar Reporte") |
-> | **Jira**       | Bug Tracking  |                                                                              ❌                                                                              |
-> | **Confluence** | Documentation |                                                                              ❌                                                                              |
 
 ---
 

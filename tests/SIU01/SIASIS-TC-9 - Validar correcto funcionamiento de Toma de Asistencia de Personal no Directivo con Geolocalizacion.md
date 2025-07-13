@@ -4,7 +4,7 @@
 > **ID del Test Case:** SIASIS-TC-9
 > **Fecha de Creación:** 03/07/2025
 > **Autor:** Juan Chavez
-> **Última Actualización: **03/07/2025**
+> **Última Actualización:** **03/07/2025**
 > **Estado:** 🟢 Ready
 
 ---
@@ -15,17 +15,17 @@
 >
 > ### 🔖 Metadatos del Test
 >
-> | Campo                     | Valor                                                                                               |
-> | ------------------------- | --------------------------------------------------------------------------------------------------- |
-> | **ID Test Case**    | SIASIS-TC-9                                                                                         |
+> | Campo                     |                                                Valor                                                |
+> | ------------------------- | :-------------------------------------------------------------------------------------------------: |
+> | **ID Test Case**    |                                             SIASIS-TC-9                                             |
 > | **Nombre**          | Validar correcto funcionamiento de Toma de Asistencia de Personal no Directivo con Geolocalización |
-> | **Módulo/Feature** | Toma de Asistencia Individual para Personal no Directivo                                            |
-> | **Epic/User Story** | No se tiene                                                                                         |
-> | **Tipo de Prueba**  | 🔧 Funcional\| 🎨 UI/UX \| 🌐 E2E                                                                  |
-> | **Nivel de Prueba** | 🌐 System\| ✅ Acceptance                                                                           |
-> | **Prioridad**       | 🟡 High                                                                                             |
-> | **Severidad**       | 🟡 Major                                                                                            |
-> | **Automatizable**   | ❌ No                                                                                               |
+> | **Módulo/Feature** |                      Toma de Asistencia Individual para Personal no Directivo                      |
+> | **Epic/User Story** |                                             No se tiene                                             |
+> | **Tipo de Prueba**  |                                 🔧 Funcional\| 🎨 UI/UX \| 🌐 E2E                                 |
+> | **Nivel de Prueba** |                                      🌐 System\| ✅ Acceptance                                      |
+> | **Prioridad**       |                                               🟡 High                                               |
+> | **Severidad**       |                                              🟡 Major                                              |
+> | **Automatizable**   |                                                ❌ No                                                |
 
 ---
 

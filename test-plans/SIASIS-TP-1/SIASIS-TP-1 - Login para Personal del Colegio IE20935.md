@@ -95,8 +95,6 @@
 > |    Componente    | Descripción                                                                                                                                                      | Si | No |
 > | :--------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -- | -- |
 > | **SIU01** | Servidor de Interfaces de Usuario                                                                                                                                 | ✅ |    |
-> | **API01** | API para personal del colegio (Directivos, Auxiliares, Profesores, etc)                                                                                           | ✅ |    |
-> | **API02** | API para padres de Familia                                                                                                                                        |    | ❌ |
 > | **API03** | API para obtención de hora real UTC                                                                                                                              |    | ❌ |
 > | **TPS01** | Tareas programadas con Scripts                                                                                                                                    |    | ❌ |
 > | **EMCS01** | Ejecutor múltiple de consultas SQL de Escritura de API01 hacia RDP02 y RDP03                                                                                     |    | ❌ |
@@ -160,7 +158,7 @@
 > | Tecnología    | Marcar(X) |
 > | -------------- | :-------: |
 > | Web            |    ✅    |
-> | API            |    ✅    |
+> | API            |    ❌    |
 > | Base de Datos  |    ❌    |
 > | GitHub Actions |    ❌    |
 > | Otros          |    ❌    |
@@ -172,7 +170,7 @@
 > | Dispositivos | Marcar(X) |
 > | ------------ | :-------: |
 > | Desktop      |    ✅    |
-> | Móviles     |    ✅    |
+> | Móviles     |    ❌    |
 > | Tablets      |    ❌    |
 > | Laptops      |    ✅    |
 > | Otros        |    ❌    |

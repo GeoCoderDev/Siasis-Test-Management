@@ -1,10 +1,11 @@
-# 🚀 Test Execution: [Nombre de la Ejecución]
+# 🚀 Test Execution: Validar correcto funcionamiento de toma de asistencia propia de personal no directivo con geolocalizacion
 
-> [!IMPORTANT] > **ID de Ejecución:** TE-XXX-001
-> **Fecha de Ejecución:** [DD/MM/YYYY]
-> **Ejecutor:** [Nombre del QA]
-> **Duración:** [HH:MM] hrs
-> **Estado:** 🟡 In Progress | ✅ Completed | ❌ Failed | ⏸️ Paused
+> [!IMPORTANT]
+> **ID de Ejecución:** SIASIS-TE-4
+> **Fecha de Ejecución:** 06/07/2025
+> **Ejecutor:** Juan Chavez
+> **Duración:** 30 min
+> **Estado:** ✅ Completed
 
 ---
 
@@ -14,16 +15,16 @@
 >
 > ### 🔖 Metadatos de Ejecución
 >
-> | Campo                        | Valor                                                                            |
-> | ---------------------------- | -------------------------------------------------------------------------------- |
-> | **ID Ejecución**      | TE-XXX-001                                                                       |
-> | **Nombre**             | [Nombre descriptivo de la ejecución]                                            |
-> | **Test Plan**          | TP-XXX ([Link al Test Plan])                                                     |
-> | **Sprint/Release**     | [Número de Sprint o Release]                                                    |
-> | **Build/Versión**     | [Número de build o versión]                                                    |
-> | **Tipo de Ejecución** | 🔥 Smoke\| 🔄 Regression \| ✨ New Features \| 🐛 Bug Verification \| 🚀 Release |
-> | **Modo de Ejecución** | 🤖 Automated\| 👤 Manual \| 🔀 Mixed                                             |
-> | **Prioridad**          | 🔴 Critical\| 🟡 High \| 🟢 Medium \| 🔵 Low                                     |
+> |            Campo            |                                                                                                                       Valor                                                                                                                       |
+> | :--------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+> |   **ID Ejecución**   |                                                                                                                    SIASIS-TE-4                                                                                                                    |
+> |       **Nombre**       |                                                                   Validar correcto funcionamiento de toma de asistencia propia de<br />personal no directivo con geolocalizacion                                                                   |
+> |     **Test Plan**     | [SIASIS-TP-2](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-2/SIASIS-TP-2%20-%20Toma%20de%20Asistencia%20de%20Personal%20no%20Directivo%20del%20Colegio%20IE20935%20con%20Geolocalizacion.md "Ir al Test Plan") |
+> |   **Sprint/Release**   |                                                                                                                         5                                                                                                                         |
+> |   **Build/Versión**   |                                                                                                                        1.0                                                                                                                        |
+> | **Tipo de Ejecución** |                                                                                                       ✨ New Features\| 🐛 Bug Verification                                                                                                       |
+> | **Modo de Ejecución** |                                                                                                                     👤 Manual                                                                                                                     |
+> |     **Prioridad**     |                                                                                                                     🟢 Medium                                                                                                                     |
 
 ---
 
@@ -33,35 +34,34 @@
 >
 > ### 🏗️ Detalles del Ambiente
 >
-> | Aspecto                 | Configuración                                               |
-> | ----------------------- | ------------------------------------------------------------ |
-> | **Ambiente**      | 🔧 Development\| 🧪 Testing \| 🏛️ Staging \| 🚀 Production |
-> | **URL Base**      | [URL del ambiente]                                           |
-> | **Base de Datos** | [Instancia y versión]                                       |
-> | **Servidor**      | [Detalles del servidor]                                      |
-> | **Red/VPN**       | [Configuración de red]                                      |
+> | Aspecto                 |         Configuración         |
+> | ----------------------- | :----------------------------: |
+> | **Ambiente**      |       🧪 Certificación       |
+> | **URL Base**      | https://siasis-cert.vercel.app |
+> | **Base de Datos** |  instancia 1 de RDP05(Redis)  |
+> | **Servidor**      |        No hay detalles        |
+> | **Red/VPN**       |        No hay detalles        |
 
 > [!TIP]
 >
 > ### 💻 Configuración Técnica
 >
-> | Tecnología             | Versión        | Estado |
-> | ----------------------- | --------------- | ------ |
-> | **Frontend**      | React 18.2.0    | 🟢     |
-> | **Backend**       | Node.js 18.17.0 | 🟢     |
-> | **Base de Datos** | PostgreSQL 15.3 | 🟢     |
-> | **Cache**         | Redis 7.0       | 🟢     |
-> | **WebSocket**     | Socket.io 4.7.0 | 🟢     |
+> |       Tecnología       |    Versión    | Estado |
+> | :---------------------: | :-------------: | :----: |
+> |   **Frontend**   |  React 18.2.0  |   🟢   |
+> |    **Backend**    | Node.js 18.17.0 |   🟢   |
+> | **Base de Datos** | PostgreSQL 15.3 |   🟢   |
+> |     **Cache**     |    Redis 7.0    |   🟢   |
+> |   **WebSocket**   | Socket.io 4.7.0 |   🟢   |
 
 > [!CAUTION]
 >
 > ### 🖥️ Configuración de Dispositivos
 >
-> | Dispositivo       | Sistema Operativo | Navegador     | Resolución |
-> | ----------------- | ----------------- | ------------- | ----------- |
-> | **Desktop** | Windows 11        | Chrome 115+   | 1920x1080   |
-> | **Mobile**  | iOS 16+           | Safari        | 375x667     |
-> | **Tablet**  | Android 12+       | Chrome Mobile | 768x1024    |
+> | Dispositivo       | Sistema Operativo | Navegador   | Resolución |
+> | ----------------- | ----------------- | ----------- | ----------- |
+> | **Desktop** | Windows 11        | Chrome 115+ | 1920x1080   |
+> | **Mobile**  | Android           | Chrome      | 384x728     |
 
 ---
 
@@ -71,29 +71,14 @@
 >
 > ### 📈 Estadísticas Generales
 >
-> | Métrica                      | Cantidad | Porcentaje |
-> | ----------------------------- | -------- | ---------- |
-> | **Total de Tests**      | 150      | 100%       |
-> | **Tests Críticos**     | 45       | 30%        |
-> | **Tests Automatizados** | 120      | 80%        |
-> | **Tests Manuales**      | 30       | 20%        |
-> | **Tests Nuevos**        | 25       | 17%        |
-> | **Tests de Regresión** | 125      | 83%        |
-
-> [!TIP]
->
-> ### 🏷️ Distribución por Tags
->
-> | Tag              | Cantidad | Descripción              |
-> | ---------------- | -------- | ------------------------- |
-> | `@smoke`       | 20       | Tests críticos básicos  |
-> | `@regression`  | 100      | Tests de regresión       |
-> | `@auth`        | 15       | Tests de autenticación   |
-> | `@crud`        | 40       | Tests de operaciones CRUD |
-> | `@api`         | 60       | Tests de API              |
-> | `@web`         | 90       | Tests de interfaz web     |
-> | `@mobile`      | 25       | Tests móviles            |
-> | `@performance` | 10       | Tests de rendimiento      |
+> |           Métrica           | Cantidad | Porcentaje |
+> | :---------------------------: | :------: | :--------: |
+> |   **Total de Tests**   |    1    |    100%    |
+> |   **Tests Críticos**   |    0    |     0%     |
+> | **Tests Automatizados** |    0    |     0%     |
+> |   **Tests Manuales**   |    1    |    100%    |
+> |    **Tests Nuevos**    |    1    |    100%    |
+> | **Tests de Regresión** |    1    |    100%    |
 
 ---
 
@@ -103,116 +88,21 @@
 >
 > ### 🧪 Tests por Módulo/Funcionalidad
 >
-> #### 🔐 Módulo de Autenticación
+> #### 📝 Módulo de Registro de Asistencia Propia para Usuarios no Directivos
 >
-> | ID Test     | Nombre                            | Tipo      | Prioridad   | Estado     | Tiempo Est. |
-> | ----------- | --------------------------------- | --------- | ----------- | ---------- | ----------- |
-> | TC-AUTH-001 | Login con credenciales válidas   | Funcional | 🔴 Critical | ⏳ Pending | 5 min       |
-> | TC-AUTH-002 | Login con credenciales inválidas | Funcional | 🔴 Critical | ⏳ Pending | 3 min       |
-> | TC-AUTH-003 | Logout de usuario                 | Funcional | 🟡 High     | ⏳ Pending | 2 min       |
-> | TC-AUTH-004 | Sesión expira por timeout        | Funcional | 🟡 High     | ⏳ Pending | 10 min      |
->
-> #### 👥 Módulo de Gestión de Usuarios
->
-> | ID Test     | Nombre                  | Tipo      | Prioridad   | Estado     | Tiempo Est. |
-> | ----------- | ----------------------- | --------- | ----------- | ---------- | ----------- |
-> | TC-USER-001 | Crear nuevo usuario     | CRUD      | 🔴 Critical | ⏳ Pending | 8 min       |
-> | TC-USER-002 | Editar datos de usuario | CRUD      | 🟡 High     | ⏳ Pending | 6 min       |
-> | TC-USER-003 | Eliminar usuario        | CRUD      | 🟡 High     | ⏳ Pending | 4 min       |
-> | TC-USER-004 | Buscar usuarios         | Funcional | 🟢 Medium   | ⏳ Pending | 5 min       |
->
-> #### 📊 Módulo de Reportes
->
-> | ID Test    | Nombre                        | Tipo      | Prioridad | Estado     | Tiempo Est. |
-> | ---------- | ----------------------------- | --------- | --------- | ---------- | ----------- |
-> | TC-REP-001 | Generar reporte de asistencia | Funcional | 🟡 High   | ⏳ Pending | 12 min      |
-> | TC-REP-002 | Exportar reporte a Excel      | Funcional | 🟢 Medium | ⏳ Pending | 8 min       |
-> | TC-REP-003 | Filtrar reportes por fecha    | Funcional | 🟢 Medium | ⏳ Pending | 6 min       |
+> |                                                                                                                         ID Test                                                                                                                         |                                                  Nombre                                                  | Tipo      | Prioridad | Estado    | Tiempo Est. |
+> | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: | --------- | --------- | --------- | ----------- |
+> | [SIASIS-TC-9](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-9%20-%20Validar%20correcto%20funcionamiento%20de%20Toma%20de%20Asistencia%20de%20Personal%20no%20Directivo%20con%20Geolocalizacion.md "Ir al Test Case") | Validar correcto funcionamiento de Toma de Asistencia de<br />Personal no Directivo con Geolocalización | Funcional | 🟢 Medium | ✅ Passed | 15 min      |
 
 ---
 
-## 🎯 Tipos de Pruebas por Categoría
-
-> [!IMPORTANT]
->
-> ### 🧪 Pruebas Funcionales
->
-> | Categoría                | Cantidad | Tests Incluidos                     | Tiempo Estimado |
-> | ------------------------- | -------- | ----------------------------------- | --------------- |
-> | **CRUD Operations** | 40       | TC-USER-_, TC-STU-_, TC-GRADE-\*  | 320 min         |
-> | **Business Logic**  | 35       | TC-CALC-_, TC-RULE-_, TC-VALID-\* | 280 min         |
-> | **Integration**     | 25       | TC-INT-_, TC-API-_, TC-DB-\*      | 200 min         |
-> | **Workflow**        | 20       | TC-FLOW-_, TC-PROC-_, TC-STEP-\*  | 240 min         |
+## 📎 Evidencias y Documentación
 
 > [!TIP]
 >
-> ### 🎨 Pruebas de UI/UX
+> ### 📸 Evidencias de la ejecución
 >
-> |  | Categoría                  | Cantidad | Tests Incluidos | Tiempo Estimado |
-> | - | --------------------------- | -------- | --------------- | --------------- |
-> |  | **Responsive Design** | 15       | TC-RESP-\*      | 120 min         |
-> |  | **Cross-browser**     | 12       | TC-CROSS-\*     | 144 min         |
-> |  | **Accessibility**     | 8        | TC-A11Y-\*      | 96 min          |
-> |  | **Usability**         | 10       | TC-UX-\*        | 150 min         |
-
-> [!WARNING]
->
-> ### ⚡ Pruebas No Funcionales
->
-> | Categoría              | Cantidad | Tests Incluidos | Tiempo Estimado |
-> | ----------------------- | -------- | --------------- | --------------- |
-> | **Performance**   | 10       | TC-PERF-\*      | 180 min         |
-> | **Security**      | 8        | TC-SEC-\*       | 160 min         |
-> | **Compatibility** | 12       | TC-COMP-\*      | 144 min         |
-> | **Reliability**   | 5        | TC-REL-\*       | 100 min         |
-
----
-
-## ⏰ Cronograma de Ejecución
-
-> [!NOTE]
->
-> ### 📅 Plan de Ejecución por Fases
->
-> | Fase        | Tipo de Tests        | Fecha Inicio  | Fecha Fin     | Duración | Responsable |
-> | ----------- | -------------------- | ------------- | ------------- | --------- | ----------- |
-> | **1** | 🔥 Smoke Tests       | [DD/MM HH:MM] | [DD/MM HH:MM] | 2 hrs     | [Nombre QA] |
-> | **2** | 🔐 Security & Auth   | [DD/MM HH:MM] | [DD/MM HH:MM] | 4 hrs     | [Nombre QA] |
-> | **3** | 🧪 Functional Tests  | [DD/MM HH:MM] | [DD/MM HH:MM] | 8 hrs     | [Nombre QA] |
-> | **4** | 🔗 Integration Tests | [DD/MM HH:MM] | [DD/MM HH:MM] | 6 hrs     | [Nombre QA] |
-> | **5** | ⚡ Performance Tests | [DD/MM HH:MM] | [DD/MM HH:MM] | 4 hrs     | [Nombre QA] |
-> | **6** | 🔄 Regression Tests  | [DD/MM HH:MM] | [DD/MM HH:MM] | 10 hrs    | [Nombre QA] |
-
----
-
-## 📊 Resultados y Métricas
-
-> [!SUCCESS]
->
-> ### 📈 Resultados de Ejecución
->
-> | Estado                 | Cantidad | Porcentaje | Icono |
-> | ---------------------- | -------- | :--------: | :---: |
-> | **Passed**       | 0        |     0%     |  ✅  |
-> | **Failed**       | 0        |     0%     |  ❌  |
-> | **Blocked**      | 0        |     0%     |  🚫  |
-> | **Skipped**      | 0        |     0%     | ⏭️ |
-> | **In Progress**  | 0        |     0%     |  🔄  |
-> | **Not Executed** | 150      |    100%    |  ⏳  |
-
-> [!INFO]
->
-> ### ⏱️ Métricas de Tiempo
->
-> | Métrica                       | Estimado | Actual | Diferencia |
-> | ------------------------------ | -------- | ------ | ---------- |
-> | **Tiempo Total**         | 34 hrs   | - hrs  | - hrs      |
-> | **Tiempo Promedio/Test** | 13.6 min | - min  | - min      |
-> | **Tests/Hora**           | 4.4      | -      | -          |
-> | **Tiempo Setup**         | 30 min   | - min  | - min      |
-> | **Tiempo Cleanup**       | 15 min   | - min  | - min      |
-
----
+> 1. Directivo
 
 ## 🐛 Defectos Encontrados
 
