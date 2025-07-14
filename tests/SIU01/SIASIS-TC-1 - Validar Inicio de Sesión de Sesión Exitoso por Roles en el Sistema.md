@@ -2,7 +2,7 @@
 
 > [!IMPORTANT]
 > **ID del Test Case:** SIASIS-TC-1
-> **Fecha de Creación:** 28/06/2025 
+> **Fecha de Creación:** 28/06/2025
 > **Autor:** Gil Pardo
 > **Última Actualización:** 28/06/2025
 > **Estado:** 🟢 Ready
@@ -15,18 +15,18 @@
 >
 > ### 🔖 Metadatos del Test
 >
-> | Campo               |                                                                                    Valor                                                                                    |
-> | ------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | **ID Test Case**    |                                                                                 SIASIS-TC-1                                                                                 |
-> | **Nombre**          |                                                          Validar Inicio de Sesión  Exitoso por Roles en el Sistema                                                          |
-> | **Módulo/Feature**  |                                                                              Inicio de Sesión                                                                               |
-> | **Epic/User Story** |                                                                                 No se tiene                                                                                 |
-> | **Tipo de Prueba**  |                                                                            🔧 Funcional\|🌐 E2E                                                                             |
-> | **Nivel de Prueba** |                                                                                  🌐 System                                                                                  |
-> | **Prioridad**       |                                                                                 🔴 Critical                                                                                 |
-> | **Severidad**       |                                                                                 🔴 Blocker                                                                                  |
-> | **Automatizable**   |                                                                                    ✅ Sí                                                                                    |
-> | Automatizada        | ✅ Sí ([Test Automatizado](https://github.com/GeoCoderDev/continuous-testing-selenium-SIASIS-SIU01-WEB/blob/master/src/test/resources/features/Login.feature "👁️Ver Test")) |
+> | Campo                     |                                                                                  Valor                                                                                  |
+> | ------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+> | **ID Test Case**    |                                                                               SIASIS-TC-1                                                                               |
+> | **Nombre**          |                                                       Validar Inicio de Sesión  Exitoso por Roles en el Sistema                                                       |
+> | **Módulo/Feature** |                                                                            Inicio de Sesión                                                                            |
+> | **Epic/User Story** |                                                                               No se tiene                                                                               |
+> | **Tipo de Prueba**  |                                                                           🔧 Funcional\|🌐 E2E                                                                           |
+> | **Nivel de Prueba** |                                                                                🌐 System                                                                                |
+> | **Prioridad**       |                                                                               🔴 Critical                                                                               |
+> | **Severidad**       |                                                                                🔴 Blocker                                                                                |
+> | **Automatizable**   |                                                                                  ✅ Sí                                                                                  |
+> | Automatizada              | ✅ Sí ([Test Automatizado](https://github.com/GeoCoderDev/continuous-testing-selenium-SIASIS-SIU01-WEB/blob/master/src/test/resources/features/Login.feature "👁️Ver Test")) |
 
 ---
 
@@ -68,7 +68,7 @@
 >
 > **Objetivo:** Validar que cada tipo de usuario puede iniciar sesión correctamente con sus credenciales y acceder a su interfaz de bienvenida correspondiente.
 >
-> **Criterio de Éxito:** Se puede visualizar las interfaces de bienvenida con los nombres y roles espectivos de cada usuario.
+> **Criterio de Éxito:** Se puede visualizar las interfaces de bienvenida con los nombres y roles respectivos de cada usuario.
 
 ---
 
@@ -78,34 +78,34 @@
 >
 > ### 💻 Tecnología y Componentes
 >
-> | Aspecto                  | Detalle                               |
-> | ------------------------ | ------------------------------------- |
-> | **Tecnología Principal** | 🌐 Web\| 🖥️ Desktop                   |
-> | **Navegadores**          | Chrome, Edge                          |
-> | **Dispositivos**         | Desktop, Mobile, Tablet               |
-> | **Sistemas Operativos**  | Windows, macOS, Linux, iOS, Android   |
-> | **Resoluciones**         | 1920x1080, 1366x768, 375x667 (mobile) |
+> | Aspecto                         | Detalle                               |
+> | ------------------------------- | ------------------------------------- |
+> | **Tecnología Principal** | 🌐 Web\| 🖥️ Desktop                 |
+> | **Navegadores**           | Chrome, Edge                          |
+> | **Dispositivos**          | Desktop, Mobile, Tablet               |
+> | **Sistemas Operativos**   | Windows, macOS, Linux, iOS, Android   |
+> | **Resoluciones**          | 1920x1080, 1366x768, 375x667 (mobile) |
 
 > [!CAUTION]
 >
 > ### 🏗️ Componentes Involucrados
 >
-> | Componente | Descripción                                                                                                                                                  | Si  | No  |
-> | :--------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | --- |
-> | **SIU01**  | Servidor de Interfaces de Usuario                                                                                                                            | ✅  |     |
-> | **API01**  | API para personal del colegio (Directivos, Auxiliares, Profesores, etc)                                                                                      | ✅  |     |
-> | **API02**  | API para padres de Familia                                                                                                                                   |     | ❌  |
-> | **API03**  | API para obtención de hora real UTC                                                                                                                          |     | ❌  |
-> | **TPS01**  | Tareas programadas con Scripts                                                                                                                               |     | ❌  |
-> | **EMCS01** | Ejecutor múltiple de consultas SQL de Escritura de API01 hacia RDP02 y RDP03                                                                                 |     | ❌  |
-> | **EMCN01** | Ejecutor múltiple de consultas SQL de escritura para API02 hacia RDP03                                                                                       |     | ❌  |
-> | **RDP01**  | Repositorio de Datos Persistentes solo para Archivos del Sistema en General (Fotos de Perfil, Excels de Asistencia, Backups, etc) ➡️**Google Drive**         |     | ❌  |
-> | **RDP02**  | Repositorio de Datos Persistentes para Datos Relacionados a Personal del Colegio (Directivos, Auxiliares, Profesores, etc) ➡️ PostgreSQL                     |     | ❌  |
-> | **RDP03**  | Repositorio de Datos Persistentes para Datos Relacionados a Responsables (Padres de Familia/Apoderados) ➡️ MongoDB                                           | ✅  |     |
-> | **RDP04**  | Repositorio de Datos Persistentes para JSONs con Información de Datos de Asistencia del Día Actual (Se actualiza todos los días por TPS01) ➡️ Blob de Vercel |     | ❌  |
-> | **RDP05**  | Repositorio de Datos Persistentes para Asistencias Tomadas a lo largo del día actual exclusivamente ➡️ Redis                                                 |     | ❌  |
-> |  **SS01**  | Servidor de Sockets para operaciones en tiempo real                                                                                                          |     | ❌  |
-> |  **SE01**  | Servicio Externo de Correo Electrónico por GMAIL de Google                                                                                                   |     | ❌  |
+> |    Componente    | Descripción                                                                                                                                                      | Si | No |
+> | :--------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -- | -- |
+> | **SIU01** | Servidor de Interfaces de Usuario                                                                                                                                 | ✅ |    |
+> | **API01** | API para personal del colegio (Directivos, Auxiliares, Profesores, etc)                                                                                           | ✅ |    |
+> | **API02** | API para padres de Familia                                                                                                                                        |    | ❌ |
+> | **API03** | API para obtención de hora real UTC                                                                                                                              |    | ❌ |
+> | **TPS01** | Tareas programadas con Scripts                                                                                                                                    |    | ❌ |
+> | **EMCS01** | Ejecutor múltiple de consultas SQL de Escritura de API01 hacia RDP02 y RDP03                                                                                     |    | ❌ |
+> | **EMCN01** | Ejecutor múltiple de consultas SQL de escritura para API02 hacia RDP03                                                                                           |    | ❌ |
+> | **RDP01** | Repositorio de Datos Persistentes solo para Archivos del Sistema en General (Fotos de Perfil, Excels de Asistencia, Backups, etc) ➡️**Google Drive**      |    | ❌ |
+> | **RDP02** | Repositorio de Datos Persistentes para Datos Relacionados a Personal del Colegio (Directivos, Auxiliares, Profesores, etc) ➡️ PostgreSQL                        | ✅ | ❌ |
+> | **RDP03** | Repositorio de Datos Persistentes para Datos Relacionados a Responsables (Padres de Familia/Apoderados) ➡️ MongoDB                                              |    | ❌ |
+> | **RDP04** | Repositorio de Datos Persistentes para JSONs con Información de Datos de Asistencia del Día Actual (Se actualiza todos los días por TPS01) ➡️ Blob de Vercel |    | ❌ |
+> | **RDP05** | Repositorio de Datos Persistentes para Asistencias Tomadas a lo largo del día actual exclusivamente ➡️ Redis                                                   |    | ❌ |
+> |  **SS01**  | Servidor de Sockets para operaciones en tiempo real                                                                                                               |    | ❌ |
+> |  **SE01**  | Servicio Externo de Correo Electrónico por GMAIL de Google                                                                                                       |    | ❌ |
 
 ---
 
@@ -177,12 +177,12 @@
 >
 > ### ⚠️ Escenarios de Error
 >
-> | Escenario            | Acción                         | Resultado Esperado          |
-> | -------------------- | ------------------------------ | --------------------------- |
+> | Escenario                   | Acción                        | Resultado Esperado          |
+> | --------------------------- | ------------------------------ | --------------------------- |
 > | **Datos Inválidos**  | [Ingreso de datos incorrectos] | [Mensaje de error esperado] |
-> | **Sin Permisos**     | [Acceso sin autorización]      | [Bloqueo o redirección]     |
-> | **Timeout**          | [Operación que excede tiempo]  | [Manejo de timeout]         |
-> | **Conexión Perdida** | [Pérdida de conectividad]      | [Recuperación o error]      |
+> | **Sin Permisos**      | [Acceso sin autorización]     | [Bloqueo o redirección]    |
+> | **Timeout**           | [Operación que excede tiempo] | [Manejo de timeout]         |
+> | **Conexión Perdida** | [Pérdida de conectividad]     | [Recuperación o error]     |
 
 ---
 
@@ -192,8 +192,8 @@
 >
 > ### ⏱️ Criterios de Performance (si aplica)
 >
-> | Métrica                 | Valor Esperado | Crítico       |
-> | ----------------------- | -------------- | ------------- |
+> | Métrica                      | Valor Esperado | Crítico      |
+> | ----------------------------- | -------------- | ------------- |
 > | **Tiempo de Respuesta** | < 2 segundos   | < 5 segundos  |
 > | **Tiempo de Carga**     | < 3 segundos   | < 10 segundos |
 > | **Uso de Memoria**      | < 500MB        | < 1GB         |
@@ -226,15 +226,15 @@
 >
 > ### 👥 Roles Involucrados
 >
-> | Rol                     | SI  | NO  |
-> | ----------------------- | --- | --- |
-> | **Directivo**           | ✅  |     |
-> | **Profesor Primaria**   | ✅  |     |
-> | **Auxiliar**            | ✅  |     |
-> | Profesor Secundaria     | ✅  |     |
-> | Tutor                   | ✅  |     |
-> | Personal Administrativo | ✅  |     |
-> | **Responsable**         | ✅  |     |
+> | Rol                         | SI | NO |
+> | --------------------------- | -- | -- |
+> | **Directivo**         | ✅ |    |
+> | **Profesor Primaria** | ✅ |    |
+> | **Auxiliar**          | ✅ |    |
+> | Profesor Secundaria         | ✅ |    |
+> | Tutor                       | ✅ |    |
+> | Personal Administrativo     | ✅ |    |
+> | **Responsable**       | ✅ |    |
 
 ---
 
@@ -266,11 +266,11 @@
 >
 > ### 👥 Responsables
 >
-> |        Rol         |   Nombre    | Email / Celular |     Responsabilidad      |
-> | :----------------: | :---------: | :-------------: | :----------------------: |
+> |           Rol           |   Nombre   | Email / Celular |      Responsabilidad      |
+> | :----------------------: | :---------: | :-------------: | :-----------------------: |
 > | **Autor del Test** |  Gil Pardo  |        -        | Creación y mantenimiento |
-> | **Product Owner**  | Juan Chavez |        -        | Validación de criterios  |
-> |   **Tech Lead**    | Juan Chavez |        -        |     Revisión técnica     |
+> | **Product Owner** | Juan Chavez |        -        | Validación de criterios |
+> |   **Tech Lead**   | Juan Chavez |        -        |    Revisión técnica    |
 > |  **Dev Asignado**  | Juan Chavez |        -        |    Corrección de bugs    |
 
 ---
@@ -287,10 +287,10 @@
 >
 > ### 🔄 Historial de Cambios
 >
-> |    Fecha     | Versión | Cambio               |    Autor    |
-> | :----------: | :-----: | -------------------- | :---------: |
+> |    Fecha    | Versión | Cambio                |    Autor    |
+> | :----------: | :------: | --------------------- | :---------: |
 > |  28/06/2025  |   1.0   | Creación inicial     | Juan Chavez |
-> | [DD/MM/YYYY] |   1.1   | [Descripción cambio] |  [Nombre]   |
+> | [DD/MM/YYYY] |   1.1   | [Descripción cambio] |  [Nombre]  |
 
 ---
 

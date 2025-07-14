@@ -4,7 +4,7 @@
 >
 > **Fecha de Creación:** 07/07/2025
 > **Responsable: Andry Diego**
-> **Sprint/Release:** 6
+> **Sprint/Release:** 5
 > **Estado:** ✅ Completed
 
 ---
@@ -29,9 +29,9 @@
 >
 > **Dado** que soy un usuario directivo y he iniciado sesion en varios dispositivos
 >
-> **Cuando** accedo a la seccion de toma de asistencia de Personal *(Ejemplo: Entrada de profesores de Secundaria)*
+> **Cuando** accedo a la seccion de toma de asistencia de Personal *(Ejemplo: Entrada de profesores de Secundaria)* en todos los dispositivos
 >
-> **Y** marco la asistencia de cualquier personal
+> **Y** marco la asistencia de cualquier personal en uno de ellos
 >
 > **Entonces** la asistencia es registrada en todos los dispositivos a la vez
 

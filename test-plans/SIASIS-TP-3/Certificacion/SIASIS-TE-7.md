@@ -1,7 +1,7 @@
 # 🚀 Test Execution: Ejecución de Tests para toma de asistencia de personal por parte de Directivo en varios dispositivos a la vez
 
 > [!IMPORTANT]
-> **ID de Ejecución:** SIASIS-TE-6
+> **ID de Ejecución:** SIASIS-TE-7
 > **Fecha de Ejecución:** 07/07/2025
 > **Ejecutor:** Andry Diego
 > **Duración:**
@@ -17,7 +17,7 @@
 >
 > | Campo                        |                                                                                                               Valor                                                                                                               |
 > | ---------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | **ID Ejecución**      |                                                                                                            SIASIS-TE-6                                                                                                            |
+> | **ID Ejecución**      |                                                                                                            SIASIS-TE-7                                                                                                            |
 > | **Nombre**             |                                                        Ejecución de Tests para toma de asistencia de personal<br /> por parte de Directivo en varios dispositivos a la vez                                                        |
 > | **Test Plan**          | [SIASIS-TP-3](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-3/SIASIS-TP-3%20-%20Toma%20de%20Asistencia%20de%20Personal%20en%20varios%20dispositivos%20sincronizados.md "Test Plan Relacionado") |
 > | **Sprint/Release**     |                                                                                                                 5                                                                                                                 |
@@ -106,10 +106,7 @@
 >
 > Link del Video de Evidencias
 >
->[![Link del Video De Evidencias](https://img.youtube.com/vi/uoFJKIdJN2Y/maxresdefault.jpg)](https://www.youtube.com/watch?v=uoFJKIdJN2Y)
->
-
-
+> [![Link del Video De Evidencias](https://img.youtube.com/vi/uoFJKIdJN2Y/maxresdefault.jpg)](https://www.youtube.com/watch?v=uoFJKIdJN2Y)
 
 ## 🐛 Defectos Encontrados
 
