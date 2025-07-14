@@ -73,12 +73,12 @@
 >
 > |           Métrica           | Cantidad | Porcentaje |
 > | :---------------------------: | :------: | :--------: |
-> |   **Total de Tests**   |    1    |    100%    |
+> |   **Total de Tests**   |    9    |    100%    |
 > |   **Tests Críticos**   |    0    |     0%     |
 > | **Tests Automatizados** |    0    |     0%     |
-> |   **Tests Manuales**   |    1    |    100%    |
-> |    **Tests Nuevos**    |    1    |    100%    |
-> | **Tests de Regresión** |    1    |    100%    |
+> |   **Tests Manuales**   |    9    |    100%    |
+> |    **Tests Nuevos**    |    9    |    100%    |
+> | **Tests de Regresión** |    9    |    100%    |
 
 ---
 
