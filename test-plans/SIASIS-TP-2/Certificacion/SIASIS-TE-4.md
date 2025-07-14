@@ -134,7 +134,8 @@
 >
 >     ![1752458036133](image/SIASIS-TE-4/1752458036133.png)
 >
-> * [SIASIS-TC-42](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-42%20-%20%20Marcado%20de%20Asistencia%20Propia%20en%20D%C3%ADa%20de%20evento%20o%20feriado%20registrado%20en%20el%20Sistema.md "Ir al Test Case")
+> * [SIASIS-TC-42](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-42%20-%20%20Marcado%20de%20Asistencia%20Propia%20en%20D%C3%ADa%20de%20evento%20o%20feriado%20registrado%20en%20el%20Sistema.md "Ir al Test Case") 
+>
 >   ![1752457342671](https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/juanc/OneDrive/Escritorio/PROYECTO%20SIASIS/TESTING/Siasis-Test-Management/test-plans/SIASIS-TP-2/Certificacion/image/SIASIS-TE-4/1752457342671.png)
 
 ## 🐛 Defectos Encontrados
