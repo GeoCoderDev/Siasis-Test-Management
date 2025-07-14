@@ -1,10 +1,10 @@
-# 🧪 Test Case: SIASIS-TC-9 - Validar correcto funcionamiento de Toma de Asistencia de Personal no Directivo con Geolocalización
+# 🧪 Test Case: SIASIS-TC-37 - GPS desactivado o permisos denegados
 
 > [!IMPORTANT]
-> **ID del Test Case:** SIASIS-TC-9
-> **Fecha de Creación:** 03/07/2025
+> **ID del Test Case:** SIASIS-TC-37
+> **Fecha de Creación:** 06/07/2025
 > **Autor:** Juan Chavez
-> **Última Actualización:** **03/07/2025**
+> **Última Actualización:** **06/07/2025**
 > **Estado:** 🟢 Ready
 
 ---
@@ -15,17 +15,18 @@
 >
 > ### 🔖 Metadatos del Test
 >
-> | Campo                     |                                                Valor                                                |
-> | ------------------------- | :-------------------------------------------------------------------------------------------------: |
-> | **ID Test Case**    |                                             SIASIS-TC-9                                             |
-> | **Nombre**          | Validar correcto funcionamiento de Toma de Asistencia de Personal no Directivo con Geolocalización |
-> | **Módulo/Feature** |                      Toma de Asistencia Individual para Personal no Directivo                      |
-> | **Epic/User Story** |                                             No se tiene                                             |
-> | **Tipo de Prueba**  |                                 🔧 Funcional\| 🎨 UI/UX \| 🌐 E2E                                 |
-> | **Nivel de Prueba** |                                      🌐 System\| ✅ Acceptance                                      |
-> | **Prioridad**       |                                               🟡 High                                               |
-> | **Severidad**       |                                              🟡 Major                                              |
-> | **Automatizable**   |                                                ❌ No                                                |
+> | Campo                     |                                     Valor                                     |
+> | ------------------------- | :---------------------------------------------------------------------------: |
+> | **ID Test Case**    |                                 SIASIS-TC-37                                 |
+> | **Nombre**          |                     GPS desactivado o permisos denegados                     |
+> | **Módulo/Feature** | Registro de Asistencia Propia con Gelocalización para usuarios no Directivos |
+> | **Epic/User Story** |                                  No se tiene                                  |
+> | **Tipo de Prueba**  |                                 🔧 Funcional                                 |
+> | **Nivel de Prueba** |                                   🌐 System                                   |
+> | **Prioridad**       |                                    🟡 High                                    |
+> | **Severidad**       |                                   🟢 Normal                                   |
+> | **Automatizable**   |                                     ❌ No                                     |
+> | Automatizado              |                                     ❌ No                                     |
 
 ---
 
@@ -36,13 +37,13 @@
 > **Tags principales:**
 >
 > ```gherkin
-> @smoke @regression @geolocation @web @mobile
+> @SIASIS-TC-37 @smoke @regresion @geolocalizacion @web @mobile
 > ```
 >
 > **Tags por componente:**
 >
 > ```gherkin
-> @SIU01
+> @SIU01 @API03 @RDP05
 > ```
 >
 > **Tags por rol:**
@@ -59,15 +60,15 @@
 >
 > ### 📖 Descripción del Test Case
 >
-> Este test validara todos los casos posibles a siceder al momento de que un personal no directivo(Profesor de Primaria, Profesor de Secundaria, Auxiliar o Personal Administrativo) registre su asistencia desde su propio dispositivo con Geolocalización activada.
+> Este test validará que el sistema maneja apropiadamente las situaciones donde el usuario no ha concedido permisos de ubicación o tiene el GPS desactivado. Se verificará que el sistema detecte esta condición, proporcione instrucciones claras y útiles para resolver el problema, y permita al usuario reintentar una vez que haya habilitado los permisos necesarios.
 
 > [!NOTE]
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** [Describir qué funcionalidad o comportamiento específico se va a verificar]
+> **Objetivo:** Verificar que el sistema maneja adecuadamente los casos donde el usuario tiene GPS desactivado o ha denegado permisos de ubicación
 >
-> **Criterio de Éxito:** [Definir claramente cuándo el test se considera exitoso]
+> **Criterio de Éxito:** El sistema solicita activar GPS, proporciona instrucciones claras para habilitar geolocalización, no registra asistencia y permite reintentar tras habilitar permisos
 
 ---
 
@@ -77,12 +78,12 @@
 >
 > ### 💻 Tecnología y Componentes
 >
-> | Aspecto                         | Detalle                               |
-> | ------------------------------- | ------------------------------------- |
-> | **Tecnología Principal** | 🌐 Web                                |
-> | **Navegadores**           | Chrome, Edge                          |
-> | **Dispositivos**          | Desktop, Mobile                       |
-> | **Sistemas Operativos**   | Windows, Android                      |
+> | Aspecto                         |                Detalle                |
+> | ------------------------------- | :-----------------------------------: |
+> | **Tecnología Principal** |                🌐 Web                |
+> | **Navegadores**           |             Chrome, Edge             |
+> | **Dispositivos**          |            Desktop, Mobile            |
+> | **Sistemas Operativos**   |           Windows, Android           |
 > | **Resoluciones**          | 1920x1080, 1366x768, 375x667 (mobile) |
 
 > [!CAUTION]
@@ -94,7 +95,7 @@
 > | **SIU01** | Servidor de Interfaces de Usuario                                                                                                                                 | ✅ |    |
 > | **API01** | API para personal del colegio (Directivos, Auxiliares, Profesores, etc)                                                                                           |    | ❌ |
 > | **API02** | API para padres de Familia                                                                                                                                        |    | ❌ |
-> | **API03** | API para obtención de hora real UTC                                                                                                                              |    | ❌ |
+> | **API03** | API para obtención de hora real UTC                                                                                                                              | ✅ |    |
 > | **TPS01** | Tareas programadas con Scripts                                                                                                                                    |    | ❌ |
 > | **EMCS01** | Ejecutor múltiple de consultas SQL de Escritura de API01 hacia RDP02 y RDP03                                                                                     |    | ❌ |
 > | **EMCN01** | Ejecutor múltiple de consultas SQL de escritura para API02 hacia RDP03                                                                                           |    | ❌ |
@@ -102,7 +103,7 @@
 > | **RDP02** | Repositorio de Datos Persistentes para Datos Relacionados a Personal del Colegio (Directivos, Auxiliares, Profesores, etc) ➡️ PostgreSQL                        |    | ❌ |
 > | **RDP03** | Repositorio de Datos Persistentes para Datos Relacionados a Responsables (Padres de Familia/Apoderados) ➡️ MongoDB                                              |    | ❌ |
 > | **RDP04** | Repositorio de Datos Persistentes para JSONs con Información de Datos de Asistencia del Día Actual (Se actualiza todos los días por TPS01) ➡️ Blob de Vercel |    | ❌ |
-> | **RDP05** | Repositorio de Datos Persistentes para Asistencias Tomadas a lo largo del día actual exclusivamente ➡️ Redis                                                   |    | ❌ |
+> | **RDP05** | Repositorio de Datos Persistentes para Asistencias Tomadas a lo largo del día actual exclusivamente ➡️ Redis                                                   | ✅ |    |
 > |  **SS01**  | Servidor de Sockets para operaciones en tiempo real                                                                                                               |    | ❌ |
 > |  **SE01**  | Servicio Externo de Correo Electrónico por GMAIL de Google                                                                                                       |    | ❌ |
 
@@ -115,35 +116,30 @@
 > ### 🥒 Scenario en Gherkin
 >
 > ```gherkin
-> @smoke @auth @web @SIU01 @API01
-> Feature: Toma de Asistencia de Personal no Directivo con Gelocalización Activada
->   Como personal no Directivo del colegio IE20935
->   Quiero Quiero poder tomar mi propia asistencia en el sistema ingresando con mi cuenta desde mi propio dispositivo movil
->   Para así no depender de la directora para poder registrar mi asistencia (entrada y salida) en el sistema
+> Feature: Registro de Asistencia Propia con Gelocalización para usuarios no Directivos
+>   Como personal no Directivo del colegio IE20935 (Profesores, Auxiliares, Personal Administrativo)
+>   Quiero poder registrar mi propia asistencia desde mi dispositivo móvil
+>   Para no depender de usuarios con rol Directivo para marcar mi asistencia de entrada y salida
 >
 > Background:
->   Given el usuario 
->   And el sistema está funcionando correctamente
+>   Given que el sistema está funcionando correctamente
 >   And todos los servicios están disponibles
+>   And soy un usuario no directivo con cuenta activa
+>   And tengo horario laboral configurado para el día actual
 >
-> @SIASIS-TC-9 @smoke @regression @geolocation @web @mobile @profesor-primaria @profesor-secundaria @auxiliar @personal-administrativo
-> Scenario Outline: Personal no Directivo del Colegio toma su asistencia con Geolocalización Activada
->   Given que <situacion>
->   And he iniciado sesion con mis respectivas credenciales
->   And me encuentro en la interfaz de bienvenida segun mi rol 
->   And he dado click en el boton flotante de registrar asistencia de Entrada o Salida(Segun la Hora)
->   And me aparece en pantalla el modal de Marcado de Asistencia
->   When hago click en el boton Registrar asistencia
->   Then me aparece el modal <modal_resultante>
->
->   Examples:
->     | situacion                                                                       | modal_resultante                                     |
->     | Me encuentro dentro del perimetro del Colegio con GPS y permisos habillitados   | Modal de Registro Exitoso                            |
->     | Estoy usando mi laptop o algun dispositivo que no sea un celular                | Modal de Solo uso de Celulares para Geolocaclizacion |
->     | Tengo mi celular con GPS Desactivado o Permisos no Condedidos                   | Modal de Solicitud de Permisos o Activación de GPS   |
->     | No me encuentro dentro del perimetro del Colegio con GPS y permisos habilitados | Modal de Te encuentras fuera del colegio             |
->     | El sistema ha estado fallando ultimamente                                       | Modal de Error generico                              |
->     | Mi red es inestable o nula                                                      | Modal de Error de Conexion                           |
+> @SIASIS-TC-37 @regression @gps-permissions @mobile
+> Scenario: GPS desactivado o permisos denegados
+>   Given que estoy usando mi dispositivo móvil
+>   And me encuentro dentro del perímetro del colegio
+>   And me encuentro en mi rango horario laboral
+>   And tengo el GPS desactivado o he denegado permisos de ubicación
+>   And he iniciado sesión correctamente
+>   When accedo a la interfaz principal y hago clic en el botón flotante
+>   And hago clic en "Registrar Entrada" o "Registrar Salida"
+>   Then me aparece un modal solicitando activar el GPS
+>   And el modal proporciona instrucciones para habilitar la geolocalización
+>   And la asistencia no es registrada
+>   And puedo reintentar después de habilitar los permisos
 > ```
 
 ---
@@ -270,6 +266,6 @@
 
 ---
 
-**📅 Última Actualización:** 03/07/2025 05:00PM
+**📅 Última Actualización:** 06/07/2025 05:15PM
 **✅ Estado de Revisión:** Aprobado
 **👤 Revisado por:** Juan Chavez - Lider Técnico
