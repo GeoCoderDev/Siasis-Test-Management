@@ -1,11 +1,9 @@
 # 🚀 Test Execution: Ejecución de Tests para toma de asistencia de personal por parte de Directivo en varios dispositivos a la vez
 
-> [!IMPORTANT]
-> **ID de Ejecución:** SIASIS-TE-6
+> [!IMPORTANT] > **ID de Ejecución:** SIASIS-TE-6
 > **Fecha de Ejecución:** 07/07/2025
 > **Ejecutor:** Andry Diego
-> **Duración:**
-> **Estado:** ✅ Completed
+> **Duración:** > **Estado:** ✅ Completed
 
 ---
 
@@ -15,16 +13,16 @@
 >
 > ### 🔖 Metadatos de Ejecución
 >
-> | Campo                        |                                                                                                               Valor                                                                                                               |
-> | ---------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | **ID Ejecución**      |                                                                                                            SIASIS-TE-6                                                                                                            |
-> | **Nombre**             |                                                        Ejecución de Tests para toma de asistencia de personal<br /> por parte de Directivo en varios dispositivos a la vez                                                        |
-> | **Test Plan**          | [SIASIS-TP-3](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-3/SIASIS-TP-3%20-%20Toma%20de%20Asistencia%20de%20Personal%20en%20varios%20dispositivos%20sincronizados.md "Test Plan Relacionado") |
-> | **Sprint/Release**     |                                                                                                                 5                                                                                                                 |
-> | **Build/Versión**     |                                                                                                                1.0                                                                                                                |
-> | **Tipo de Ejecución** |                                                                                               🐛 Bug Verification\| ✨ New Features                                                                                               |
-> | **Modo de Ejecución** |                                                                                                             👤 Manual                                                                                                             |
-> | **Prioridad**          |                                                                                                             🟢 Medium                                                                                                             |
+> | Campo                 |                                                                                                                  Valor                                                                                                                   |
+> | --------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+> | **ID Ejecución**      |                                                                                                               SIASIS-TE-6                                                                                                                |
+> | **Nombre**            |                                                           Ejecución de Tests para toma de asistencia de personal<br /> por parte de Directivo en varios dispositivos a la vez                                                            |
+> | **Test Plan**         | [SIASIS-TP-3](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-3/SIASIS-TP-3%20-%20Toma%20de%20Asistencia%20de%20Personal%20en%20varios%20dispositivos%20sincronizados.md "Test Plan Relacionado") |
+> | **Sprint/Release**    |                                                                                                                    5                                                                                                                     |
+> | **Build/Versión**     |                                                                                                                   1.0                                                                                                                    |
+> | **Tipo de Ejecución** |                                                                                                  🐛 Bug Verification\| ✨ New Features                                                                                                   |
+> | **Modo de Ejecución** |                                                                                                                👤 Manual                                                                                                                 |
+> | **Prioridad**         |                                                                                                                🟢 Medium                                                                                                                 |
 
 ---
 
@@ -34,11 +32,11 @@
 >
 > ### 🏗️ Detalles del Ambiente
 >
-> | Aspecto                 |        Configuración        |
-> | ----------------------- | :---------------------------: |
+> | Aspecto           |         Configuración         |
+> | ----------------- | :---------------------------: |
 > | **Ambiente**      |         🔧 Desarrollo         |
 > | **URL Base**      | https://siasis-dev.vercel.app |
-> | **Base de Datos** |     Instancia 1 de RDP05     |
+> | **Base de Datos** |     Instancia 1 de RDP05      |
 > | **Servidor**      |        No hay detalles        |
 > | **Red/VPN**       |        No hay Detalles        |
 
@@ -46,8 +44,8 @@
 >
 > ### 💻 Configuración Técnica
 >
-> | Tecnología             | Versión        | Estado |
-> | ----------------------- | --------------- | :----: |
+> | Tecnología        | Versión         | Estado |
+> | ----------------- | --------------- | :----: |
 > | **Frontend**      | React 18.2.0    |   🟢   |
 > | **Backend**       | Node.js 22      |   🟢   |
 > | **Base de Datos** | PostgreSQL 15.3 |   🟢   |
@@ -58,11 +56,11 @@
 >
 > ### 🖥️ Configuración de Dispositivos
 >
-> | Dispositivo       | Sistema Operativo | Navegador   | Resolución |
-> | ----------------- | ----------------- | ----------- | ----------- |
-> | **Desktop** | Windows           | Chrome 115+ | 1920x941    |
-> | **Mobile**  | -                 | -           | -           |
-> | **Tablet**  | -                 | -           | -           |
+> | Dispositivo | Sistema Operativo | Navegador   | Resolución |
+> | ----------- | ----------------- | ----------- | ---------- |
+> | **Desktop** | Windows           | Chrome 115+ | 1920x941   |
+> | **Mobile**  | -                 | -           | -          |
+> | **Tablet**  | -                 | -           | -          |
 
 ---
 
@@ -72,14 +70,14 @@
 >
 > ### 📈 Estadísticas Generales
 >
-> | Métrica                      | Cantidad | Porcentaje |
-> | ----------------------------- | -------- | :--------: |
+> | Métrica                 | Cantidad | Porcentaje |
+> | ----------------------- | -------- | :--------: |
 > | **Total de Tests**      | 2        |    100%    |
-> | **Tests Críticos**     | 1        |    50%    |
+> | **Tests Críticos**      | 1        |    50%     |
 > | **Tests Automatizados** | 0        |     0%     |
 > | **Tests Manuales**      | 2        |    100%    |
 > | **Tests Nuevos**        | 2        |    100%    |
-> | **Tests de Regresión** | 0        |     0%     |
+> | **Tests de Regresión**  | 0        |     0%     |
 
 ---
 
@@ -91,10 +89,10 @@
 >
 > #### 🔐 Módulo de Autenticación
 >
-> | ID Test                                                                                                                                                                                                                                                                                                             | Nombre                                                                   | Tipo      | Prioridad | Estado    | Tiempo Est. |
-> | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------- | :-------: | --------- | ----------- |
-> | [SIASIS-TC-10](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-10%20-%20Validar%20sincronizaci%C3%B3n%20de%20varios%20dispositivos%20al%20marcar%20una%20asistencia%20de%20personal%20por%20parte%20de%20usuario%20Directivo.md "Ir al Test Case")                                | Validar Inicio de Sesión de Sesión Exitoso para Directivos             | Funcional | 🟢 Medium | ✅ Passed | -           |
-> | [SIASIS-TC-11](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-11%20-%20Validar%20la%20no%20sincronizacion%20al%20tomar%20asistencia%20de%20personal%20por%20parte%20de%20directivo%20en%20varios%20dispositivos%20con%20diferente%20seccion%20seleccionada.md "Ir al Test Case") | Validar Inicio de Sesión de Sesión Exitoso para Profesores de Primaria | Funcional |  🟡 High  | ✅ Passed | -           |
+> | ID Test                                                                                                                                                                                                                                                                                                                   | Nombre                                                     | Tipo      | Prioridad | Estado    | Tiempo Est. |
+> | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | --------- | :-------: | --------- | ----------- |
+> | [SIASIS-TC-10](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-10%20-%20Validar%20sincronizaci%C3%B3n%20de%20varios%20dispositivos%20al%20marcar%20una%20asistencia%20de%20personal%20por%20parte%20de%20usuario%20Directivo.md "Ir al Test Case")                                | Sincronización en tiempo real en múltiples dispositivos    | Funcional | 🟢 Medium | ✅ Passed | 41 seg      |
+> | [SIASIS-TC-11](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-11%20-%20Validar%20la%20no%20sincronizacion%20al%20tomar%20asistencia%20de%20personal%20por%20parte%20de%20directivo%20en%20varios%20dispositivos%20con%20diferente%20seccion%20seleccionada.md "Ir al Test Case") | No Sincronización en tiempo real en múltiples dispositivos | Funcional | 🟢 Medium | ✅ Passed | 30 seg      |
 
 ---
 
@@ -102,14 +100,17 @@
 
 > [!TIP]
 >
-> ### 📸 Evidencias de la ejecución
+> ### 📸 Evidencias de la ejecución - Prueba de DEV SINCRONIZADO - WebSockets
 >
 > Link del Video de Evidencias
 >
->[![Link del Video De Evidencias](https://img.youtube.com/vi/uoFJKIdJN2Y/maxresdefault.jpg)](https://www.youtube.com/watch?v=uoFJKIdJN2Y)
+> [![Link del Video De Evidencias](https://img.youtube.com/vi/RycS1yiRptU/maxresdefault.jpg)](https://www.youtube.com/watch?v=RycS1yiRptU)
 >
-
-
+> ### 📸 Evidencias de la ejecución - Prueba de DEV NO SINCRONIZADO - WebSockets
+>
+> Link del Video de Evidencias
+>
+> [![Link del Video De Evidencias](https://img.youtube.com/vi/qjFgwzqKdqM/maxresdefault.jpg)](https://www.youtube.com/watch?v=qjFgwzqKdqM)
 
 ## 🐛 Defectos Encontrados
 
@@ -135,12 +136,12 @@
 >
 > ### ⚠️ Riesgos Identificados
 >
-> | Riesgo                              | Probabilidad | Impacto | Mitigación         | Responsable   |
-> | ----------------------------------- | ------------ | ------- | ------------------- | ------------- |
+> | Riesgo                        | Probabilidad | Impacto | Mitigación          | Responsable   |
+> | ----------------------------- | ------------ | ------- | ------------------- | ------------- |
 > | **Ambiente inestable**        | Media        | Alto    | Ambiente backup     | DevOps        |
 > | **Datos de prueba corruptos** | Baja         | Alto    | Backup/Restore plan | QA Lead       |
 > | **Ausencia de QA**            | Baja         | Medio   | Cross-training team | Test Manager  |
-> | **Bloqueos por bugs**         | Alta         | Medio   | Priorización ágil | Product Owner |
+> | **Bloqueos por bugs**         | Alta         | Medio   | Priorización ágil   | Product Owner |
 
 ---
 
