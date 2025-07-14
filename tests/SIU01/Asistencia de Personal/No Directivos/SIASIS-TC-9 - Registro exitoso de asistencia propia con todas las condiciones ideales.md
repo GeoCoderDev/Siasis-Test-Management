@@ -1,10 +1,10 @@
-# 🧪 Test Case: SIASIS-TC-38 - Usuario fuera del perímetro del colegio
+# 🧪 Test Case: SIASIS-TC-9 - Registro exitoso de asistencia propia con todas las condiciones ideales
 
 > [!IMPORTANT]
-> **ID del Test Case:** SIASIS-TC-38
-> **Fecha de Creación:** 06/07/2025
+> **ID del Test Case:** SIASIS-TC-9
+> **Fecha de Creación:** 03/07/2025
 > **Autor:** Juan Chavez
-> **Última Actualización:** **06/07/2025**
+> **Última Actualización:** **03/07/2025**
 > **Estado:** 🟢 Ready
 
 ---
@@ -17,15 +17,15 @@
 >
 > | Campo                     |                                     Valor                                     |
 > | ------------------------- | :---------------------------------------------------------------------------: |
-> | **ID Test Case**    |                                 SIASIS-TC-38                                 |
-> | **Nombre**          |                   Usuario fuera del perímetro del colegio                   |
+> | **ID Test Case**    |                                  SIASIS-TC-9                                  |
+> | **Nombre**          |    Registro exitoso de asistencia propia con todas las condiciones ideales    |
 > | **Módulo/Feature** | Registro de Asistencia Propia con Gelocalización para usuarios no Directivos |
 > | **Epic/User Story** |                                  No se tiene                                  |
 > | **Tipo de Prueba**  |                                 🔧 Funcional                                 |
 > | **Nivel de Prueba** |                                   🌐 System                                   |
-> | **Prioridad**       |                                    🟡 High                                    |
+> | **Prioridad**       |                                   🟡 Medium                                   |
 > | **Severidad**       |                                   🟡 Major                                   |
-> | **Automatizable**   |                                    ✅ Sí                                    |
+> | **Automatizable**   |                                     ❌ No                                     |
 > | Automatizado              |                                     ❌ No                                     |
 
 ---
@@ -37,7 +37,7 @@
 > **Tags principales:**
 >
 > ```gherkin
-> @SIASIS-TC-38 @smoke @regresion @geolocalizacion @web @mobile
+> @SIASIS-TC-9 @smoke @regresion @geolocalizacion @web @mobile
 > ```
 >
 > **Tags por componente:**
@@ -60,15 +60,15 @@
 >
 > ### 📖 Descripción del Test Case
 >
-> Este test validará que la funcionalidad de geofencing (cerca geográfica) está correctamente implementada y que el sistema puede determinar con precisión si un usuario se encuentra dentro o fuera del perímetro establecido del colegio. Se verificará que el sistema rechace intentos de marcado desde ubicaciones externas y proporcione retroalimentación clara sobre la restricción de ubicación.
+> Este test validará que el flujo completo de marcado de asistencia funciona correctamente cuando todas las condiciones son favorables. Se verificará desde el inicio de sesión hasta la confirmación final del registro, pasando por la detección automática del tipo de marcado (entrada/salida), la validación de geolocalización, y la actualización del estado en el sistema. Es el caso principal que confirma que la funcionalidad core está operativa.
 
 > [!NOTE]
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** Validar que el sistema detecta cuando un usuario está fuera del perímetro del colegio y bloquea el registro de asistencia
+> **Objetivo:** Verificar que el personal no directivo puede registrar exitosamente su asistencia de entrada o salida cuando todas las condiciones son ideales (dispositivo móvil, dentro del colegio, en horario laboral, GPS habilitado)
 >
-> **Criterio de Éxito:** El sistema muestra modal indicando "Te encuentras fuera del colegio", no registra la asistencia y opcionalmente muestra ubicación aproximada del usuario
+> **Criterio de Éxito:** El sistema registra la asistencia correctamente, muestra confirmación con hora exacta, y el botón flotante desaparece tras el registro exitoso
 
 ---
 
@@ -127,18 +127,25 @@
 >   And soy un usuario no directivo con cuenta activa
 >   And tengo horario laboral configurado para el día actual
 >
-> @SIASIS-TC-38 @regression @geolocation-restriction @mobile @outside-perimeter
-> Scenario: Usuario fuera del perímetro del colegio
->   Given que estoy usando mi dispositivo móvil con GPS activado
->   And he concedido permisos de ubicación
->   And me encuentro fuera del perímetro del colegio
->   And me encuentro en mi rango horario laboral
+> @SIASIS-TC-09 @smoke @regresion @happy-path @profesor-primaria @profesor-secundaria @auxiliar @personal-administrativo
+> Scenario: Registro exitoso de asistencia con todas las condiciones ideales
+>   Given que estoy usando mi dispositivo móvil
+>   And me encuentro dentro del perímetro del colegio
+>   And me encuentro en mi rango horario laboral (máximo 2 horas antes/después)
+>   And aún no he marcado mi asistencia en el sistema
 >   And he iniciado sesión correctamente
->   When accedo a la interfaz principal y hago clic en el botón flotante
->   And hago clic en "Registrar Entrada" o "Registrar Salida"
->   Then me aparece un modal indicando "Te encuentras fuera del colegio"
->   And la asistencia no es registrada
->   And el modal puede mostrar mi ubicación aproximada 👁️
+>   When accedo a la interfaz principal de mi rol
+>   Then me aparece el botón flotante de marcado de asistencia
+>   And el botón muestra el color correcto según mi horario (verde para entrada, rojo para salida)
+>   When hago clic en el botón flotante
+>   Then me aparece el modal de marcado de asistencia
+>   And el modal muestra si es para "Entrada" o "Salida" según mi horario
+>   When hago clic en el botón "Registrar Entrada" o "Registrar Salida"
+>   And concedo permisos de ubicación GPS
+>   Then mi asistencia es registrada exitosamente
+>   And me aparece un modal de confirmación
+>   And el modal muestra la hora exacta de registro
+>   And el botón flotante desaparece de la interfaz
 > ```
 
 ---
@@ -264,6 +271,6 @@
 
 ---
 
-**📅 Última Actualización:** 06/07/2025 05:10PM
+**📅 Última Actualización:** 03/07/2025 05:00PM
 **✅ Estado de Revisión:** Aprobado
 **👤 Revisado por:** Juan Chavez - Lider Técnico

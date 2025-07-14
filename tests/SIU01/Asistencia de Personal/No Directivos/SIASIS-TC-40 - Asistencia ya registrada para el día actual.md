@@ -1,7 +1,7 @@
-# 🧪 Test Case: SIASIS-TC-38 - Usuario fuera del perímetro del colegio
+# 🧪 Test Case: SIASIS-TC-40 - Asistencia ya registrada para el día actual
 
 > [!IMPORTANT]
-> **ID del Test Case:** SIASIS-TC-38
+> **ID del Test Case:** SIASIS-TC-40
 > **Fecha de Creación:** 06/07/2025
 > **Autor:** Juan Chavez
 > **Última Actualización:** **06/07/2025**
@@ -17,13 +17,13 @@
 >
 > | Campo                     |                                     Valor                                     |
 > | ------------------------- | :---------------------------------------------------------------------------: |
-> | **ID Test Case**    |                                 SIASIS-TC-38                                 |
-> | **Nombre**          |                   Usuario fuera del perímetro del colegio                   |
+> | **ID Test Case**    |                                 SIASIS-TC-40                                 |
+> | **Nombre**          |                 Asistencia ya registrada para el día actual                 |
 > | **Módulo/Feature** | Registro de Asistencia Propia con Gelocalización para usuarios no Directivos |
 > | **Epic/User Story** |                                  No se tiene                                  |
 > | **Tipo de Prueba**  |                                 🔧 Funcional                                 |
 > | **Nivel de Prueba** |                                   🌐 System                                   |
-> | **Prioridad**       |                                    🟡 High                                    |
+> | **Prioridad**       |                                   🟢 Medium                                   |
 > | **Severidad**       |                                   🟡 Major                                   |
 > | **Automatizable**   |                                    ✅ Sí                                    |
 > | Automatizado              |                                     ❌ No                                     |
@@ -37,7 +37,7 @@
 > **Tags principales:**
 >
 > ```gherkin
-> @SIASIS-TC-38 @smoke @regresion @geolocalizacion @web @mobile
+> @SIASIS-TC-40 @regression @already-registered @mobile
 > ```
 >
 > **Tags por componente:**
@@ -60,15 +60,15 @@
 >
 > ### 📖 Descripción del Test Case
 >
-> Este test validará que la funcionalidad de geofencing (cerca geográfica) está correctamente implementada y que el sistema puede determinar con precisión si un usuario se encuentra dentro o fuera del perímetro establecido del colegio. Se verificará que el sistema rechace intentos de marcado desde ubicaciones externas y proporcione retroalimentación clara sobre la restricción de ubicación.
+> Este test validará que el sistema previene eficazmente la duplicación de registros de asistencia para el mismo día. Se verificará que una vez registrada la entrada o salida, el sistema actualice su interfaz para reflejar este estado, muestre la información del registro previo, y no permita nuevos intentos de marcado para evitar inconsistencias en los datos.
 
 > [!NOTE]
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** Validar que el sistema detecta cuando un usuario está fuera del perímetro del colegio y bloquea el registro de asistencia
+> **Objetivo:** Validar que el sistema previene el doble registro de asistencia y muestra correctamente el estado cuando ya se ha registrado entrada o salida.
 >
-> **Criterio de Éxito:** El sistema muestra modal indicando "Te encuentras fuera del colegio", no registra la asistencia y opcionalmente muestra ubicación aproximada del usuario
+> **Criterio de Éxito:** El botón flotante no aparece, se muestra indicador visual de asistencia ya registrada con la hora exacta del registro previo.
 
 ---
 
@@ -127,18 +127,17 @@
 >   And soy un usuario no directivo con cuenta activa
 >   And tengo horario laboral configurado para el día actual
 >
-> @SIASIS-TC-38 @regression @geolocation-restriction @mobile @outside-perimeter
-> Scenario: Usuario fuera del perímetro del colegio
->   Given que estoy usando mi dispositivo móvil con GPS activado
->   And he concedido permisos de ubicación
->   And me encuentro fuera del perímetro del colegio
+> @SIASIS-TC-40 @regression @already-registered @mobile
+> Scenario: Asistencia ya registrada para el día actual
+>   Given que estoy usando mi dispositivo móvil
+>   And me encuentro dentro del perímetro del colegio
 >   And me encuentro en mi rango horario laboral
+>   And ya he registrado mi asistencia de entrada o salida para el día actual
 >   And he iniciado sesión correctamente
->   When accedo a la interfaz principal y hago clic en el botón flotante
->   And hago clic en "Registrar Entrada" o "Registrar Salida"
->   Then me aparece un modal indicando "Te encuentras fuera del colegio"
->   And la asistencia no es registrada
->   And el modal puede mostrar mi ubicación aproximada 👁️
+>   When accedo a la interfaz principal
+>   Then no me aparece el botón flotante de marcado de asistencia
+>   And me aparece un indicador visual mostrando que mi asistencia ya fue registrada
+>   And se muestra la hora en que fue registrada 👁️
 > ```
 
 ---
@@ -264,6 +263,6 @@
 
 ---
 
-**📅 Última Actualización:** 06/07/2025 05:10PM
+**📅 Última Actualización:** 06/07/2025 05:30PM
 **✅ Estado de Revisión:** Aprobado
 **👤 Revisado por:** Juan Chavez - Lider Técnico

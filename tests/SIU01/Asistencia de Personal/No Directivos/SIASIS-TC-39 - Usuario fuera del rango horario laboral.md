@@ -1,7 +1,7 @@
-# 🧪 Test Case: SIASIS-TC-38 - Usuario fuera del perímetro del colegio
+# 🧪 Test Case: SIASIS-TC-39 - Usuario fuera del rango horario laboral
 
 > [!IMPORTANT]
-> **ID del Test Case:** SIASIS-TC-38
+> **ID del Test Case:** SIASIS-TC-39
 > **Fecha de Creación:** 06/07/2025
 > **Autor:** Juan Chavez
 > **Última Actualización:** **06/07/2025**
@@ -17,8 +17,8 @@
 >
 > | Campo                     |                                     Valor                                     |
 > | ------------------------- | :---------------------------------------------------------------------------: |
-> | **ID Test Case**    |                                 SIASIS-TC-38                                 |
-> | **Nombre**          |                   Usuario fuera del perímetro del colegio                   |
+> | **ID Test Case**    |                                 SIASIS-TC-39                                 |
+> | **Nombre**          |                    Usuario fuera del rango horario laboral                    |
 > | **Módulo/Feature** | Registro de Asistencia Propia con Gelocalización para usuarios no Directivos |
 > | **Epic/User Story** |                                  No se tiene                                  |
 > | **Tipo de Prueba**  |                                 🔧 Funcional                                 |
@@ -37,7 +37,7 @@
 > **Tags principales:**
 >
 > ```gherkin
-> @SIASIS-TC-38 @smoke @regresion @geolocalizacion @web @mobile
+> @SIASIS-TC-39 @regression @time-restriction @mobile
 > ```
 >
 > **Tags por componente:**
@@ -60,15 +60,15 @@
 >
 > ### 📖 Descripción del Test Case
 >
-> Este test validará que la funcionalidad de geofencing (cerca geográfica) está correctamente implementada y que el sistema puede determinar con precisión si un usuario se encuentra dentro o fuera del perímetro establecido del colegio. Se verificará que el sistema rechace intentos de marcado desde ubicaciones externas y proporcione retroalimentación clara sobre la restricción de ubicación.
+> Este test validará que el sistema respeta y enforza correctamente las políticas de horario laboral establecidas, específicamente la ventana de 2 horas antes y 2 horas después del horario oficial. Se verificará que fuera de este rango, el botón de marcado no esté disponible y que se muestre información clara sobre cuándo será posible marcar asistencia nuevamente.
 
 > [!NOTE]
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** Validar que el sistema detecta cuando un usuario está fuera del perímetro del colegio y bloquea el registro de asistencia
+> **Objetivo:** Verificar que el sistema respeta las restricciones de horario laboral (máximo 2 horas antes/después) y no permite marcado fuera de este rango.
 >
-> **Criterio de Éxito:** El sistema muestra modal indicando "Te encuentras fuera del colegio", no registra la asistencia y opcionalmente muestra ubicación aproximada del usuario
+> **Criterio de Éxito:** El botón flotante no aparece, se muestra mensaje informativo con horario laboral del usuario y rango permitido para marcar asistencia.
 
 ---
 
@@ -127,18 +127,16 @@
 >   And soy un usuario no directivo con cuenta activa
 >   And tengo horario laboral configurado para el día actual
 >
-> @SIASIS-TC-38 @regression @geolocation-restriction @mobile @outside-perimeter
-> Scenario: Usuario fuera del perímetro del colegio
->   Given que estoy usando mi dispositivo móvil con GPS activado
->   And he concedido permisos de ubicación
->   And me encuentro fuera del perímetro del colegio
->   And me encuentro en mi rango horario laboral
+> @SIASIS-TC-39 @regression @time-restriction @mobile
+> Scenario: Usuario fuera del rango horario laboral
+>   Given que estoy usando mi dispositivo móvil
+>   And me encuentro dentro del perímetro del colegio
+>   And me encuentro fuera de mi rango laboral (más de 2 horas antes/después)
 >   And he iniciado sesión correctamente
->   When accedo a la interfaz principal y hago clic en el botón flotante
->   And hago clic en "Registrar Entrada" o "Registrar Salida"
->   Then me aparece un modal indicando "Te encuentras fuera del colegio"
->   And la asistencia no es registrada
->   And el modal puede mostrar mi ubicación aproximada 👁️
+>   When accedo a la interfaz principal
+>   Then no me aparece el botón flotante de marcado de asistencia
+>   And me aparece un mensaje informativo con mi horario laboral
+>   And el mensaje indica el rango permitido para marcar asistencia
 > ```
 
 ---
@@ -264,6 +262,6 @@
 
 ---
 
-**📅 Última Actualización:** 06/07/2025 05:10PM
+**📅 Última Actualización:** 06/07/2025 05:18PM
 **✅ Estado de Revisión:** Aprobado
 **👤 Revisado por:** Juan Chavez - Lider Técnico

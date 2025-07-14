@@ -251,7 +251,6 @@
 >
 > ### 💡 Notas Importantes
 >
-> - Aun falta agregar el Rol de Responsable
 > - Aun falta especificar los Test Cases relacionados
 > - [Consideración especial]
 >
@@ -259,7 +258,7 @@
 >
 > |    Fecha    | Versión | Cambio                |    Autor    |
 > | :----------: | :------: | --------------------- | :---------: |
-> |  03/07/2025  |   1.0   | Creación inicial     | Juan Chavez |
+> |  06/07/2025  |   1.0   | Creación inicial     | Juan Chavez |
 > | [DD/MM/YYYY] |   1.1   | [Descripción cambio] |  [Nombre]  |
 
 ---

@@ -1,10 +1,10 @@
-# 🧪 Test Case: SIASIS-TC-9 - Registro exitoso de asistencia propia con todas las condiciones ideales
+# 🧪 Test Case: SIASIS-TC-42 - Marcado de Asistencia Propia en Día de evento o feriado registrado en el Sistema
 
 > [!IMPORTANT]
-> **ID del Test Case:** SIASIS-TC-9
-> **Fecha de Creación:** 03/07/2025
+> **ID del Test Case:** SIASIS-TC-42
+> **Fecha de Creación:** 06/07/2025
 > **Autor:** Juan Chavez
-> **Última Actualización:** **03/07/2025**
+> **Última Actualización:** **06/07/2025**
 > **Estado:** 🟢 Ready
 
 ---
@@ -15,18 +15,18 @@
 >
 > ### 🔖 Metadatos del Test
 >
-> | Campo                     |                                     Valor                                     |
-> | ------------------------- | :---------------------------------------------------------------------------: |
-> | **ID Test Case**    |                                  SIASIS-TC-9                                  |
-> | **Nombre**          |    Registro exitoso de asistencia propia con todas las condiciones ideales    |
-> | **Módulo/Feature** | Registro de Asistencia Propia con Gelocalización para usuarios no Directivos |
-> | **Epic/User Story** |                                  No se tiene                                  |
-> | **Tipo de Prueba**  |                                 🔧 Funcional                                 |
-> | **Nivel de Prueba** |                                   🌐 System                                   |
-> | **Prioridad**       |                                   🟡 Medium                                   |
-> | **Severidad**       |                                   🟡 Major                                   |
-> | **Automatizable**   |                                     ❌ No                                     |
-> | Automatizado              |                                     ❌ No                                     |
+> | Campo                     |                                          Valor                                          |
+> | ------------------------- | :-------------------------------------------------------------------------------------: |
+> | **ID Test Case**    |                                      SIASIS-TC-42                                      |
+> | **Nombre**          | Marcado de Asistencia Propia en Día de evento o <br />feriado registrado en el Sistema |
+> | **Módulo/Feature** |      Registro de Asistencia Propia con Gelocalización para usuarios no Directivos      |
+> | **Epic/User Story** |                                       No se tiene                                       |
+> | **Tipo de Prueba**  |                                      🔧 Funcional                                      |
+> | **Nivel de Prueba** |                                        🌐 System                                        |
+> | **Prioridad**       |                                        🟢 Medium                                        |
+> | **Severidad**       |                                        🟡 Major                                        |
+> | **Automatizable**   |                                         ✅ Sí                                         |
+> | Automatizado              |                                          ❌ No                                          |
 
 ---
 
@@ -37,7 +37,7 @@
 > **Tags principales:**
 >
 > ```gherkin
-> @SIASIS-TC-9 @smoke @regresion @geolocalizacion @web @mobile
+> @SIASIS-TC-42  @regression @special-days @mobile
 > ```
 >
 > **Tags por componente:**
@@ -60,15 +60,15 @@
 >
 > ### 📖 Descripción del Test Case
 >
-> Este test validará que el flujo completo de marcado de asistencia funciona correctamente cuando todas las condiciones son favorables. Se verificará desde el inicio de sesión hasta la confirmación final del registro, pasando por la detección automática del tipo de marcado (entrada/salida), la validación de geolocalización, y la actualización del estado en el sistema. Es el caso principal que confirma que la funcionalidad core está operativa.
+> Este test validará que el sistema consulta correctamente el calendario de eventos institucionales y respeta los días designados como no laborales. Se verificará que en feriados, celebraciones, o eventos especiales registrados en el sistema, la funcionalidad de marcado esté deshabilitada y se proporcione información clara sobre el motivo de la restricción.
 
 > [!NOTE]
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** Verificar que el personal no directivo puede registrar exitosamente su asistencia de entrada o salida cuando todas las condiciones son ideales (dispositivo móvil, dentro del colegio, en horario laboral, GPS habilitado)
+> **Objetivo:** Validar que el sistema reconoce días especiales (eventos, feriados) y no permite marcado de asistencia en esas fechas
 >
-> **Criterio de Éxito:** El sistema registra la asistencia correctamente, muestra confirmación con hora exacta, y el botón flotante desaparece tras el registro exitoso
+> **Criterio de Éxito:** El botón flotante no aparece y se muestra mensaje informativo con el nombre del evento del día indicando que no se registra asistencia
 
 ---
 
@@ -127,25 +127,15 @@
 >   And soy un usuario no directivo con cuenta activa
 >   And tengo horario laboral configurado para el día actual
 >
-> @SIASIS-TC-09 @smoke @regresion @happy-path @profesor-primaria @profesor-secundaria @auxiliar @personal-administrativo
-> Scenario: Registro exitoso de asistencia con todas las condiciones ideales
+> @SIASIS-TC-42 @regression @special-days @mobile
+> Scenario: Día de evento o feriado registrado
 >   Given que estoy usando mi dispositivo móvil
->   And me encuentro dentro del perímetro del colegio
->   And me encuentro en mi rango horario laboral (máximo 2 horas antes/después)
->   And aún no he marcado mi asistencia en el sistema
+>   And el día actual está registrado como evento, feriado o día no laboral
 >   And he iniciado sesión correctamente
->   When accedo a la interfaz principal de mi rol
->   Then me aparece el botón flotante de marcado de asistencia
->   And el botón muestra el color correcto según mi horario (verde para entrada, rojo para salida)
->   When hago clic en el botón flotante
->   Then me aparece el modal de marcado de asistencia
->   And el modal muestra si es para "Entrada" o "Salida" según mi horario
->   When hago clic en el botón "Registrar Entrada" o "Registrar Salida"
->   And concedo permisos de ubicación GPS
->   Then mi asistencia es registrada exitosamente
->   And me aparece un modal de confirmación
->   And el modal muestra la hora exacta de registro
->   And el botón flotante desaparece de la interfaz
+>   When accedo a la interfaz principal
+>   Then no me aparece el botón flotante de marcado de asistencia
+>   And me aparece un mensaje informativo indicando el nombre del evento del día
+>   And el mensaje indica que no se registra asistencia ese día
 > ```
 
 ---
@@ -259,7 +249,6 @@
 >
 > ### 💡 Notas Importantes
 >
-> - Aun falta agregar el Rol de Responsable
 > - Aun falta especificar los Test Cases relacionados
 > - [Consideración especial]
 >
@@ -267,11 +256,11 @@
 >
 > |    Fecha    | Versión | Cambio                |    Autor    |
 > | :----------: | :------: | --------------------- | :---------: |
-> |  03/07/2025  |   1.0   | Creación inicial     | Juan Chavez |
+> |  06/07/2025  |   1.0   | Creación inicial     | Juan Chavez |
 > | [DD/MM/YYYY] |   1.1   | [Descripción cambio] |  [Nombre]  |
 
 ---
 
-**📅 Última Actualización:** 03/07/2025 05:00PM
+**📅 Última Actualización:** 06/07/2025 05:40PM
 **✅ Estado de Revisión:** Aprobado
 **👤 Revisado por:** Juan Chavez - Lider Técnico

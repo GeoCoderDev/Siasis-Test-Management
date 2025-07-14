@@ -1,7 +1,7 @@
-# 🧪 Test Case: SIASIS-TC-38 - Usuario fuera del perímetro del colegio
+# 🧪 Test Case: SIASIS-TC-43 - Registro de Asistencia Propia para Usuario sin horario laboral para el día actual
 
 > [!IMPORTANT]
-> **ID del Test Case:** SIASIS-TC-38
+> **ID del Test Case:** SIASIS-TC-43
 > **Fecha de Creación:** 06/07/2025
 > **Autor:** Juan Chavez
 > **Última Actualización:** **06/07/2025**
@@ -15,18 +15,18 @@
 >
 > ### 🔖 Metadatos del Test
 >
-> | Campo                     |                                     Valor                                     |
-> | ------------------------- | :---------------------------------------------------------------------------: |
-> | **ID Test Case**    |                                 SIASIS-TC-38                                 |
-> | **Nombre**          |                   Usuario fuera del perímetro del colegio                   |
-> | **Módulo/Feature** | Registro de Asistencia Propia con Gelocalización para usuarios no Directivos |
-> | **Epic/User Story** |                                  No se tiene                                  |
-> | **Tipo de Prueba**  |                                 🔧 Funcional                                 |
-> | **Nivel de Prueba** |                                   🌐 System                                   |
-> | **Prioridad**       |                                    🟡 High                                    |
-> | **Severidad**       |                                   🟡 Major                                   |
-> | **Automatizable**   |                                    ✅ Sí                                    |
-> | Automatizado              |                                     ❌ No                                     |
+> | Campo                     |                                          Valor                                          |
+> | ------------------------- | :-------------------------------------------------------------------------------------: |
+> | **ID Test Case**    |                                      SIASIS-TC-43                                      |
+> | **Nombre**          | Registro de Asistencia Propia para Usuario sin horario<br />laboral para el día actual |
+> | **Módulo/Feature** |      Registro de Asistencia Propia con Gelocalización para usuarios no Directivos      |
+> | **Epic/User Story** |                                       No se tiene                                       |
+> | **Tipo de Prueba**  |                                      🔧 Funcional                                      |
+> | **Nivel de Prueba** |                                        🌐 System                                        |
+> | **Prioridad**       |                                        🟢 Medium                                        |
+> | **Severidad**       |                                        🟡 Major                                        |
+> | **Automatizable**   |                                         ✅ Sí                                         |
+> | Automatizado              |                                          ❌ No                                          |
 
 ---
 
@@ -37,7 +37,7 @@
 > **Tags principales:**
 >
 > ```gherkin
-> @SIASIS-TC-38 @smoke @regresion @geolocalizacion @web @mobile
+> @SIASIS-TC-43 @regression @no-schedule @mobile
 > ```
 >
 > **Tags por componente:**
@@ -60,15 +60,15 @@
 >
 > ### 📖 Descripción del Test Case
 >
-> Este test validará que la funcionalidad de geofencing (cerca geográfica) está correctamente implementada y que el sistema puede determinar con precisión si un usuario se encuentra dentro o fuera del perímetro establecido del colegio. Se verificará que el sistema rechace intentos de marcado desde ubicaciones externas y proporcione retroalimentación clara sobre la restricción de ubicación.
+> Este test validará que el sistema maneja correctamente los casos donde un empleado no tiene horario asignado para el dia actual (por ejemplo, empleados de tiempo parcial o con horarios variables). Se verificará que el sistema detecte esta condición en la configuración del usuario y proporcione un mensaje claro explicando por qué el marcado no está disponible.
 
 > [!NOTE]
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** Validar que el sistema detecta cuando un usuario está fuera del perímetro del colegio y bloquea el registro de asistencia
+> **Objetivo:** Verificar que el sistema maneja correctamente los casos donde un usuario no tiene horario configurado para el día actual
 >
-> **Criterio de Éxito:** El sistema muestra modal indicando "Te encuentras fuera del colegio", no registra la asistencia y opcionalmente muestra ubicación aproximada del usuario
+> **Criterio de Éxito:** El botón flotante no aparece y se muestra mensaje claro indicando "Hoy no asistes al colegio" para ese día
 
 ---
 
@@ -127,18 +127,14 @@
 >   And soy un usuario no directivo con cuenta activa
 >   And tengo horario laboral configurado para el día actual
 >
-> @SIASIS-TC-38 @regression @geolocation-restriction @mobile @outside-perimeter
-> Scenario: Usuario fuera del perímetro del colegio
->   Given que estoy usando mi dispositivo móvil con GPS activado
->   And he concedido permisos de ubicación
->   And me encuentro fuera del perímetro del colegio
->   And me encuentro en mi rango horario laboral
+> @SIASIS-TC-43 @regression @no-schedule @mobile
+> Scenario: Usuario sin horario laboral para el día actual
+>   Given que estoy usando mi dispositivo móvil
+>   And no tengo horario laboral configurado para el día actual
 >   And he iniciado sesión correctamente
->   When accedo a la interfaz principal y hago clic en el botón flotante
->   And hago clic en "Registrar Entrada" o "Registrar Salida"
->   Then me aparece un modal indicando "Te encuentras fuera del colegio"
->   And la asistencia no es registrada
->   And el modal puede mostrar mi ubicación aproximada 👁️
+>   When accedo a la interfaz principal
+>   Then no me aparece el botón flotante de marcado de asistencia
+>   And me aparece un mensaje indicando "Hoy no Asistes al Colegio"
 > ```
 
 ---
@@ -264,6 +260,6 @@
 
 ---
 
-**📅 Última Actualización:** 06/07/2025 05:10PM
+**📅 Última Actualización:** 06/07/2025 05:45PM
 **✅ Estado de Revisión:** Aprobado
 **👤 Revisado por:** Juan Chavez - Lider Técnico
