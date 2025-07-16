@@ -1,4 +1,4 @@
-# 🧪 Test Case: SIASIS-TC-47 - # 🧪 Test Case: SIASIS-TC-46 - Bloqueo de Comentarios SQL (--) en Query Params
+# 🧪 Test Case: SIASIS-TC-47 - # 🧪 Test Case: SIASIS-TC-46 - Bloqueo de Condición Siempre Verdadera (OR 1=1)
 
 > [!IMPORTANT] > **ID del Test Case:** SIASIS-TC-46
 > **Fecha de Creación:** 13/07/2025

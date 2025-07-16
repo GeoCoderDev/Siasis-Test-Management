@@ -16,7 +16,7 @@
 >
 > |         Campo         |                                                                            Valor                                                                             |
 > | :-------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------: |
-> |   **ID Ejecución**    |                                                                         SIASIS-TE-4                                                                          |
+> |   **ID Ejecución**    |                                                                         SIASIS-TE-8                                                                          |
 > |      **Nombre**       |                                             Validación de protección contra SQL Injection en endpoints de API01                                              |
 > |     **Test Plan**     | [SIASIS-TP-4](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-4/SIASIS-TP-4%20-%20SQL_Injection.md "Ir al Test Plan") |
 > |  **Sprint/Release**   |                                                                              5                                                                               |
@@ -89,12 +89,12 @@
 >
 > #### 📝 Módulo de Registro de Asistencia Propia para Usuarios no Directivos
 >
-> |                                                                                                                                               ID Test                                                                                                                                               |                                         Nombre                                          | Tipo      | Prioridad | Estado    | Tiempo Est. |
-> | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: | --------- | --------- | --------- | :---------: |
-> |              [SIASIS-TC-9](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-9%20-%20Registro%20exitoso%20de%20asistencia%20propia%20con%20todas%20las%20condiciones%20ideales.md "Ir al Test Case")               |      Registro exitoso de asistencia propia con todas las<br />condiciones ideales       | Funcional | 🟢 Medium | ✅ Passed |    1 min    |
-> |                  [SIASIS-TC-36](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-36%20-%20Intento%20de%20marcado%20de%20asistencia%20desde%20dispositivo%20no%20m%C3%B3vil.md "Ir al Test Case")                  |               Intento de marcado de asistencia desde dispositivo no móvil               | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
-> |                                    [SIASIS-TC-37](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-37%20-%20GPS%20desactivado%20o%20permisos%20denegados.md "Ir al Test Case")                                    |                          GPS desactivado o permisos denegados                           | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
-> |                               [SIASIS-TC-38](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-38%20-%20Usuario%20fuera%20del%20per%C3%ADmetro%20del%20colegio.md "Ir al Test Case")                               |                         Usuario fuera del perímetro del colegio                         | Funcional | 🟢 Medium | ✅ Passed |    1 min    |
+> |                                                                                                  ID Test                                                                                                   |                     Nombre                      | Tipo      | Prioridad   | Estado    | Tiempo Est. |
+> | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------: | --------- | ----------- | --------- | :---------: |
+> |     [SIASIS-TC-44](<https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-44%20-%20Bloqueo%20de%20Inyecci%C3%B3n%20B%C3%A1sica%20(OR%201%3D1).md> "Ir al Test Case")     |      Bloqueo de Inyección Básica (OR 1=1)       | Funcional | 🔴 Critical | ✅ Passed |   471 ms    |
+> |         [SIASIS-TC-45](<https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-45%20-%20Bloqueo%20de%20Comandos%20DDL%20(DROP%20TABLE)%20.md> "Ir al Test Case")          |      Bloqueo de Comandos DDL (DROP TABLE)       | Funcional | 🔴 Critical | ✅ Passed |   414 ms    |
+> |   [SIASIS-TC-46](<https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-46%20-%20Bloqueo%20de%20Comentarios%20SQL%20(--)%20en%20Query%20Params.md> "Ir al Test Case")    |         Bloqueo de Comentarios SQL (--)         | Funcional | 🔴 Critical | ✅ Passed |   224 ms    |
+> | [SIASIS-TC-47](<https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-47-%20%20Bloqueo%20de%20Condici%C3%B3n%20Siempre%20Verdadera%20(OR%201%3D1).md> "Ir al Test Case") | Bloqueo de Condición Siempre Verdadera (OR 1=1) | Funcional | 🔴 Critical | ✅ Passed |   228 ms    |
 
 ---
 
@@ -104,37 +104,22 @@
 >
 > ### 📸 Evidencias de la ejecución
 >
-> - [SIASIS-TC-38](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-38%20-%20Usuario%20fuera%20del%20per%C3%ADmetro%20del%20colegio.md "Ir al Test Case") | [SIASIS-TC-9](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-9%20-%20Registro%20exitoso%20de%20asistencia%20propia%20con%20todas%20las%20condiciones%20ideales.md "Ir al Test Case")
+> Capturas:
+> 1. TC-SQLI-001: Bloqueo de Inyección Básica (OR '1'='1)
 >
->   ![1752456139011](https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/juanc/OneDrive/Escritorio/PROYECTO%20SIASIS/TESTING/Siasis-Test-Management/test-plans/SIASIS-TP-2/Certificacion/image/SIASIS-TE-4/1752456139011.png)
+>![alt text](image.png)
 >
-> Link del Video de Evidencias:
+> 2. TC-SQLI-002: Bloqueo de Comandos DDL (DROP TABLE)
 >
-> [![Link del Video De Evidencias](https://img.youtube.com/vi/7oyO36QC4sU/maxresdefault.jpg)](https://youtube.com/shorts/7oyO36QC4sU)
+>![alt text](image-1.png)
 >
-> - [SIASIS-TC-36](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-36%20-%20Intento%20de%20marcado%20de%20asistencia%20desde%20dispositivo%20no%20m%C3%B3vil.md "Ir al Test Case")
+> 3. TC-SQLI-003: Bloqueo de Comentarios SQL (--)
 >
->   ![1752456544829](image/SIASIS-TE-4/1752456544829.png)
+>![alt text](image-2.png)
 >
-> - [SIASIS-TC-37](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-37%20-%20GPS%20desactivado%20o%20permisos%20denegados.md "Ir al Test Case")
+> 4. TC-SQLI-004: Bloqueo de Condición Siempre Verdadera (OR 1=1)
 >
->   ![1752456789177](image/SIASIS-TE-4/1752456789177.png)
->
-> - [SIASIS-TC-39](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-39%20-%20Usuario%20fuera%20del%20rango%20horario%20laboral.md "Ir al Test Case")
->
->   ![1752456893553](image/SIASIS-TE-4/1752456893553.png)
->
-> - [SIASIS-TC-40](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-40%20-%20Asistencia%20ya%20registrada%20para%20el%20d%C3%ADa%20actual.md "Ir al Test Case")
->
->   ![1752457804420](image/SIASIS-TE-4/1752457804420.png)
->
-> - [SIASIS-TC-41](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-41%20-%20Error%20de%20conexi%C3%B3n%20de%20red%20al%20marcar%20asistencia%20propia.md "Ir al Test Case")
->
->   ![1752458036133](image/SIASIS-TE-4/1752458036133.png)
->
-> - [SIASIS-TC-42](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/Asistencia%20de%20Personal/No%20Directivos/SIASIS-TC-42%20-%20%20Marcado%20de%20Asistencia%20Propia%20en%20D%C3%ADa%20de%20evento%20o%20feriado%20registrado%20en%20el%20Sistema.md "Ir al Test Case")
->
->   ![1752457342671](https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/juanc/OneDrive/Escritorio/PROYECTO%20SIASIS/TESTING/Siasis-Test-Management/test-plans/SIASIS-TP-2/Certificacion/image/SIASIS-TE-4/1752457342671.png)
+>![alt text](image-3.png)
 
 ## 🐛 Defectos Encontrados
 
