@@ -1,6 +1,6 @@
-# 🧪 Test Case: SIASIS-TC-44 - Bloqueo de Inyección Básica (OR 1=1)
+# 🧪 Test Case: SIASIS-TC-46 - Bloqueo de Comentarios SQL (--) en Query Params
 
-> [!IMPORTANT] > **ID del Test Case:** SIASIS-TC-15
+> [!IMPORTANT] > **ID del Test Case:** SIASIS-TC-46
 > **Fecha de Creación:** 13/07/2025
 > **Autor:** Andry Diego
 > **Última Actualización:** 13/07/2025
@@ -14,18 +14,18 @@
 >
 > ### 🔖 Metadatos del Test
 >
-> | Campo               |              Valor              |
-> | ------------------- | :-----------------------------: |
-> | **ID Test Case**    |          SIASIS-TC-44           |
-> | **Nombre**          | Bloqueo de Inyección SQL Básica |
-> | **Módulo/Feature**  |        API01 - Seguridad        |
-> | **Epic/User Story** | API01-Protección SQL Injection  |
-> | **Tipo de Prueba**  |           🔒 Security           |
-> | **Nivel de Prueba** |          🌐 System 🔗           |
-> | **Prioridad**       |           🔴 Critical           |
-> | **Severidad**       |           🔴 Blocker            |
-> | **Automatizable**   |              ❌ No              |
-> | **Automatizado**    |              ❌ No              |
+> | Campo               |             Valor              |
+> | ------------------- | :----------------------------: |
+> | **ID Test Case**    |          SIASIS-TC-46          |
+> | **Nombre**          |   Bloqueo de Comentarios SQL   |
+> | **Módulo/Feature**  |       API01 - Seguridad        |
+> | **Epic/User Story** | API01-Protección SQL Injection |
+> | **Tipo de Prueba**  |          🔒 Security           |
+> | **Nivel de Prueba** |          🌐 System 🔗          |
+> | **Prioridad**       |          🔴 Critical           |
+> | **Severidad**       |            🟡 Major            |
+> | **Automatizable**   |             ❌ No              |
+> | **Automatizado**    |             ❌ No              |
 
 ---
 
@@ -36,7 +36,7 @@
 > **Tags principales:**
 >
 > ```gherkin
-> @SIASIS-TC-44
+> @SIASIS-TC-45
 > ```
 >
 > **Tags por componente:**
@@ -59,20 +59,20 @@
 >
 > ### 📖 Descripción del Test Case
 >
-> Verificar que el endpoint bloquea intentos de inyección SQL básica usando condición OR 1=1 en query params
-
+> Verificar que el endpoint detecta y bloquea intentos de inyección usando comentarios
+> SQL (--) en query params.
+>
 > [!NOTE]
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** Garantizar que la aplicación es resistente ante ataques de inyección SQL en ambiente de (desarrollo, certificación y producción)
+> **Objetivo:** Validar el comportamiento observado:
 >
 > **Criterio de Éxito:** <br>
 >
-> - Bloqueo de payloads clásicos de bypass <br>
-> - Mensaje de error genérico sin detalles técnicos <br>
-> - Registro en logs de seguridad <br>
->   Campo success: true
+> - Bloqueo con HTTP 400s <br>
+> - Mensaje estandarizado <br>
+> - Código de error específicoa <br>
 
 ---
 
@@ -118,19 +118,20 @@
 > ```gherkin
 > Feature: Protección contra SQL Injection en Query Params
 >  Como QA del sistema
->  Quiero verificar el bloqueo de inyecciones básicas
->  Para garantizar la seguridad de los datos
+>  Quiero verificar el bloqueo de comentarios SQL
+>  Para garantizar seguridad en todos los ambientes
 >
->   Background:
->     Given la API01 está operativa en el ambiente de (desarrollo, certificación y desarrollo).
+>  Background:
+>    Given el endpoint "/api/usuarios-genericos"
+>    And existen usuarios de prueba con rol de auxiliar
 >
->   @SIASIS-TC-44 @API01 @RDP02
->   Scenario: Bloqueo de condición OR 1=1
->   Given el endpoint "/api/usuarios-genericos" está operativo
->   When realizo una petición GET con "Criterio=rol=1' OR '1'='1"
->   Then recibo un código HTTP 400
->   And el mensaje de error no revela detalles técnicos
->   And el sistema registra el intento en logs de seguridad
+>  @SIASIS-TC-44 @API01 @RDP02
+>  Scenario: Bloqueo de comentarios SQL en parámetro Criterio
+>    Given el endpoint "/api/usuarios-genericos"
+>    When realizo una petición GET con "Criterio=admin' --"
+>    Then recibo un código HTTP 400 en todos los ambientes
+>    And la tabla "usuarios" permanece intacta en RDP02
+>    And el sistema registra una alerta de severidad "CRÍTICA"
 > ```
 
 ---
@@ -150,7 +151,7 @@
 >
 > #### Datos de Prueba Requeridos:
 >
-> - 📊 **Datos específicos:** Datos de prueba: Usuarios con roles PP.
+> - 📊 **Datos específicos:** Datos de prueba: Usuarios con roles PS.
 
 ---
 
@@ -192,8 +193,8 @@
 > | Rol                         | SI  | NO  |
 > | --------------------------- | --- | --- |
 > | **Directivo**               |     | ❌  |
-> | **Profesor Primaria**       | ✅  |     |
-> | **Auxiliar**                |     | ❌  |
+> | **Profesor Primaria**       |     | ❌  |
+> | **Auxiliar**                | ✅  |     |
 > | **Profesor Secundaria**     |     | ❌  |
 > | **Tutor**                   |     | ❌  |
 > | **Personal Administrativo** |     | ❌  |
