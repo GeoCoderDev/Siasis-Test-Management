@@ -1,4 +1,4 @@
-# 🧪 Test Case: SIASIS-TC-29 - Validar la obtención de datos del rol No Tutor
+# 🧪 Test Case: SIASIS-TC-29 - Validar la obtención de datos del rol No Tutor(Profesor Secundaria)
 
 > [!IMPORTANT]
 > **ID del Test Case:** SIASIS-TC-29
@@ -196,7 +196,7 @@
 > | **Profesor Primaria** |    | ❌ |
 > | **Auxiliar**          |   | ❌ |
 > | **Profesor Secundaria**         | ✅   |  |
-> | **Tutor**                       | ❌   |  |
+> | **Tutor**                       |    | ❌ |
 > | **Personal Administrativo**     |    | ❌ |
 > | **Responsable**       |    | ❌ |
 

@@ -1,7 +1,7 @@
 # 🧪 Test Case: SIASIS-TC-32 - Validar que el Directivo obtenga los datos de todos los auxiliares registrados del Sistema
 
 > [!IMPORTANT]
-> **ID del Test Case:** SIASIS-TC-31
+> **ID del Test Case:** SIASIS-TC-32
 > **Fecha de Creación:** 15/07/2025
 > **Autor:** Jose Gil
 > **Última Actualización:** 15/07/2025
@@ -17,9 +17,9 @@
 >
 > | Campo                     |                                                                        Valor                                                                        |
 > | ------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | **ID Test Case**    |                                                                    SIASIS-TC-31                                                                 |
+> | **ID Test Case**    |                                                                    SIASIS-TC-32                                                                 |
 > | **Nombre**          | Validar que el Directivo obtenga los datos de todos los auxiliares registrados del Sistema  |
-> | **Módulo/Feature** |                                                           Auxiliares/porDNI                                                      |
+> | **Módulo/Feature** |                                                           Auxiliares/                                                      |
 > | **Epic/User Story** |                                                                     No se tiene                                                                     |
 > | **Tipo de Prueba**  |                                                                🔧 Funcional                                                              |
 > | **Nivel de Prueba** |                                                                      🌐 System                                                                      |
@@ -60,7 +60,7 @@
 >
 > ### 📖 Descripción del Test Case
 >
-> Este test evalúa el método GET, que obtiene los datos de todos los Auxiliares través de la API del sistema mediante el login exitoso del Directivo.
+> Este test evalúa el método GET, que obtiene los datos de todos los Auxiliares través de la API del sistema y mediante el login exitoso del Directivo.
 
 > [!NOTE]
 >

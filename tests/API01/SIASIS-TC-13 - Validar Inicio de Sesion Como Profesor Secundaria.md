@@ -151,7 +151,7 @@
 >
 > #### Datos de Prueba Requeridos:
 >
-> - 📊 **Datos específicos:** Credenciales **_(Nombre de Usuario y Contraseña)_** de un usuario con Rol de Auxiliar
+> - 📊 **Datos específicos:** Credenciales **_(Nombre de Usuario y Contraseña)_** de un usuario con Rol de Profesor de Secundaria
 
 ---
 

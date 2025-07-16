@@ -1,7 +1,7 @@
-# 🧪 Test Case: SIASIS-TC-14 - Validar Inicio de Sesión de Sesión Exitoso para rol de Personal Admin
+# 🧪 Test Case: SIASIS-TC-19 - Validar Cambio de Foto de Perfil Exitoso para el Rol de Auxiliar
 
 > [!IMPORTANT]
-> **ID del Test Case:** SIASIS-TC-15
+> **ID del Test Case:** SIASIS-TC-19
 > **Fecha de Creación:** 13/07/2025
 > **Autor:** Jose Gil
 > **Última Actualización:** 13/07/2025
@@ -17,9 +17,9 @@
 >
 > | Campo                     |                                                                        Valor                                                                        |
 > | ------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | **ID Test Case**    |                                                                    SIASIS-TC-15                                                                   |
-> | **Nombre**          | Validar Inicio de Sesión de Sesión Exitoso <br> para rol de Directivo |
-> | **Módulo/Feature** |                                                           Login                                                       |
+> | **ID Test Case**    |                                                                    SIASIS-TC-19                                                                   |
+> | **Nombre**          | Validar Cambio de foto de Perfil  Exitoso para rol de Auxiliar |
+> | **Módulo/Feature** |                                                           misDatos/Modificar                                                       |
 > | **Epic/User Story** |                                                                     No se tiene                                                                     |
 > | **Tipo de Prueba**  |                                                                🔧 Funcional                                                              |
 > | **Nivel de Prueba** |                                                                      🌐 System                                                                      |
@@ -37,7 +37,7 @@
 > **Tags principales:**
 >
 > ```gherkin
-> @SIASIS-TC-15
+> @SIASIS-TC-19
 > ```
 >
 > **Tags por componente:**
@@ -49,7 +49,7 @@
 > **Tags por rol:**
 >
 > ```gherkin
-> @Iniciar-Sesion-Directivo
+> @Modificar-Foto-Perfil-Auxiliar
 > ```
 
 ---
@@ -60,17 +60,17 @@
 >
 > ### 📖 Descripción del Test Case
 >
-> Este test evalúa el flujo de autenticación exitoso para el rol de Directivo mediante la validación del inicio de sesión a través de la API del sistema.
+> Este test evalúa el flujo de cambio de foto de perfil exitoso para el rol de Auxiliar  a través de la API del sistema.
 
 > [!NOTE]
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** Verificar que los usuarios con el rol de Directivo  puedan iniciar sesión correctamente en el sistema
+> **Objetivo:** Verificar que los usuarios con el rol de Auxiliar puedan cambiar su foto de perfil exitosamente
 >
 > **Criterio de Éxito:** <br>
 > Código de estado: 200 OK <br>
-> Mensaje: "Inicio de sesión exitoso" <br>
+> Mensaje: "Foto de perfil actualizada correctamente" <br>
 > Campo success: true
 
 ---
@@ -117,21 +117,23 @@
 > ### 🥒 Scenario en Gherkin
 >
 > ```gherkin
-> Feature: Inicio de Sesion de Directivo
->  Como Directivo
->  Quiero poder iniciar sesión exitosamente
->  Para acceder a las funcionalidades correspondientes 
->   a  mi rol
+> Feature: Cambiar Foto de Perfil 
+>  Como Auxiliar
+>  Quiero poder cambiar mi foto de perfil 
+>  Para poder identificarme con mi imagen personal 
 >
 >   Background:
 >     Given tengo acceso a la API01 
+>     And inicio sesion exitosamente con mi rol
 >
->   @SIASIS-TC-15 @API01 @Iniciar-Sesion-Directivo
->   Scenario: Iniciar Sesion con usuario de Directivo
->   Given El usuario tiene credenciales válidas para el rol 
->   When El usuario realiza la solicitud POST 
+>   @SIASIS-TC-19 @API01 @Modificar-Foto-Perfil-Auxiliar
+>   Scenario: Cambiar Foto de Perfil para el rol de Auxiliar
+>   Given El usuario se a logeado correctamente  
+>   And Adjunta su foto de Perfil
+>   When El usuario realiza la solicitud PUT
 >   Then La API debe devolver un código de estado 200 OK
->   And El mensaje de respuesta debe indicar "Inicio de sesión exitoso"
+>   And El mensaje de respuesta debe indicar "Foto de perfil actualizada correctamente"
+> And La foto de perfil debe reflejarse correctamente en el sistema 
 > ```
 
 ---
@@ -178,9 +180,9 @@
 >
 > #### Test Cases Relacionados:
 >
-> - 📋 **Pre-requisito:** No hay Pre-requitsitos
-> - 🔄 **Dependiente:** No hay dependencias
-> - 🔗 **Relacionado:** No hay Relacion
+> - 📋 **Pre-requisito:** Estar Logeado con su respectivo rol - Cargar foto de Perfil
+> - 🔄 **Dependiente:** Login
+> - 🔗 **Relacionado:** API01 - LOGIN 
 
 ---
 
@@ -192,12 +194,12 @@
 >
 > | Rol                         | SI | NO |
 > | --------------------------- | -- | -- |
-> | **Directivo**         | ✅ |    |
+> | **Directivo**         |  |   ❌ |
 > | **Profesor Primaria** |    | ❌ |
-> | **Auxiliar**          |    | ❌ |
+> | **Auxiliar**          |  ✅  |  |
 > | **Profesor Secundaria**         |    | ❌ |
 > | **Tutor**                       |    | ❌ |
-> | **Personal Administrativo**     |    | ❌ |
+> | **Personal Administrativo**     |    |❌  |
 > | **Responsable**       |    | ❌ |
 
 ---
@@ -253,6 +255,6 @@
 
 ---
 
-**📅 Última Actualización:** 07/07/2025 01:26AM
+**📅 Última Actualización:** 13/07/2025 13:20PM
 **✅ Estado de Revisión:** Aprobado
 **👤 Revisado por:** Juan Chavez - Lider Técnico

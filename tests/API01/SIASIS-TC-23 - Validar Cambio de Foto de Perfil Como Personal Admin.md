@@ -1,7 +1,7 @@
-# 🧪 Test Case: SIASIS-TC-22 - Validar Cambio de Foto de Perfil Exitoso para el Rol de Directivo
+# 🧪 Test Case: SIASIS-TC-23 - Validar Cambio de Foto de Perfil Exitoso para el Rol de Personal Admin
 
 > [!IMPORTANT]
-> **ID del Test Case:** SIASIS-TC-22
+> **ID del Test Case:** SIASIS-TC-23
 > **Fecha de Creación:** 13/07/2025
 > **Autor:** Jose Gil
 > **Última Actualización:** 13/07/2025
@@ -17,8 +17,8 @@
 >
 > | Campo                     |                                                                        Valor                                                                        |
 > | ------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | **ID Test Case**    |                                                                    SIASIS-TC-22                                                                  |
-> | **Nombre**          | Validar Cambio de foto de Perfil  Exitoso para rol de Directivo |
+> | **ID Test Case**    |                                                                    SIASIS-TC-23                                                                  |
+> | **Nombre**          | Validar Cambio de foto de Perfil  Exitoso para rol de Personal Admin |
 > | **Módulo/Feature** |                                                           misDatos/Modificar                                                       |
 > | **Epic/User Story** |                                                                     No se tiene                                                                     |
 > | **Tipo de Prueba**  |                                                                🔧 Funcional                                                              |
@@ -37,7 +37,7 @@
 > **Tags principales:**
 >
 > ```gherkin
-> @SIASIS-TC-22
+> @SIASIS-TC-23
 > ```
 >
 > **Tags por componente:**
@@ -49,7 +49,7 @@
 > **Tags por rol:**
 >
 > ```gherkin
-> @Modificar-Foto-Perfil-Directivo
+> @Modificar-Foto-Perfil-Personal-Admin
 > ```
 
 ---
@@ -60,13 +60,13 @@
 >
 > ### 📖 Descripción del Test Case
 >
-> Este test evalúa el flujo de cambio de foto de perfil exitoso para el rol de Directivo a través de la API del sistema.
+> Este test evalúa el flujo de cambio de foto de perfil exitoso para el rol de Personal Admin a través de la API del sistema.
 
 > [!NOTE]
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** Verificar que los usuarios con el rol de Directivo puedan cambiar su foto de perfil exitosamente
+> **Objetivo:** Verificar que los usuarios con el rol de Personal Admin puedan cambiar su foto de perfil exitosamente
 >
 > **Criterio de Éxito:** <br>
 > Código de estado: 200 OK <br>
@@ -118,7 +118,7 @@
 >
 > ```gherkin
 > Feature: Cambiar Foto de Perfil 
->  Como Directivo
+>  Como Personal Admin
 >  Quiero poder cambiar mi foto de perfil 
 >  Para poder identificarme con mi imagen personal 
 >
@@ -126,8 +126,8 @@
 >     Given tengo acceso a la API01 
 >     And inicio sesion exitosamente con mi rol
 >
->   @SIASIS-TC-22 @API01 @Modificar-Foto-Perfil-Directivo
->   Scenario: Cambiar Foto de Perfil para el rol de Directivo
+>   @SIASIS-TC-23 @API01 @Modificar-Foto-Perfil-Personal-Admin
+>   Scenario: Cambiar Foto de Perfil para el rol de Personal Admin
 >   Given El usuario se a logeado correctamente  
 >   And Adjunta su foto de Perfil
 >   When El usuario realiza la solicitud PUT
@@ -153,7 +153,7 @@
 >
 > #### Datos de Prueba Requeridos:
 >
-> - 📊 **Datos específicos:** Credenciales **_(Nombre de Usuario y Contraseña)_** de un usuario con Rol de Directivo
+> - 📊 **Datos específicos:** Credenciales **_(Nombre de Usuario y Contraseña)_** de un usuario con Rol de Personal Admin
 
 ---
 
@@ -194,12 +194,12 @@
 >
 > | Rol                         | SI | NO |
 > | --------------------------- | -- | -- |
-> | **Directivo**         | ✅ |    |
+> | **Directivo**         |  |  ❌  |
 > | **Profesor Primaria** |    | ❌ |
 > | **Auxiliar**          |    | ❌ |
 > | **Profesor Secundaria**         |    |❌  |
 > | **Tutor**                       |    |  ❌|
-> | **Personal Administrativo**     |    |❌  |
+> | **Personal Administrativo**     | ✅   |  |
 > | **Responsable**       |    | ❌ |
 
 ---

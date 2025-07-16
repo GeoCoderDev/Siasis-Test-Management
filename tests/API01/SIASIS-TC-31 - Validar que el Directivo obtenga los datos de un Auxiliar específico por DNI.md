@@ -60,13 +60,13 @@
 >
 > ### 📖 Descripción del Test Case
 >
-> Este test evalúa el método GET, que obtiene los datos del  rol de Auxiliar través de la API del sistema mediante el login exitoso del Directivo.
+> Este test evalúa el método GET, que obtiene los datos del  rol de Auxiliar través de la API del sistema y  mediante el login exitoso del Directivo.
 
 > [!NOTE]
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** Verificar que el método GET obtenga los datos del rol Auxiliar mediante la sesion del exitosa del Directivo
+> **Objetivo:** Verificar que el método GET obtenga los datos del rol Auxiliar mediante la sesion exitosa del Directivo
 >
 > **Criterio de Éxito:** <br>
 > Código de estado: 200 OK <br>

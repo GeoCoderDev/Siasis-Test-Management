@@ -17,7 +17,7 @@
 >
 > | Campo                     |                                                                        Valor                                                                        |
 > | ------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | **ID Test Case**    |                                                                    SIASIS-TC-12                                                                    |
+> | **ID Test Case**    |                                                                    SIASIS-TC-14                                                                    |
 > | **Nombre**          | Validar Inicio de Sesión de Sesión Exitoso <br> para rol de Tutor |
 > | **Módulo/Feature** |                                                           Login                                                       |
 > | **Epic/User Story** |                                                                     No se tiene                                                                     |
@@ -66,7 +66,7 @@
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** Verificar que los usuarios con el rol de Profesor de Secundaria puedan iniciar sesión correctamente en el sistema
+> **Objetivo:** Verificar que los usuarios con el rol de Tutor  puedan iniciar sesión correctamente en el sistema
 >
 > **Criterio de Éxito:** <br>
 > Código de estado: 200 OK <br>
@@ -117,8 +117,8 @@
 > ### 🥒 Scenario en Gherkin
 >
 > ```gherkin
-> Feature: Inicio de Sesion de Profesor de Secundaria
->  Como Profesor de Secundaria
+> Feature: Inicio de Sesion de Tutor
+>  Como Tutor
 >  Quiero poder iniciar sesión exitosamente
 >  Para acceder a las funcionalidades correspondientes 
 >   a  mi rol
@@ -126,8 +126,8 @@
 >   Background:
 >     Given tengo acceso a la API01 
 >
->   @SIASIS-TC-13 @API01 @Iniciar-Sesion-No-Tutor
->   Scenario: Iniciar Sesion con usuario Profesor de Secundaria
+>   @SIASIS-TC-14 @API01 @Iniciar-Sesion-Caso-Tutor
+>   Scenario: Iniciar Sesion con usuario de Tutor
 >   Given El usuario tiene credenciales válidas para el rol 
 >   When El usuario realiza la solicitud POST 
 >   Then La API debe devolver un código de estado 200 OK
@@ -151,7 +151,7 @@
 >
 > #### Datos de Prueba Requeridos:
 >
-> - 📊 **Datos específicos:** Credenciales **_(Nombre de Usuario y Contraseña)_** de un usuario con Rol de Auxiliar
+> - 📊 **Datos específicos:** Credenciales **_(Nombre de Usuario y Contraseña)_** de un usuario con Rol de Tutor
 
 ---
 
@@ -195,8 +195,8 @@
 > | **Directivo**         |  |  ❌  |
 > | **Profesor Primaria** |    | ❌ |
 > | **Auxiliar**          |    | ❌ |
-> | **Profesor Secundaria**         |  ✅  |  |
-> | **Tutor**                       |    | ❌ |
+> | **Profesor Secundaria**         |    | ❌ |
+> | **Tutor**                       |  ✅  |  |
 > | **Personal Administrativo**     |    | ❌ |
 > | **Responsable**       |    | ❌ |
 

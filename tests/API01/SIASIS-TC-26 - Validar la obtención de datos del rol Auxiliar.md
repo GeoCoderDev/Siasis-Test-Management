@@ -1,7 +1,7 @@
 # 🧪 Test Case: SIASIS-TC-26 - Validar la obtención de datos del rol Auxiliar
 
 > [!IMPORTANT]
-> **ID del Test Case:** SIASIS-TC-25
+> **ID del Test Case:** SIASIS-TC-26
 > **Fecha de Creación:** 13/07/2025
 > **Autor:** Jose Gil
 > **Última Actualización:** 13/07/2025
@@ -66,7 +66,7 @@
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** Verificar que el método GET para obtener los datos del rol Personal Admin funcione correctamente y devuelva la información precisa y completa del rol.
+> **Objetivo:** Verificar que el método GET para obtener los datos del rol Auxiliar funcione correctamente y devuelva la información precisa y completa del rol.
 >
 > **Criterio de Éxito:** <br>
 > Código de estado: 200 OK <br>

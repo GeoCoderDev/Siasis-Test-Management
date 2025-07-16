@@ -1,7 +1,7 @@
-# 🧪 Test Case: SIASIS-TC-14 - Validar Inicio de Sesión de Sesión Exitoso para rol de Personal Admin
+# 🧪 Test Case: SIASIS-TC-16 - Validar Inicio de Sesión de Sesión Exitoso para rol de Personal Admin
 
 > [!IMPORTANT]
-> **ID del Test Case:** SIASIS-TC-15
+> **ID del Test Case:** SIASIS-TC-16
 > **Fecha de Creación:** 13/07/2025
 > **Autor:** Jose Gil
 > **Última Actualización:** 13/07/2025
@@ -17,8 +17,8 @@
 >
 > | Campo                     |                                                                        Valor                                                                        |
 > | ------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | **ID Test Case**    |                                                                    SIASIS-TC-15                                                                   |
-> | **Nombre**          | Validar Inicio de Sesión de Sesión Exitoso <br> para rol de Directivo |
+> | **ID Test Case**    |                                                                    SIASIS-TC-16                                                                   |
+> | **Nombre**          | Validar Inicio de Sesión de Sesión Exitoso <br> para rol de Personal Admin |
 > | **Módulo/Feature** |                                                           Login                                                       |
 > | **Epic/User Story** |                                                                     No se tiene                                                                     |
 > | **Tipo de Prueba**  |                                                                🔧 Funcional                                                              |
@@ -37,7 +37,7 @@
 > **Tags principales:**
 >
 > ```gherkin
-> @SIASIS-TC-15
+> @SIASIS-TC-16
 > ```
 >
 > **Tags por componente:**
@@ -49,7 +49,7 @@
 > **Tags por rol:**
 >
 > ```gherkin
-> @Iniciar-Sesion-Directivo
+> @Iniciar-Sesion-Personal-Administrativo
 > ```
 
 ---
@@ -60,13 +60,13 @@
 >
 > ### 📖 Descripción del Test Case
 >
-> Este test evalúa el flujo de autenticación exitoso para el rol de Directivo mediante la validación del inicio de sesión a través de la API del sistema.
+> Este test evalúa el flujo de autenticación exitoso para el rol de Personal Admin mediante la validación del inicio de sesión a través de la API del sistema.
 
 > [!NOTE]
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** Verificar que los usuarios con el rol de Directivo  puedan iniciar sesión correctamente en el sistema
+> **Objetivo:** Verificar que los usuarios con el rol de Personal Admin puedan iniciar sesión correctamente en el sistema
 >
 > **Criterio de Éxito:** <br>
 > Código de estado: 200 OK <br>
@@ -117,8 +117,8 @@
 > ### 🥒 Scenario en Gherkin
 >
 > ```gherkin
-> Feature: Inicio de Sesion de Directivo
->  Como Directivo
+> Feature: Inicio de Sesion de Personal Admin
+>  Como Personal Admin
 >  Quiero poder iniciar sesión exitosamente
 >  Para acceder a las funcionalidades correspondientes 
 >   a  mi rol
@@ -126,8 +126,8 @@
 >   Background:
 >     Given tengo acceso a la API01 
 >
->   @SIASIS-TC-15 @API01 @Iniciar-Sesion-Directivo
->   Scenario: Iniciar Sesion con usuario de Directivo
+>   @SIASIS-TC-16 @API01 @Iniciar-Sesion-Personal-Administrativo
+>   Scenario: Iniciar Sesion con usuario de Personal Admin
 >   Given El usuario tiene credenciales válidas para el rol 
 >   When El usuario realiza la solicitud POST 
 >   Then La API debe devolver un código de estado 200 OK
@@ -151,7 +151,7 @@
 >
 > #### Datos de Prueba Requeridos:
 >
-> - 📊 **Datos específicos:** Credenciales **_(Nombre de Usuario y Contraseña)_** de un usuario con Rol de Auxiliar
+> - 📊 **Datos específicos:** Credenciales **_(Nombre de Usuario y Contraseña)_** de un usuario con Rol de Personal Admin
 
 ---
 
@@ -192,12 +192,12 @@
 >
 > | Rol                         | SI | NO |
 > | --------------------------- | -- | -- |
-> | **Directivo**         | ✅ |    |
+> | **Directivo**         |  |   ❌ |
 > | **Profesor Primaria** |    | ❌ |
 > | **Auxiliar**          |    | ❌ |
 > | **Profesor Secundaria**         |    | ❌ |
 > | **Tutor**                       |    | ❌ |
-> | **Personal Administrativo**     |    | ❌ |
+> | **Personal Administrativo**     |  ✅  |  |
 > | **Responsable**       |    | ❌ |
 
 ---
@@ -253,6 +253,6 @@
 
 ---
 
-**📅 Última Actualización:** 07/07/2025 01:26AM
+**📅 Última Actualización:** 13/07/2025 13:20PM
 **✅ Estado de Revisión:** Aprobado
 **👤 Revisado por:** Juan Chavez - Lider Técnico

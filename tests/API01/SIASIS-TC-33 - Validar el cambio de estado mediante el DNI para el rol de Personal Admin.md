@@ -19,7 +19,7 @@
 > | ------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
 > | **ID Test Case**    |                                                                    SIASIS-TC-33                                                                |
 > | **Nombre**          | Validar que el Directivo cambie el estado Activo/Desactivo de un Personal Admin específico por DNI  |
-> | **Módulo/Feature** |                                                           Auxiliares/porDNI                                                      |
+> | **Módulo/Feature** |                                                           PersonalAdministrativo/porDNI                                                      |
 > | **Epic/User Story** |                                                                     No se tiene                                                                     |
 > | **Tipo de Prueba**  |                                                                🔧 Funcional                                                              |
 > | **Nivel de Prueba** |                                                                      🌐 System                                                                      |

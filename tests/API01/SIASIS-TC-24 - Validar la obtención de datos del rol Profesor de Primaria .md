@@ -19,7 +19,7 @@
 > | ------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
 > | **ID Test Case**    |                                                                    SIASIS-TC-24                                                                  |
 > | **Nombre**          | Validar la obtención de datos del rol Profesor de Primaria |
-> | **Módulo/Feature** |                                                           misDatos/Modificar                                                       |
+> | **Módulo/Feature** |                                                           misDatos/                                                       |
 > | **Epic/User Story** |                                                                     No se tiene                                                                     |
 > | **Tipo de Prueba**  |                                                                🔧 Funcional                                                              |
 > | **Nivel de Prueba** |                                                                      🌐 System                                                                      |
@@ -127,13 +127,11 @@
 >     And inicio sesion exitosamente con mi rol
 >
 >   @SIASIS-TC-24 @API01 @Obtener-Mis-Datos-Profesor-Primaria
->   Scenario: Cambiar Foto de Perfil para el rol de Personal Admin
+>   Scenario: Obtener todos los datos del rol Profesor de Primaria
 >   Given El usuario se a logeado correctamente  
->   And Adjunta su foto de Perfil
->   When El usuario realiza la solicitud PUT
+>   When El usuario realiza la solicitud GET
 >   Then La API debe devolver un código de estado 200 OK
->   And El mensaje de respuesta debe indicar ""
-> And La foto de perfil debe reflejarse correctamente en el sistema 
+>   And La respuesta debe contener todos los datos asociados al rol (nombres, ID, DNI, etc.e")
 > ```
 
 ---

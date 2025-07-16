@@ -66,9 +66,9 @@
 >
 > ### 🎯 Objetivo Principal
 >
-> **Objetivo:** Validar que un usuario o usuarios con rol Auxiliar pueda iniciar sesion correctamente.
+> **Objetivo:** Verificar que los usuarios con el rol de Auxiliar puedan iniciar sesión correctamente en el sistema
 >
-> **Criterio de Éxito:** 
+> **Criterio de Éxito:** <br>
 > Código de estado: 200 OK <br>
 > Mensaje: "Inicio de sesión exitoso" <br>
 > Campo success: true
@@ -124,13 +124,14 @@
 >   a  mi rol
 >
 >   Background:
->     Given tengo acceso a la API01 para autenticarme como Auxiliar
+>     Given tengo acceso a la API01 
 >
 >   @SIASIS-TC-12 @API01 @Iniciar-Sesion-Auxiliar
 >   Scenario: Iniciar Sesion con usuario Auxiliar
->     Given El usuario con rol Auxiliar tiene credenciales válidas
->      When El usuario realiza la solicitud de inicio de sesión con sus credenciales 
->     Then La API debe devolver un código de estado 200 OK
+>   Given El usuario tiene credenciales válidas para el rol Auxiliar
+>   When El usuario realiza la solicitud POST 
+>   Then La API debe devolver un código de estado 200 OK
+>   And El mensaje de respuesta debe indicar "Inicio de sesión exitoso"
 > ```
 
 ---
@@ -191,9 +192,9 @@
 >
 > | Rol                         | SI | NO |
 > | --------------------------- | -- | -- |
-> | **Directivo**         | ❌ |    |
+> | **Directivo**         |  |  ❌  |
 > | **Profesor Primaria** |    | ❌ |
-> | **Auxiliar**          |    | ✅ |
+> | **Auxiliar**          | ✅   |  |
 > | Profesor Secundaria         |    | ❌ |
 > | Tutor                       |    | ❌ |
 > | Personal Administrativo     |    | ❌ |
@@ -221,7 +222,7 @@
 ---
 
 ## 📞 Información de Contacto
-
+>
 > [!INFO]
 >
 > ### 👥 Responsables

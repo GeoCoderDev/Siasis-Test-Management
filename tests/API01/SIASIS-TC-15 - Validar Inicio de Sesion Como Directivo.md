@@ -1,4 +1,4 @@
-# 🧪 Test Case: SIASIS-TC-14 - Validar Inicio de Sesión de Sesión Exitoso para rol de Directivo
+# 🧪 Test Case: SIASIS-TC-15 - Validar Inicio de Sesión de Sesión Exitoso para rol de Directivo
 
 > [!IMPORTANT]
 > **ID del Test Case:** SIASIS-TC-15
@@ -151,7 +151,7 @@
 >
 > #### Datos de Prueba Requeridos:
 >
-> - 📊 **Datos específicos:** Credenciales **_(Nombre de Usuario y Contraseña)_** de un usuario con Rol de Auxiliar
+> - 📊 **Datos específicos:** Credenciales **_(Nombre de Usuario y Contraseña)_** de un usuario con Rol de Directivo
 
 ---
 
