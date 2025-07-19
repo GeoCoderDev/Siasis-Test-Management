@@ -1,4 +1,4 @@
-# 📋 Test Plan: SIASIS-TP-1 - Login para Personal del Colegio IE20935
+# 📋 Test Plan: SIASIS-TP-1 - Obtención de Datos para Toma de Asistencia Diaria
 
 > [!IMPORTANT]
 >
