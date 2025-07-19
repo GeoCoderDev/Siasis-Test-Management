@@ -1,7 +1,7 @@
 # 🚀 Test Execution: Validar correcto funcionamiento de los Endpoints de API SIU01 - COOKIES
 
 > [!IMPORTANT]
-> **ID de Ejecución:** SIASIS-TE-14
+> **ID de Ejecución:** SIASIS-TE-15
 > **Fecha de Ejecución:** 19/07/2025
 > **Ejecutor:** Jose Gil
 > **Duración:** 1 min
@@ -97,19 +97,19 @@
 >
 > |                                                                                                                          ID Test                                                                                                                          |                                                   Nombre                                                   | Tipo      | Prioridad | Estado    | Tiempo Est. |
 > | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------: | ----------- | ----------- | ----------- | :-----------: |
-> |                                   [SIASIS-TC-50](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-12%20-%20Validar%20Inicio%20de%20Sesion%20Como%20Auxiliar.md "Ir al Test Case")                                   |                          Validar el metodo POST del endpoint que realiza el Set Cookies                         | Funcional | 🟢 Medium | ✅ Passed |    1 min    |
-> |                            [SIASIS-TC-51](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-13%20-%20Validar%20Inicio%20de%20Sesion%20Como%20Profesor%20Secundaria.md "Ir al Test Case")                            |             Validar el metodo GET para obtener los datos de Asistencia              | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
-> |                                   [SIASIS-TC-52](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-14%20-%20Validar%20Inicio%20de%20Sesion%20Como%20Tutor%20.md "Ir al Test Case")                                   |                     Validar el metodo POST para marcar Asistencia con DNI para el el rol de Directivo| Funcional | 🟢 Medium | ✅ Passed |    2 min    |
-> |                                  [SIASIS-TC-53](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-15%20-%20Validar%20Inicio%20de%20Sesion%20Como%20Directivo.mdd "Ir al Test Case")                                  |                        Validar el metodo POST para marcar Asistencia con DNI para el el rol de Auxiliar                        | Funcional | 🟢 Medium | ✅ Passed |    1 min    |
-> |                               [SIASIS-TC-54](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-16%20-%20Validar%20Inicio%20de%20Sesion%20Como%20Personal%20Admin.md "Ir al Test Case")                               |                       Validar el metodo POST para marcar Asistencia con DNI para el el rol de Admin                      | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
-> |                           [SIASIS-TC-55](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-17%20-%20Validar%20Inicio%20de%20Sesion%20Como%20Profesor%20de%20Primaria.md "Ir al Test Case")                           |                    Validar el metodo POST para marcar Asistencia con DNI para el el rol de Profesor Primaria                   | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
-> |                   [SIASIS-TC-56](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-18%20-%20Validar%20Cambio%20de%20Foto%20de%20Perfil%20Como%20Profesor%20de%20Primaria%20.md "Ir al Test Case")                   |                         Validar el metodo POST para marcar Asistencia con DNI para el el rol de Profesor Secundaria - Tutor| Funcional | 🟢 Medium | ✅ Passed |    2 min    |
-> |                        [SIASIS-TC-57](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-19%20-%20Validar%20Cambio%20de%20Foto%20de%20Perfil%20Como%20Auxiliar%20%20copy.md "Ir al Test Case")                        |                               Validar el metodo POST para marcar Asistencia con DNI para estudiantes de Secundaria con el rol  de Auxiliar                               | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
-> |                            [SIASIS-TC-58](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-20%20-%20Validar%20Cambio%20de%20Foto%20de%20Perfil%20Como%20No%20Tutor.md "Ir al Test Case")                            |                              Validar el metodo POST para marcar Asistencia con DNI para estudiantes de Primaria con el rol de Profesor de Primaria                               | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
-> |                             [SIASIS-TC-59](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-21%20-%20Validar%20Cambio%20de%20Foto%20de%20Perfil%20Como%20Tutor%20.md "Ir al Test Case")                             |                         Validar el metodo POST para marcar mi Asistencia propia para todos los roles  | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
-> |                            [SIASIS-TC-60](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-22%20-%20Validar%20Cambio%20de%20Foto%20de%20Perfil%20Como%20Directivo.md "Ir al Test Case")                            |                       Validar el metodo GET para obtener las asistencias por cada Rol                      | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
-> |                         [SIASIS-TC-61](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-23%20-%20Validar%20Cambio%20de%20Foto%20de%20Perfil%20Como%20Personal%20Admin.md "Ir al Test Case")                         |                   Validar el metodo GET para obtener las asistencias especificas por DNI                    | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
-> |                 [SIASIS-TC-62](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-24%20-%20Validar%20la%20obtenci%C3%B3n%20de%20datos%20del%20rol%20Profesor%20de%20Primaria%20.md "Ir al Test Case")                 |                        Validar el metodo GET para obtener mi propia asistencia                        | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
+> |                                   [SIASIS-TC-50](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-50%20-%20POST%20-Set%20Cookies.md "Ir al Test Case")                                   |                          Validar el metodo POST del endpoint que realiza el Set Cookies                         | Funcional | 🟢 Medium | ✅ Passed |    1 min    |
+> |                            [SIASIS-TC-51](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-51%20-%20%20GET%20-%20obtener%20los%20datos%20de%20Asistencia.md "Ir al Test Case")                            |             Validar el metodo GET para obtener los datos de Asistencia              | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
+> |                                   [SIASIS-TC-52](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-52%20-%20%20POST%20-%20Marcar%20asistencia%20con%20DNI%20espec%C3%ADfico%20para%20personal%20directivo.md "Ir al Test Case")                                   |                     Validar el metodo POST para marcar Asistencia con DNI para el el rol de Directivo| Funcional | 🟢 Medium | ✅ Passed |    2 min    |
+> |                                  [SIASIS-TC-53](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-53%20-%20POST%20-%20Marcar%20asistencia%20con%20DNI%20espec%C3%ADfico%20para%20personal%20Auxiliar.md "Ir al Test Case")                                  |                        Validar el metodo POST para marcar Asistencia con DNI para el el rol de Auxiliar                        | Funcional | 🟢 Medium | ✅ Passed |    1 min    |
+> |                               [SIASIS-TC-54](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-54%20-%20POST%20-%20Marcar%20asistencia%20con%20DNI%20espec%C3%ADfico%20para%20personal%20Admin.md "Ir al Test Case")                               |                       Validar el metodo POST para marcar Asistencia con DNI para el el rol de Admin                      | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
+> |                           [SIASIS-TC-55](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-55%20-%20POST%20-%20Marcar%20asistencia%20con%20DNI%20espec%C3%ADfico%20para%20Profesor%20Primaria.md "Ir al Test Case")                           |                    Validar el metodo POST para marcar Asistencia con DNI para el el rol de Profesor Primaria                   | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
+> |                   [SIASIS-TC-56](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-56%20-%20POST%20-%20Marcar%20asistencia%20con%20DNI%20espec%C3%ADfico%20para%20Profesor%20Secundaria-Tutor.md "Ir al Test Case")                   |                         Validar el metodo POST para marcar Asistencia con DNI para el el rol de Profesor Secundaria - Tutor| Funcional | 🟢 Medium | ✅ Passed |    2 min    |
+> |                        [SIASIS-TC-57](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-57%20-%20POST%20-%20Marcar%20asistencia%20con%20DNI%20espec%C3%ADfico%20para%20Estudiante%20de%20Secundaria.md "Ir al Test Case")                        |                               Validar el metodo POST para marcar Asistencia con DNI para estudiantes de Secundaria con el rol  de Auxiliar                               | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
+> |                            [SIASIS-TC-58](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-58%20-%20POST%20-%20Marcar%20asistencia%20con%20DNI%20espec%C3%ADfico%20para%20Estudiante%20de%20Primaria.md "Ir al Test Case")                            |                              Validar el metodo POST para marcar Asistencia con DNI para estudiantes de Primaria con el rol de Profesor de Primaria                               | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
+> |                             [SIASIS-TC-59](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-59%20-%20POST%20-%20Marcar%20mi%20asistencia%20propia%20para%20todos%20los%20roles.md "Ir al Test Case")                             |                         Validar el metodo POST para marcar mi Asistencia propia para todos los roles  | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
+> |                            [SIASIS-TC-60](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-60%20-%20GET%20-%20Obtener%20todas%20las%20asistencias%20por%20roles.md "Ir al Test Case")                            |                       Validar el metodo GET para obtener las asistencias por cada Rol                      | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
+> |                         [SIASIS-TC-61](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-61%20-%20GET%20-%20Obtener%20%20las%20asistencias%20por%20DNI%20.md "Ir al Test Case")                         |                   Validar el metodo GET para obtener las asistencias especificas por DNI                    | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
+> |                 [SIASIS-TC-62](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-62%20-%20GET%20-%20Obtener%20%20mi%20propia%20Asistencia%20md "Ir al Test Case")                 |                        Validar el metodo GET para obtener mi propia asistencia                        | Funcional | 🟢 Medium | ✅ Passed |    2 min    |
 
 ---
 
@@ -119,11 +119,12 @@
 >
 > ### 📸 Evidencias de la ejecución
 >
-
 >![alt text](image.png)
-
 >![alt text](image-1.png)
 >![alt text](image-2.png)
+>![alt text](image-3.png)
+>![alt text](image-4.png)
+>![alt text](image-5.png)
 
 ## 🐛 Defectos Encontrados
 
@@ -223,8 +224,8 @@
 
 ---
 
-**📅 Fecha de Ejecución:** /07/2025
-**⏰ Hora de Inicio:** 23:50hs
-**⏰ Hora de Finalización:** 23:51hs
+**📅 Fecha de Ejecución:** 19/07/2025
+**⏰ Hora de Inicio:** 00:50hs
+**⏰ Hora de Finalización:** 00:51hs
 **👤 Ejecutado por:** Jose Gil
 **✅ Estado Final:** Completado
