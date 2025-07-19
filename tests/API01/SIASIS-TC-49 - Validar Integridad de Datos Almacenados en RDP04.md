@@ -1,4 +1,4 @@
-# 🧪 Test Case: SIASIS-TC-12 - Validar Integridad de Datos Almacenados en RDP04
+# 🧪 Test Case: SIASIS-TC-49 - Validar Integridad de Datos Almacenados en RDP04
 
 > [!IMPORTANT] > **ID del Test Case:** SIASIS-TC-49
 > **Fecha de Creación:** 13/07/2025

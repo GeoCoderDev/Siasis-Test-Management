@@ -1,4 +1,4 @@
-# 🧪 Test Case: SIASIS-TC-12 - Validar Ejecución Automática de Tarea Programada en GitHub Actions
+# 🧪 Test Case: SIASIS-TC-48 - Validar Ejecución Automática de Tarea Programada en GitHub Actions
 
 > [!IMPORTANT] > **ID del Test Case:** SIASIS-TC-48
 > **Fecha de Creación:** 13/07/2025

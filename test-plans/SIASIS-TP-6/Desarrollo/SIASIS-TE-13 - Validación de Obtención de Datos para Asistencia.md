@@ -1,7 +1,6 @@
-# 🚀 Test Execution: Ejecución de Tests de Login de Personal del Colegio
+# 🚀 Test Execution: Validación de Obtención de Datos para Asistencia
 
-> [!IMPORTANT]
-> **ID de Ejecución:** SIASIS-TE-13
+> [!IMPORTANT] > **ID de Ejecución:** SIASIS-TE-13
 > **Fecha de Ejecución:** 03/07/2025
 > **Ejecutor:** Andry Diego
 > **Duración:** 1min 30 secs
@@ -15,16 +14,16 @@
 >
 > ### 🔖 Metadatos de Ejecución
 >
-> | Campo                        |                                                                                              Valor                                                                                              |
-> | ---------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | **ID Ejecución**      |                                                                                           SIASIS-TE-2                                                                                           |
-> | **Nombre**             |                                                                       Ejecución de Tests de Login de Personal del Colegio                                                                       |
-> | **Test Plan**          | [SIASIS-TP-1](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/SIASIS-TP-1%20-%20Login%20para%20Personal%20del%20Colegio%20IE20935.md "Test Plan Relacionado") |
-> | **Sprint/Release**     |                                                                                                4                                                                                                |
-> | **Build/Versión**     |                                                                                               1.0                                                                                               |
-> | **Tipo de Ejecución** |                                                                                       🐛 Bug Verification                                                                                       |
-> | **Modo de Ejecución** |                                                                                           🤖 Automated                                                                                           |
-> | **Prioridad**          |                                                                                           🔴 Critical                                                                                           |
+> | Campo                 |                                                                     Valor                                                                      |
+> | --------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------: |
+> | **ID Ejecución**      |                                                                  SIASIS-TE-13                                                                  |
+> | **Nombre**            |                               Validación de Obtención de Datos para Asistencia Diaria en Ambiente de Desarrollo                                |
+> | **Test Plan**         | [SIASIS-TP-6](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-6/SIASIS-TP-6.md "Test Plan Relacionado") |
+> | **Sprint/Release**    |                                                                       6                                                                        |
+> | **Build/Versión**     |                                                                      1.0                                                                       |
+> | **Tipo de Ejecución** |                                                              🐛 Bug Verification                                                               |
+> | **Modo de Ejecución** |                                                                    🔀 Mixed                                                                    |
+> | **Prioridad**         |                                                                  🔴 Critical                                                                   |
 
 ---
 
@@ -34,22 +33,22 @@
 >
 > ### 🏗️ Detalles del Ambiente
 >
-> |         Aspecto         |            Configuración            |
-> | :---------------------: | :----------------------------------: |
-> |   **Ambiente**   |          🧪 Certificación          |
-> |   **URL Base**   |    https://siasis-cert.vercel.app    |
-> | **Base de Datos** | Instancia Aleatoria **RDP02** |
-> |   **Servidor**   |           No hay detalles           |
-> |    **Red/VPN**    |           No hay Detalles           |
+> |      Aspecto      |         Configuración          |
+> | :---------------: | :----------------------------: |
+> |   **Ambiente**    |         🔧 Desarrollo          |
+> |   **URL Base**    | https://siasis-dev.vercel.app/ |
+> | **Base de Datos** | Instancia de Desarrollo RDP02  |
+> |   **Servidor**    |        No hay detalles         |
+> |    **Red/VPN**    |        No hay Detalles         |
 
 > [!TIP]
 >
 > ### 💻 Configuración Técnica
 >
-> | Tecnología             |    Versión    | Estado |
-> | ----------------------- | :-------------: | :----: |
-> | **Frontend**      |  React 18.2.0  |   🟢   |
-> | **Backend**       |   Node.js 22   |   🟢   |
+> | Tecnología        |     Versión     | Estado |
+> | ----------------- | :-------------: | :----: |
+> | **Frontend**      |  React 18.2.0   |   🟢   |
+> | **Backend**       |   Node.js 22    |   🟢   |
 > | **Base de Datos** | PostgreSQL 15.3 |   🟢   |
 > | **Cache**         |    Redis 7.0    |   🟢   |
 > | **WebSocket**     | Socket.io 4.7.0 |   🟢   |
@@ -58,11 +57,11 @@
 >
 > ### 🖥️ Configuración de Dispositivos
 >
-> | Dispositivo       | Sistema Operativo | Navegador   | Resolución |
-> | ----------------- | ----------------- | ----------- | ----------- |
-> | **Desktop** | Linux             | Chrome 115+ | 1920x941    |
-> | **Mobile**  | -                 | -           | -           |
-> | **Tablet**  | -                 | -           | -           |
+> | Dispositivo | Sistema Operativo | Navegador   | Resolución |
+> | ----------- | ----------------- | ----------- | ---------- |
+> | **Desktop** | Linux             | Chrome 115+ | 1920x941   |
+> | **Mobile**  | -                 | -           | -          |
+> | **Tablet**  | -                 | -           | -          |
 
 ---
 
@@ -72,14 +71,14 @@
 >
 > ### 📈 Estadísticas Generales
 >
-> | Métrica                      | Cantidad | Porcentaje |
-> | ----------------------------- | -------- | ---------- |
-> | **Total de Tests**      | 6        | 100%       |
-> | **Tests Críticos**     | 6        | 100%       |
-> | **Tests Automatizados** | 6        | 100%       |
-> | **Tests Manuales**      | 0        | 0%         |
-> | **Tests Nuevos**        | 0        | 0%         |
-> | **Tests de Regresión** | 6        | 100%       |
+> | Métrica                 | Cantidad | Porcentaje |
+> | ----------------------- | -------- | ---------- |
+> | **Total de Tests**      | 2        | 100%       |
+> | **Tests Críticos**      | 2        | 100%       |
+> | **Tests Automatizados** | 1        | 50%        |
+> | **Tests Manuales**      | 1        | 50%        |
+> | **Tests Nuevos**        | 2        | 100%       |
+> | **Tests de Regresión**  | 0        | 0%         |
 
 ---
 
@@ -91,14 +90,10 @@
 >
 > #### 🔐 Módulo de Autenticación
 >
-> | ID Test                                                                                                                                                                                                                              | Nombre                                                                       | Tipo      | Prioridad   | Estado    | Tiempo Est. |
-> | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- | --------- | ----------- | --------- | ----------- |
-> | [SIASIS-TC-2](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-2%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Directivos.md "Ir al Test Case")                   | Validar Inicio de Sesión de Sesión Exitoso para Directivos                 | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
-> | [SIASIS-TC-3](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-3%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Profesores%20de%20Primaria.md "Ir al Test Case")   | Validar Inicio de Sesión de Sesión Exitoso para Profesores de Primaria     | Funcional | 🔴 Critical | ✅ Passed | 15 secs    |
-> | [SIASIS-TC-4](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-4%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Auxiliar.md "Ir al Test Case")                     | Validar Inicio de Sesión de Sesión Exitoso para Auxiliar                   | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
-> | [SIASIS-TC-5](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-5%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Profesor%20Secundaria.md "Ir al Test Case")        | Validar Inicio de Sesión de Sesión Exitoso para Profesor Secundaria        | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
-> | [SIASIS-TC-6](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-6%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Tutores.md "Ir al Test Case")                      | Validar Inicio de Sesión de Sesión Exitoso para Tutores                    | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
-> | [SIASIS-TC-7](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/SIU01/SIASIS-TC-7%20-%20Validar%20Inicio%20de%20Sesi%C3%B3n%20de%20Sesi%C3%B3n%20Exitoso%20para%20Personales%20Administrativos.md "Ir al Test Case") | Validar Inicio de Sesión de Sesión Exitoso para Personales Administrativos | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
+> | ID Test                                                                                                                                                                                                                                    | Nombre                                                                     | Tipo      | Prioridad   | Estado    | Tiempo Est. |
+> | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- | --------- | ----------- | --------- | ----------- |
+> | [SIASIS-TC-48](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-48%20-%20Validar%20Ejecuci%C3%B3n%20Autom%C3%A1tica%20de%20Tarea%20Programada%20en%20GitHub%20Actions%20.md "Ir al Test Case")                   | Validar Ejecución Automática de Tarea Programada en GitHub Actions                 | Funcional | 🔴 Critical | ✅ Passed | 50 seg     |
+> | [SIASIS-TC-49](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-49%20-%20Validar%20Integridad%20de%20Datos%20Almacenados%20en%20RDP04.md "Ir al Test Case")   | Validar Integridad de Datos Almacenados en RDP04     | Funcional | 🔴 Critical | ✅ Passed | 15 secs     |
 
 ---
 
@@ -106,8 +101,20 @@
 
 > [!SUCCESS]
 >
-> Job Execution: [https://github.com/GeoCoderDev/continuous-testing-selenium-SIASIS-SIU01-WEB/actions/runs/16058681082](https://github.com/GeoCoderDev/continuous-testing-selenium-SIASIS-SIU01-WEB/actions/runs/16058681082 "Job Ejecutado")
-
+> **Ejecución Automáticamente en Github Actions**
+> ![alt text](image-1.png)
+>
+> **Ejecución Automáticamente a las 4:30 en días escolares (Lunes-Viernes)**
+> ![alt text](image.png)
+>
+> **Almacena los datos en formato JSON**
+> ![alt text](image-2.png)
+>
+> **JSONs almacenados en RDP04 contienen datos completos INS1**
+> ![alt text](image-3.png)
+>
+> **JSONs almacenados en RDP04 contienen datos completos INS2**
+> !![alt text](image-4.png)
 ---
 
 ## 🐛 Defectos Encontrados
@@ -134,20 +141,19 @@
 >
 > ### 🤖 Herramientas de Automatización
 >
-> | Herramienta        | Versión | Propósito  | Estado |
-> | ------------------ | :------: | ----------- | :----: |
-> | **Selenium** |  latest  | E2E Testing |   🟢   |
-> | **Postman**  |  latest  | API Testing |   🟢   |
+> | Herramienta  | Versión | Propósito   | Estado |
+> | ------------ | :-----: | ----------- | :----: |
+> | **Selenium** | latest  | E2E Testing |   🟢   |
+> | **Postman**  | latest  | API Testing |   🟢   |
 
 > [!TIP]
 >
 > ### 📊 Herramientas de Reporting
 >
-> | Herramienta          | Propósito    |                                                                             Link                                                                             |
-> | -------------------- | ------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | **Cucumber**   | Test Reports  | [[Link al reporte]](https://github.com/GeoCoderDev/continuous-testing-selenium-SIASIS-SIU01-WEB/actions/runs/16058681082/artifacts/3461098394 "Descargar Reporte") |
-> | **Jira**       | Bug Tracking  |                                                                              ❌                                                                              |
-> | **Confluence** | Documentation |                                                                              ❌                                                                              |
+> | Herramienta    | Propósito     |                                                                                Link                                                                                |
+> | -------------- | ------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+> | **Jira**       | Bug Tracking  |                                                                                 ❌                                                                                 |
+> | **Confluence** | Documentation |                                                                                 ❌                                                                                 |
 
 ---
 
@@ -157,12 +163,12 @@
 >
 > ### ⚠️ Riesgos Identificados
 >
-> | Riesgo                              | Probabilidad | Impacto | Mitigación         | Responsable   |
-> | ----------------------------------- | ------------ | ------- | ------------------- | ------------- |
+> | Riesgo                        | Probabilidad | Impacto | Mitigación          | Responsable   |
+> | ----------------------------- | ------------ | ------- | ------------------- | ------------- |
 > | **Ambiente inestable**        | Media        | Alto    | Ambiente backup     | DevOps        |
 > | **Datos de prueba corruptos** | Baja         | Alto    | Backup/Restore plan | QA Lead       |
 > | **Ausencia de QA**            | Baja         | Medio   | Cross-training team | Test Manager  |
-> | **Bloqueos por bugs**         | Alta         | Medio   | Priorización ágil | Product Owner |
+> | **Bloqueos por bugs**         | Alta         | Medio   | Priorización ágil   | Product Owner |
 
 ---
 
@@ -208,18 +214,18 @@
 >
 > ### 📋 Checklist de Finalización
 >
-> - [X] Todos los tests ejecutados
+> - [x] Todos los tests ejecutados
 > - [ ] Bugs reportados en Jira
-> - [X] Evidencias archivadas
-> - [X] Reporte de ejecución generado
+> - [x] Evidencias archivadas
+> - [x] Reporte de ejecución generado
 > - [ ] Métricas actualizadas
 > - [ ] Stakeholders notificados
-> - [X] Ambiente liberado
+> - [x] Ambiente liberado
 
 ---
 
 **📅 Fecha de Ejecución:** 03/07/2025
 **⏰ Hora de Inicio:** 02:12 PM
 **⏰ Hora de Finalización:** 02:15 PM
-**👤 Ejecutado por: Juan Chavez - QA**
+**👤 Ejecutado por: Andry Diego - QA**
 **✅ Estado Final:** Completado
