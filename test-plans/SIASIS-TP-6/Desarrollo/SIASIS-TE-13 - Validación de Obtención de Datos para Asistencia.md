@@ -101,19 +101,19 @@
 
 > [!SUCCESS]
 >
-> **Ejecución Automáticamente en Github Actions**
+> Ejecución Automáticamente en Github Actions
 > ![alt text](image-1.png)
 >
-> **Ejecución Automáticamente a las 4:30 en días escolares (Lunes-Viernes)**
+> Ejecución Automáticamente a las 4:30 en días escolares (Lunes-Viernes)
 > ![alt text](image.png)
 >
-> **Almacena los datos en formato JSON**
+> Almacena los datos en formato JSON
 > ![alt text](image-2.png)
 >
-> **JSONs almacenados en RDP04 contienen datos completos INS1**
+> JSONs almacenados en RDP04 contienen datos completos INS1
 > ![alt text](image-3.png)
 >
-> **JSONs almacenados en RDP04 contienen datos completos INS2**
+> JSONs almacenados en RDP04 contienen datos completos INS2
 > !![alt text](image-4.png)
 ---
 
