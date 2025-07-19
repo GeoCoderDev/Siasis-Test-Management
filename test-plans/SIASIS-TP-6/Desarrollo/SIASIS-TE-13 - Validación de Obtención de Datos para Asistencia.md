@@ -97,24 +97,25 @@
 
 ---
 
+
 ## 📊 Resultados y Métricas
 
 > [!SUCCESS]
->
-> Ejecución Automáticamente en Github Actions
-> ![alt text](image-1.png)
->
-> Ejecución Automáticamente a las 4:30 en días escolares (Lunes-Viernes)
-> ![alt text](image.png)
->
-> Almacena los datos en formato JSON
-> ![alt text](image-2.png)
->
-> JSONs almacenados en RDP04 contienen datos completos INS1
-> ![alt text](image-3.png)
->
-> JSONs almacenados en RDP04 contienen datos completos INS2
-> !![alt text](image-4.png)
+
+> Ejecución automática en GitHub Actions  
+> ![Ejecución en GitHub Actions](image-1.png)
+
+> Ejecución automática a las 4:30 am en días escolares (Lunes–Viernes)  
+> ![Trigger a las 4:30am en días escolares](image-2.png)
+
+> Almacena los datos en formato JSON (salida ts-node)  
+> ![Salida JSON generada por ts-node](image-3.png)
+
+> JSONs almacenados en RDP04 contienen datos completos (INS1)  
+> ![JSON completo INS1](image-4.png)
+
+> JSONs almacenados en RDP04 contienen datos completos (INS2)  
+> ![JSON completo INS2](image-5.png)
 ---
 
 ## 🐛 Defectos Encontrados
