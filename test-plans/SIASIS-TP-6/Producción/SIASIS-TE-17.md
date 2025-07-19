@@ -1,6 +1,6 @@
 # 🚀 Test Execution: Validación de Obtención de Datos para Asistencia
 
-> [!IMPORTANT] > **ID de Ejecución:** SIASIS-TE-13
+> [!IMPORTANT] > **ID de Ejecución:** SIASIS-TE-17
 > **Fecha de Ejecución:** 03/07/2025
 > **Ejecutor:** Andry Diego
 > **Duración:** 1min 30 secs
@@ -16,12 +16,12 @@
 >
 > | Campo                 |                                                                     Valor                                                                      |
 > | --------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------: |
-> | **ID Ejecución**      |                                                                  SIASIS-TE-13                                                                  |
+> | **ID Ejecución**      |                                                                  SIASIS-TE-17                                                                  |
 > | **Nombre**            |                               Validación de Obtención de Datos para Asistencia Diaria en Ambiente de Desarrollo                                |
 > | **Test Plan**         | [SIASIS-TP-6](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-6/SIASIS-TP-6.md "Test Plan Relacionado") |
 > | **Sprint/Release**    |                                                                       6                                                                        |
 > | **Build/Versión**     |                                                                      1.0                                                                       |
-> | **Tipo de Ejecución** |                                                                ✨ New Features                                                                 |
+> | **Tipo de Ejecución** |                                                                 🔄 Regression                                                                  |
 > | **Modo de Ejecución** |                                                                    🔀 Mixed                                                                    |
 > | **Prioridad**         |                                                                  🔴 Critical                                                                   |
 
@@ -36,23 +36,22 @@
 > |      Aspecto      |            Configuración             |
 > | :---------------: | :----------------------------------: |
 > |   **Ambiente**    |            🔧 Desarrollo             |
-> |   **URL Base**    |    https://siasis-dev.vercel.app/    |
+> |   **URL Base**    |  https://ie20935-siasis.vercel.app/  |
 > | **Base de Datos** |    Instancia de Desarrollo RDP02     |
-> |   **Servidor**    |           No hay detalles            |
+> |   **Servidor**    |   Vercel Certification Environment   |
 > |    **Red/VPN**    | Red corporativa con certificados SSL |
 
 > [!TIP]
 >
 > ### 💻 Configuración Técnica
 >
-> | Tecnología         |     Versión     | Estado |
-> | ------------------ | :-------------: | :----: |
-> | **Frontend**       |  React 18.2.0   |   🟢   |
-> | **Backend**        |   Node.js 22    |   🟢   |
-> | **Base de Datos**  | PostgreSQL 15.3 |   🟢   |
-> | **Cache**          |    Redis 7.0    |   🟢   |
-> | **WebSocket**      | Socket.io 4.7.0 |   🟢   |
-> | **GitHub Actions** |     Latest      |   🟢   |
+> | Tecnología        |     Versión     | Estado |
+> | ----------------- | :-------------: | :----: |
+> | **Frontend**      |  React 18.2.0   |   🟢   |
+> | **Backend**       |   Node.js 22    |   🟢   |
+> | **Base de Datos** | PostgreSQL 15.3 |   🟢   |
+> | **Cache**         |    Redis 7.0    |   🟢   |
+> | **WebSocket**     | Socket.io 4.7.0 |   🟢   |
 
 > [!CAUTION]
 >
@@ -77,8 +76,8 @@
 > | **Tests Críticos**      | 2        | 100%       |
 > | **Tests Automatizados** | 1        | 50%        |
 > | **Tests Manuales**      | 1        | 50%        |
-> | **Tests Nuevos**        | 2        | 100%       |
-> | **Tests de Regresión**  | 0        | 0%         |
+> | **Tests Nuevos**        | 0        | 0%         |
+> | **Tests de Regresión**  | 2        | 100%       |
 
 ---
 
@@ -92,7 +91,7 @@
 >
 > | ID Test                                                                                                                                                                                                                               | Nombre                                                             | Tipo        | Prioridad   | Estado    | Tiempo Est. |
 > | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ----------- | ----------- | --------- | ----------- |
-> | [SIASIS-TC-48](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-48%20-%20Validar%20Ejecuci%C3%B3n%20Autom%C3%A1tica%20de%20Tarea%20Programada%20en%20GitHub%20Actions%20.md "Ir al Test Case") | Validar Ejecución Automática de Tarea Programada en GitHub Actions | Funcional   | 🔴 Critical | ✅ Passed | 50 seg      |
+> | [SIASIS-TC-48](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-48%20-%20Validar%20Ejecuci%C3%B3n%20Autom%C3%A1tica%20de%20Tarea%20Programada%20en%20GitHub%20Actions%20.md "Ir al Test Case") | Validar Ejecución Automática de Tarea Programada en GitHub Actions | Funcional   | 🔴 Critical | ✅ Passed | 1 min       |
 > | [SIASIS-TC-49](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API01/SIASIS-TC-49%20-%20Validar%20Integridad%20de%20Datos%20Almacenados%20en%20RDP04.md "Ir al Test Case")                                    | Validar Integridad de Datos Almacenados en RDP04                   | Integration | 🔴 Critical | ✅ Passed | 15 secs     |
 
 ---
@@ -101,25 +100,37 @@
 
 > [!SUCCESS]
 
-> Ejecución automática en GitHub Actions
->
-> ![Trigger a las 4:30am en días escolares](image-1.png)
-
-> Ejecución automática a las 4:30 am en días escolares (Lunes–Viernes)
+> **Ejecución automática en GitHub Actions**
 >
 > ![Ejecución en GitHub Actions](image.png)
 
-> Almacena los datos en formato JSON (salida ts-node)
+> **Ejecución automática a las 4:30 am en días escolares (Lunes–Viernes)**
+>
+> ![Trigger a las 4:30am en días escolares](image-1.png)
+> 
+> **Almacena los datos en formato JSON (salida ts-node)**
 >
 > ![Salida JSON generada por ts-node](image-2.png)
 
-> JSONs almacenados en RDP04 contienen datos completos (INS1)
+> **JSONs almacenados en RDP04 contienen datos completos (INS1) - Inicia a las 4:30 am**
 >
 > ![JSON completo INS1](image-3.png)
 
-> JSONs almacenados en RDP04 contienen datos completos (INS2)
+> **JSONs almacenados en RDP04 contienen datos completos (INS2) - Inicia a las 4:30 am**
 >
 > ![JSON completo INS2](image-4.png)
+>
+> **JSONs almacenados en RDP04 contienen datos completos (INS3) - Inicia a las 4:30 am**
+>
+> ![JSON completo INS3](image-5.png)
+>
+> **JSONs almacenados en RDP04 contienen datos completos (INS4) - Inicia a las 4:30 am**
+>
+> ![JSON completo INS4](image-6.png)
+>
+> **JSONs almacenados en RDP04 contienen datos completos (INS5) - Inicia a las 4:30 am**
+>
+> ![JSON completo INS5](image-7.png)
 
 ---
 
@@ -188,7 +199,7 @@
 > ### ✅ Criterios de Entrada (Entry Criteria)
 >
 > - ✅ Test Plan aprobado y actualizado
-> - ✅ Ambiente de certificación estable y sincronizado
+> - ✅ Ambiente de testing configurado y estable
 > - ✅ GitHub Actions configurado en repositorio
 > - ✅ RDP04 (Vercel Blob) accesible
 > - ✅ Datos de prueba en RDP02 preparados
@@ -198,12 +209,12 @@
 >
 > ### 🏁 Criterios de Salida (Exit Criteria)
 >
-> - ✅ 100% de tests ejecutados sin bloqueos
+> - ✅ 95% de tests ejecutados
 > - ✅ 100% de tests críticos pasando
 > - ✅ GitHub Actions ejecutándose correctamente
 > - ✅ Datos almacenados correctamente en RDP04
-> - ✅ Ambiente validado para producción
-> - ✅ Sign-off para deployment a producción
+> - ✅ Cobertura de funcionalidades > 90%
+> - ✅ Reporte de ejecución completo
 
 ---
 
@@ -213,8 +224,9 @@
 >
 > ### 💡 Notas de la Ejecución
 >
-> - Validación en ambiente de desarrollo antes de certificación
-> - Monitorear logs de GitHub Actions detalladamente
+> - Dependiente de la exitosa ejecución de TE-13 (Desarrollo)
+> - Validación exhaustiva de performance y seguridad
+> - Prerequisito para deployment a producción
 >
 > ### 🔄 Lecciones Aprendidas
 >
