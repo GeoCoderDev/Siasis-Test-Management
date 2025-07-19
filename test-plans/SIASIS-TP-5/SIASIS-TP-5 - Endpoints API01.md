@@ -1,9 +1,9 @@
-# 📋 Test Plan: SIASIS-TP-3 - Toma de Asistencia de Personal en varios dispositivos sincronizados
+# 📋 Test Plan: SIASIS-TP-5 - Verificación de funcionamiento correcto de endpoints de API01
 
 > [!IMPORTANT]
 >
-> **Fecha de Creación:** 07/07/2025
-> **Responsable: Andry Diego** > **Sprint/Release:** 5
+> **Fecha de Creación:** 18/07/2025
+> **Responsable: Jose Gil** > **Sprint/Release:** 5
 > **Estado:** ✅ Completed
 
 ---
@@ -14,11 +14,11 @@
 >
 > ### 🎯 Historia de Usuario Principal
 >
-> **COMO** Directivo(Directora/Subdirectora) del Colegio IE20935
+> **COMO** QA del sistema de asistencia SIASIS
 >
-> **QUIERO** poder tomar las asistencias de los Personales del Colegio en varios dispositivos a la vez sin generar conflictos o desincronizaciones en los mismos.
+> **QUIERO** realizar pruebas preventivas a todos los endpoints del API01
 >
-> **PARA** evitar tener diferentes asistencias marcadas en estos varios dispositivos.
+> **PARA** asegurar que dicho componente funciona de manera correcta y sin bugs
 
 ### ✅ Criterios de Aceptación
 
@@ -26,26 +26,14 @@
 >
 > #### 📝 Criterio de Aceptación 1:
 >
-> **Dado** que soy un usuario directivo y he iniciado sesion en varios dispositivos
+> **Dado** que tengo una lista de todos los endpoints del API01 hasta ahora 
 >
-> **Cuando** accedo a la seccion de toma de asistencia de Personal _(Ejemplo: Entrada de profesores de Secundaria)_ en todos los dispositivos
+> **Cuando** hago uso de cada endpoint
 >
-> **Y** marco la asistencia de cualquier personal en uno de ellos
->
-> **Entonces** la asistencia es registrada en todos los dispositivos a la vez
+> **Entonces** valido que todos los enpoints del API01 funcionen correctamente
 
 > [!TIP]
->
-> #### 📝 Criterio de Aceptación 2:
->
-> **Dado** que soy un usuario directivo y he iniciado sesion en 2 dipositivos (A y B)
->
-> **Cuando** accedo a la seccion de toma de asistencia de Personal _(Ejemplo: Entrada de profesores de Secundaria) en el dispositivo A,_ pero en el dispositivo B accedo a otro rol o modo de registro(Entrada o Salida)
->
-> **Y** marco la asistencia de cualquier personal en el dispositivo A
->
-> **Entonces** la asistencia solo debe ser registrada en el dispositivo A , dado que el dispositivo B se encuentra en otra seccion.
-
+> 
 ---
 
 ## 📄 Descripción del Plan
@@ -54,7 +42,7 @@
 >
 > ### 1. Objetivo
 >
-> Validar el correcto funcionamiento del marcado de asistencia sincronizado de Personal por parte de un usuario directivo que ha ingresado en varios dispositivos a la misma seccion de toma de asistencia _(Ejemplo: Toma de Asistencia de Entrada para Personal Administrativo)_
+> Validar el correcto funcionamiento de todos los endpoints de la API01_
 
 > [!NOTE]
 >
@@ -65,7 +53,7 @@
 >
 > | Funcionalidad                                         | Responsable | Prioridad |
 > | :------------------------------------------------------ | ------------- | :---------: |
-> | Toma de Asistencia de Personal en Varios Dispositivos | Andry Diego | 🟡 Media |
+> | Endpoints del API01 | Jose Gil | 🟡 Media |
 >
 > #### 2.2. Lo que NO se va a probar
 >
@@ -82,8 +70,8 @@
 >
 > | Componente | Descripción                                                                                                                                                      | Si | No |
 > | :----------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ---- |
-> | **SIU01** | Servidor de Interfaces de Usuario                                                                                                                                 | ✅ |    |
-> | **API01** | API para personal del colegio (Directivos, Auxiliares, Profesores, etc)                                                                                           |    | ❌ |
+> | **SIU01** | Servidor de Interfaces de Usuario                                                                                                                                 |  |  ❌  |
+> | **API01** | API para personal del colegio (Directivos, Auxiliares, Profesores, etc)                                                                                           | ✅   |  |
 > | **API02** | API para padres de Familia                                                                                                                                        |    | ❌ |
 > | **API03** | API para obtención de hora real UTC                                                                                                                              |    | ❌ |
 > | **TPS01** | Tareas programadas con Scripts                                                                                                                                    |    | ❌ |
@@ -93,8 +81,8 @@
 > | **RDP02** | Repositorio de Datos Persistentes para Datos Relacionados a Personal del Colegio (Directivos, Auxiliares, Profesores, etc) ➡️ PostgreSQL                        |    | ❌ |
 > | **RDP03** | Repositorio de Datos Persistentes para Datos Relacionados a Responsables (Padres de Familia/Apoderados) ➡️ MongoDB                                              |    | ❌ |
 > | **RDP04** | Repositorio de Datos Persistentes para JSONs con Información de Datos de Asistencia del Día Actual (Se actualiza todos los días por TPS01) ➡️ Blob de Vercel |    | ❌ |
-> | **RDP05** | Repositorio de Datos Persistentes para Asistencias Tomadas a lo largo del día actual exclusivamente ➡️ Redis                                                   | ✅ |    |
-> |  **SS01**  | Servidor de Sockets para operaciones en tiempo real                                                                                                               | ✅ |    |
+> | **RDP05** | Repositorio de Datos Persistentes para Asistencias Tomadas a lo largo del día actual exclusivamente ➡️ Redis                                                   |  |❌    |
+> |  **SS01**  | Servidor de Sockets para operaciones en tiempo real                                                                                                               |  |   ❌ |
 > |  **SE01**  | Servicio Externo de Correo Electrónico por GMAIL de Google                                                                                                       |    | ❌ |
 
 ---
@@ -151,11 +139,11 @@
 >
 > | Tecnología    | Marcar(X) |
 > | ---------------- | :---------: |
-> | Web            |    ✅    |
+> | Web            |    ❌   |
 > | API            |    ✅    |
 > | Base de Datos  |    ❌    |
 > | GitHub Actions |    ❌    |
-> | Web Sockets    |    ✅    |
+> | Web Sockets    |    ❌    |
 > | Otros          |    ❌    |
 
 > [!NOTE]
@@ -166,7 +154,7 @@
 > | Dispositivos | Marcar(X) |
 > | -------------- | :---------: |
 > | Desktop      |    ✅    |
-> | Móviles     |    ✅    |
+> | Móviles     |     ❌   |
 > | Tablets      |    ❌    |
 > | Laptops      |    ✅    |
 > | Otros        |    ❌    |
@@ -195,7 +183,7 @@
 > | macOS             | Monterey+  |    ❌    |
 > | Linux             | Ubuntu 20+ |    ❌    |
 > | iOS               | 15+        |    ❌    |
-> | Android           | 10+        |    ✅    |
+> | Android           | 10+        |    ❌   |
 
 ---
 
@@ -206,9 +194,9 @@
 >
 > |                         Flujo                         |     Tipo de Prueba     | Fecha de Inicio | Fecha Fin |     Ambiente     |                                                                       Test Execution                                                                       |
 > | :------------------------------------------------------: | :----------------------: | :---------------: | :----------: | :-----------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | Toma de Asistencia de Personal con varios dispositivos | 🔧 Pruebas Funcionales |   03/07/2025   | 03/07/2025 |   🔧 Desarrollo   |  [SIASIS-TE-6](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-3/Desarrollo/SIASIS-TE-6.md "Ir al Test Execution")  |
-> | Toma de Asistencia de Personal con varios dispositivos | 🔧 Pruebas Funcionales |   03/07/2025   | 03/07/2025 | 🧪 Certificación | [SIASIS-TE-7](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-3/Certificacion/SIASIS-TE-7.md "Ir al Test Execution") |
-> | Toma de Asistencia de Personal con varios dispositivos | 🔧 Pruebas Funcionales |   03/07/2025   | 03/07/2025 |  🚀 Producción  |                                                                             ⌛                                                                             |
+> | Validacion del funcionamiento correcto de los endpoints de API01 | 🔧 Pruebas Funcionales |   13/07/2025   | 18/07/2025 |   🔧 Desarrollo   |  [SIASIS-TE-12](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-5/Desarollo/SIASIS-TE-12.md "Ir al Test Execution")  |
+> | Validacion del funcionamiento correcto de los endpoints de API01 | 🔧 Pruebas Funcionales |   13/07/2025   | 03/07/2025 | 🧪 Certificación | [SIASIS-TE-11](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-5/Certificacion/SIASIS-TE-11.md "Ir al Test Execution") |
+> | Toma de Asistencia de Personal con varios dispositivos | 🔧 Pruebas Funcionales |   18/07/2025   | 21/07/2025 |  🚀 Producción  |                                                                             ⌛                                                                             |
 
 ---
 
@@ -235,6 +223,6 @@
 
 ---
 
-**📅 Última Actualización:** 07/07/2025
+**📅 Última Actualización:** 18/07/2025
 **✅ Estado de Aprobación:** Aprobado
 **👤 Aprobado por:** Juan Chavez - Lider Técnico

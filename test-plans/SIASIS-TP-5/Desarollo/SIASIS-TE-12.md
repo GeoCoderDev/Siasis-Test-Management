@@ -38,7 +38,7 @@
 >
 > | Aspecto           |         Configuración         |
 > | ------------------- | :-------------------------------: |
-> | **Ambiente**      |        🧪 Certificación        |
+> | **Ambiente**      |        🧪 Desarollo        |
 > | **URL Base**      | https://siasis-dev.vercel.app |
 > | **Base de Datos** | instancia 2 de RDP05(Redis) |
 > | **Servidor**      |         No hay detalles         |
