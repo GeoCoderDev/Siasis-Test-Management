@@ -102,35 +102,35 @@
 
 > **Ejecución automática en GitHub Actions**
 >
-> ![Ejecución en GitHub Actions](image.png)
+> ![alt text](image.png)
 
 > **Ejecución automática a las 4:30 am en días escolares (Lunes–Viernes)**
 >
-> ![Trigger a las 4:30am en días escolares](image-1.png)
+> ![alt text](image-1.png)
 > 
 > **Almacena los datos en formato JSON (salida ts-node)**
 >
-> ![Salida JSON generada por ts-node](image-2.png)
+> ![alt text](image-2.png)
 
 > **JSONs almacenados en RDP04 contienen datos completos (INS1) - Inicia a las 4:30 am**
 >
-> ![JSON completo INS1](image-3.png)
+> ![alt text](image-3.png)
 
 > **JSONs almacenados en RDP04 contienen datos completos (INS2) - Inicia a las 4:30 am**
 >
-> ![JSON completo INS2](image-4.png)
+> ![alt text](image-4.png)
 >
 > **JSONs almacenados en RDP04 contienen datos completos (INS3) - Inicia a las 4:30 am**
 >
-> ![JSON completo INS3](image-5.png)
+> !![alt text](image-5.png)
 >
 > **JSONs almacenados en RDP04 contienen datos completos (INS4) - Inicia a las 4:30 am**
 >
-> ![JSON completo INS4](image-6.png)
+> ![alt text](image-6.png)
 >
 > **JSONs almacenados en RDP04 contienen datos completos (INS5) - Inicia a las 4:30 am**
 >
-> ![JSON completo INS5](image-7.png)
+> ![alt text](image-7.png)
 
 ---
 

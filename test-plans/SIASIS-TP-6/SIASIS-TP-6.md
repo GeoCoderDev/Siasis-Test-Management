@@ -194,9 +194,9 @@
 >
 > |      Flujo       |     Tipo de Prueba     | Fecha de Inicio | Fecha Fin  |     Ambiente     |                                                                         Test Execution                                                                          |
 > | :--------------: | :--------------------: | :-------------: | :--------: | :--------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | Obtención de Datos para Asistencia | 🔧 Pruebas Funcionales |   03/07/2025    | 03/07/2025 |  🔧 Desarrollo   |     [SIASIS-TE-1](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/Desarrollo/SIASIS-TE-1.md "Ir al TestExecution")     |
-> | Obtención de Datos para Asistencia | 🔧 Pruebas Funcionales |   03/07/2025    | 03/07/2025 | 🧪 Certificación | [SIASIS-TE-2](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/Certificaci%C3%B3n/SIASIS-TE-2.md "Ir al TestExecution") |
-> | Obtención de Datos para Asistencia | 🔧 Pruebas Funcionales |   03/07/2025    | 03/07/2025 |  🚀 Producción   |  [SIASIS-TE-3](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/Producci%C3%B3n/SIASIS-TE-3.md "Ir al TestExecution")   |
+> | Obtención de Datos para Asistencia | 🔧 Pruebas Funcionales |   03/07/2025    | 03/07/2025 |  🔧 Desarrollo   |     [SIASIS-TE-13](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-6/Desarrollo/SIASIS-TE-13%20-%20Validaci%C3%B3n%20de%20Obtenci%C3%B3n%20de%20Datos%20para%20Asistencia.md "Ir al TestExecution")     |
+> | Obtención de Datos para Asistencia | 🔧 Pruebas Funcionales |   03/07/2025    | 03/07/2025 | 🧪 Certificación | [SIASIS-TE-16](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-6/Certificaci%C3%B3n/SIASIS-TE-16%20-%20Validaci%C3%B3n%20de%20Obtenci%C3%B3n%20de%20Datos%20para%20Asistencia.md "Ir al TestExecution") |
+> | Obtención de Datos para Asistencia | 🔧 Pruebas Funcionales |   03/07/2025    | 03/07/2025 |  🚀 Producción   |  [SIASIS-TE-17](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-6/Producci%C3%B3n/SIASIS-TE-17.md "Ir al TestExecution")   |
 
 ---
 
