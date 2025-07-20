@@ -212,7 +212,7 @@
 > | :--------------------------------------------: | :--------------------: | :-------------: | :--------: | :--------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 > | Sincronización de Datos entre Instancias RDP02 | 🔧 Pruebas Funcionales |   17/07/2025    | 18/07/2025 |  🔧 Desarrollo   |     [SIASIS-TE-22](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-9/Desarrollo/SIASIS-TE-22%20-%20Sincronizaci%C3%B3n%20Autom%C3%A1tica%20entre%20Instancias%20RDP02.md "Ir al TestExecution")     |
 > | Sincronización de Datos entre Instancias RDP02 | 🔧 Pruebas Funcionales |   17/07/2025    | 18/07/2025 | 🧪 Certificación | [SIASIS-TE-23](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-9/Certificaci%C3%B3n/SIASIS-TE-23%20-%20Sincronizaci%C3%B3n%20Autom%C3%A1tica%20entre%20Instancias%20RDP02.md "Ir al TestExecution") |
-> | Sincronización de Datos entre Instancias RDP02 | 🔧 Pruebas Funcionales |   17/07/2025    | 18/07/2025 |  🚀 Producción   |  [SIASIS-TE-24](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-9/SIASIS-TP-9%20-%20Sincronizaci%C3%B3n%20entre%20Instancias%20de%20RDP02%20para%20Operaciones%20de%20Escritura.md "Ir al TestExecution")   |
+> | Sincronización de Datos entre Instancias RDP02 | 🔧 Pruebas Funcionales |   17/07/2025    | 18/07/2025 |  🚀 Producción   |  [SIASIS-TE-24](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-9/Producci%C3%B3n/SIASIS-TE-24%20-%20Sincronizaci%C3%B3n%20Autom%C3%A1tica%20entre%20Instancias%20RDP02.md "Ir al TestExecution")   |
 
 ---
 
