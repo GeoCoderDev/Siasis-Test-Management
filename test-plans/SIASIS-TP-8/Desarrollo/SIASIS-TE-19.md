@@ -4,7 +4,7 @@
 > **ID de Ejecución:** SIASIS-TE-19-DEV
 > **Fecha de Ejecución:** 20/07/2025
 > **Ejecutor:** Andry Diego
-> **Duración:** 2min 15 secs
+> **Duración:** 52s 
 > **Estado:** ✅ Completed
 
 ---
@@ -19,7 +19,7 @@
 > | ---------------------------- | -------------------------------------------------------------------------------- |
 > | **ID Ejecución**      | SIASIS-TE-19                                                                       |
 > | **Nombre**             | Transacción de Datos de Redis a PostgreSQL y Registro Automático de Faltas - Ambiente de Desarrollo                                            |
-> | **Test Plan**          | [SIASIS-TP-8](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-8/SIASIS-TP-8.md "Test Plan Relacionado")                                                     |
+> | **Test Plan**          | [SIASIS-TP-8](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-8/SIASIS-TP-8.md "Ir al Test Plan")                                                     |
 > | **Sprint/Release**     | 6                                                    |
 > | **Build/Versión**     | 1.0                                                    |
 > | **Tipo de Ejecución** | 🔄 Regression \| ✨ New Features                                                                |
@@ -92,7 +92,7 @@
 >
 > | ID Test     | Nombre                            | Tipo      | Prioridad   | Estado     | Tiempo Real |
 > | ----------- | --------------------------------- | --------- | ----------- | ---------- | ----------- |
-> | [SIASIS-TC-63](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/API-SIU01/SIASIS-TC-63%20-%20Validar%20Transacci%C3%B3n%20de%20Datos%20de%20Redis%20a%20PostgreSQL%20y%20Registro%20Autom%C3%A1tico%20de%20Faltas.md "Ir al Test Case") | Transacción de Datos de Redis a PostgreSQL y Registro Automático de Faltas | Integration | 🔴 Critical | ✅ Passed | 36 secs       |
+> | [SIASIS-TC-63](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/tests/TPS01/SIASIS-TC-63%20-%20Validar%20Transacci%C3%B3n%20de%20Datos%20de%20Redis%20a%20PostgreSQL%20y%20Registro%20Autom%C3%A1tico%20de%20Faltas.md "Ir al Test Case") | Transacción de Datos de Redis a PostgreSQL y Registro Automático de Faltas | Integration | 🔴 Critical | ✅ Passed | 36 secs       |
 
 ---
 
@@ -117,9 +117,9 @@
 >
 > | Métrica                       | Estimado | Actual | Diferencia |
 > | ------------------------------ | -------- | ------ | ---------- |
-> | **Tiempo Total**         | 5 min   | 2min 15secs  | -2min 45secs      |
-> | **Tiempo Promedio/Test** | 5 min | 2min 15secs  | -2min 45secs      |
-> | **Tests/Hora**           | 12      | 26.7      | +14.7          |
+> | **Tiempo Total**         | 5 min   | 52s  | -4min 8secs      |
+> | **Tiempo Promedio/Test** | 5 min | 52s  | -4min 8secs      |
+> | **Tests/Hora**           | 12      | 69.2      | +57.2          |
 > | **Tiempo Setup**         | 30 secs   | 15 secs  | -15 secs      |
 > | **Tiempo Cleanup**       | 15 secs   | 10 secs  | -5 secs      |
 

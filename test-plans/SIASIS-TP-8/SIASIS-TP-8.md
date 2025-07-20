@@ -206,9 +206,9 @@
 >
 > |                        Flujo                        |     Tipo de Prueba     | Fecha de Inicio | Fecha Fin  |     Ambiente     |                                                                         Test Execution                                                                          |
 > | :-------------------------------------------------: | :--------------------: | :-------------: | :--------: | :--------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-> | Transacción Redis a PostgreSQL + Registro de Faltas | 🔧 Pruebas Funcionales |   03/07/2025    | 03/07/2025 |  🔧 Desarrollo   |     [SIASIS-TE-1](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/Desarrollo/SIASIS-TE-1.md "Ir al TestExecution")     |
-> | Transacción Redis a PostgreSQL + Registro de Faltas | 🔧 Pruebas Funcionales |   03/07/2025    | 03/07/2025 | 🧪 Certificación | [SIASIS-TE-2](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/Certificaci%C3%B3n/SIASIS-TE-2.md "Ir al TestExecution") |
-> | Transacción Redis a PostgreSQL + Registro de Faltas | 🔧 Pruebas Funcionales |   03/07/2025    | 03/07/2025 |  🚀 Producción   |  [SIASIS-TE-3](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-1/Producci%C3%B3n/SIASIS-TE-3.md "Ir al TestExecution")   |
+> | Transacción Redis a PostgreSQL + Registro de Faltas | 🔧 Pruebas Funcionales |   03/07/2025    | 03/07/2025 |  🔧 Desarrollo   |     [SIASIS-TE-19](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-8/Desarrollo/SIASIS-TE-19.md "Ir al TestExecution")     |
+> | Transacción Redis a PostgreSQL + Registro de Faltas | 🔧 Pruebas Funcionales |   03/07/2025    | 03/07/2025 | 🧪 Certificación | [SIASIS-TE-20](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-8/Certificaci%C3%B3n/SIASIS-TE-20.md "Ir al TestExecution") |
+> | Transacción Redis a PostgreSQL + Registro de Faltas | 🔧 Pruebas Funcionales |   03/07/2025    | 03/07/2025 |  🚀 Producción   |  [SIASIS-TE-21](https://github.com/GeoCoderDev/Siasis-Test-Management/blob/master/test-plans/SIASIS-TP-8/Producci%C3%B3n/SIASIS-TE-21.md "Ir al TestExecution")   |
 
 ---
 

@@ -1,4 +1,4 @@
-# 🧪 Test Case: SIASIS-TC-52 - Validar Transacción de Datos de Redis a PostgreSQL y Registro Automático de Faltas
+# 🧪 Test Case: SIASIS-TC-63 - Validar Transacción de Datos de Redis a PostgreSQL y Registro Automático de Faltas
 
 > [!IMPORTANT]
 > **ID del Test Case:** SIASIS-TC-63
