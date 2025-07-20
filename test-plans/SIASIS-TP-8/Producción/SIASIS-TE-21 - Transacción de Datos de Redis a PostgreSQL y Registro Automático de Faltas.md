@@ -1,7 +1,7 @@
 # 🚀 Test Execution: Transacción de Datos de Redis a PostgreSQL y Registro Automático de Faltas
 
 > [!IMPORTANT] > **ID de Ejecución:** SIASIS-TE-21
-> **Fecha de Ejecución:** 19/07/2025
+> **Fecha de Ejecución:** 17/07/2025
 > **Ejecutor:** Andry Diego
 > **Duración:** 35s
 > **Estado:** ✅ Completed
@@ -381,7 +381,7 @@
 
 ---
 
-**📅 Fecha de Ejecución:** 19/07/2025  
+**📅 Fecha de Ejecución:** 17/07/2025  
 **⏰ Hora de Inicio:** 21:25  
 **⏰ Hora de Finalización:** 21:29  
 **👤 Ejecutado por:** Andry Diego - QA Senior  

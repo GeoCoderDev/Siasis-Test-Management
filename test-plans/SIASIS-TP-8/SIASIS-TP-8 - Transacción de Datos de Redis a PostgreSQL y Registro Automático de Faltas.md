@@ -2,7 +2,7 @@
 
 > [!IMPORTANT]
 >
-> **Fecha de Creación:** 19/07/2025
+> **Fecha de Creación:** 17/07/2025
 > **Responsable:** Andry Diego
 > **Sprint/Release:** 6
 > **Estado:** ✅ Completed
@@ -238,6 +238,6 @@
 
 ---
 
-**📅 Última Actualización:** 20/07/2025
+**📅 Última Actualización:** 19/07/2025
 **✅ Estado de Aprobación:** Pendiente
 **👤 Aprobado por:** Juan Chavez - Líder Técnico

@@ -2,7 +2,7 @@
 
 > [!IMPORTANT]
 > **ID de Ejecución:** SIASIS-TE-19-DEV
-> **Fecha de Ejecución:** 20/07/2025
+> **Fecha de Ejecución:** 17/07/2025
 > **Ejecutor:** Andry Diego
 > **Duración:** 52s 
 > **Estado:** ✅ Completed
@@ -314,7 +314,7 @@
 
 ---
 
-**📅 Fecha de Ejecución:** 20/07/2025  
+**📅 Fecha de Ejecución:** 17/07/2025  
 **⏰ Hora de Inicio:** 21:30  
 **⏰ Hora de Finalización:** 21:32  
 **👤 Ejecutado por:** Hizly - QA Tester  

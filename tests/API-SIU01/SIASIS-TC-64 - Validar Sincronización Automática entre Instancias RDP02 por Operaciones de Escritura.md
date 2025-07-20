@@ -3,7 +3,7 @@
 > [!IMPORTANT] > **ID del Test Case:** SIASIS-TC-64
 > **Fecha de Creación:** 16/07/2025
 > **Autor:** Andry Diego
-> **Última Actualización:** 16/07/2025
+> **Última Actualización:** 19/07/2025
 > **Estado:** 🟢 Ready
 
 ---
@@ -362,10 +362,10 @@
 >
 > |   Fecha    | Versión | Cambio           |    Autor    |
 > | :--------: | :-----: | ---------------- | :---------: |
-> | 20/07/2025 |   1.0   | Creación inicial | Andry Diego |
+> | 19/07/2025 |   1.0   | Creación inicial | Andry Diego |
 
 ---
 
-**📅 Última Actualización:** 20/07/2025 09:05  
+**📅 Última Actualización:** 19/07/2025 09:05  
 **✅ Estado de Revisión:** Pendiente  
 **👤 Revisado por:** Juan Chavez - Líder Técnico
